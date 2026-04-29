@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reel Analysis Report v2.2</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:#0f0f17;color:#e2e8f0;}
+  .header{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);padding:40px;text-align:center;}
+  .header h1{font-size:2.2em;font-weight:800;color:#fff;}
+  .header p{color:#94a3b8;margin-top:6px;}
+  .score-badge{display:inline-block;background:#f59e0b22;border:3px solid #f59e0b;
+    color:#f59e0b;font-size:2.8em;font-weight:900;padding:14px 28px;border-radius:14px;margin:16px 0;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;
+    padding:28px;max-width:1400px;margin:0 auto;}
+  .card{background:#1e1e2e;border-radius:14px;padding:22px;border:1px solid #2d2d44;}
+  .card h2{font-size:.9em;color:#94a3b8;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;}
+  .stat{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid #2d2d44;}
+  .stat:last-child{border-bottom:none;}
+  .stat-label{color:#94a3b8;font-size:.88em;}
+  .stat-value{font-weight:700;color:#e2e8f0;font-size:.92em;}
+  .tag{display:inline-block;background:#3b1f5e;color:#c084fc;padding:3px 10px;
+    border-radius:18px;font-size:.78em;margin:2px;font-weight:600;}
+  .section{max-width:1400px;margin:0 auto;padding:0 28px 28px;}
+  .section-title{font-size:1.3em;font-weight:700;margin:28px 0 14px;
+    color:#fff;border-left:4px solid #7c3aed;padding-left:11px;}
+  .shot-card{background:#1e1e2e;border-radius:10px;padding:18px;
+    border-left:4px solid #7c3aed;margin-bottom:10px;}
+  .shot-num{font-size:1em;font-weight:800;color:#a78bfa;margin-bottom:8px;}
+  .shot-num span{font-size:.78em;color:#64748b;font-weight:400;margin-left:6px;}
+  .shot-row{font-size:.88em;margin:3px 0;color:#cbd5e1;}
+  .shot-note{margin-top:7px;font-size:.83em;color:#7c3aed;font-style:italic;}
+  .hook-pill{background:#1e1e2e;border:1px solid #2d2d44;border-radius:10px;
+    padding:12px 16px;margin-bottom:9px;font-size:.93em;}
+  .hook-type{display:inline-block;background:#7c3aed22;color:#a78bfa;
+    font-size:.74em;padding:2px 7px;border-radius:9px;margin-right:7px;font-weight:700;}
+  .caption-card{background:#1e1e2e;border-radius:10px;padding:18px;
+    border:1px solid #2d2d44;margin-bottom:10px;}
+  .caption-card p{color:#e2e8f0;line-height:1.6;font-size:.93em;}
+  .hashtags{color:#7c3aed;font-size:.83em;margin-top:9px;}
+  .cta{color:#22c55e;font-size:.83em;margin-top:5px;}
+  .rec-list,.improve-list{list-style:none;}
+  .rec-list li{padding:9px 13px;background:#1e1e2e;border-radius:7px;
+    margin-bottom:7px;border-left:3px solid #f59e0b;font-size:.93em;}
+  .improve-list li{padding:9px 13px;background:#1e1e2e;border-radius:7px;
+    margin-bottom:7px;border-left:3px solid #22c55e;font-size:.93em;}
+  .transcript-box{background:#1e1e2e;border-radius:10px;padding:18px;
+    border:1px solid #2d2d44;line-height:1.8;color:#cbd5e1;font-size:.93em;
+    font-family:'Noto Sans Devanagari','Segoe UI',sans-serif;direction:auto;}
+  .strategy-box{background:#1e1e2e;border-radius:10px;padding:18px;
+    border-left:4px solid #22c55e;color:#cbd5e1;line-height:1.7;}
+  canvas{max-height:200px;}
+  code{background:#2d2d44;padding:2px 6px;border-radius:4px;font-size:.85em;}
+  .footer{text-align:center;padding:28px;color:#475569;font-size:.83em;}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🎬 Reel Intelligence Report <span style="font-size:.5em;color:#7c3aed;">v2.2</span></h1>
+  <p>Generated February 20, 2026 at 11:46 ·
+     Whisper (base, hi) ·
+     EasyOCR (en+hi) · MediaPipe · HOG · Ollama (llama3)</p>
+  <div class="score-badge">48/100 Viral Score</div>
+</div>
+
+<div class="grid">
+  <div class="card">
+    <h2>📦 Container</h2>
+    <div class="stat"><span class="stat-label">Duration</span><span class="stat-value">65.85s</span></div>
+    <div class="stat"><span class="stat-label">Resolution</span><span class="stat-value">720×1280</span></div>
+    <div class="stat"><span class="stat-label">FPS</span><span class="stat-value">30.0</span></div>
+    <div class="stat"><span class="stat-label">Format</span><span class="stat-value">reel/story</span></div>
+    <div class="stat"><span class="stat-label">Has Audio</span><span class="stat-value">✅</span></div>
+  </div>
+
+  <div class="card">
+    <h2>🎯 Content Identity</h2>
+    <div class="stat"><span class="stat-label">Niche</span><span class="stat-value">Astrology Horoscope</span></div>
+    <div class="stat"><span class="stat-label">Format</span><span class="stat-value">Direct To Camera</span></div>
+    <div class="stat"><span class="stat-label">Duration Type</span><span class="stat-value">Extended</span></div>
+    <div class="stat"><span class="stat-label">Speaking Style</span><span class="stat-value">Conversational</span></div>
+    <div class="stat"><span class="stat-label">Transcript Reliable</span><span class="stat-value">✅</span></div>
+    <div style="margin-top:11px;">
+      <span class="tag">horoscope astrology</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🎵 Audio Profile</h2>
+    <div class="stat"><span class="stat-label">Tempo</span><span class="stat-value">103.4 BPM</span></div>
+    <div class="stat"><span class="stat-label">Key</span><span class="stat-value">G# major</span></div>
+    <div class="stat"><span class="stat-label">Mood</span><span class="stat-value">Emotional Melodic</span></div>
+    <div class="stat"><span class="stat-label">Type</span><span class="stat-value">Music Only</span></div>
+    <div class="stat"><span class="stat-label">Harmony / Perc</span><span class="stat-value">65.9% / 34.1%</span></div>
+    <div class="stat"><span class="stat-label">Music Heavy</span><span class="stat-value">No</span></div>
+  </div>
+
+  <div class="card">
+    <h2>🖼️ Visual Metrics</h2>
+    <div class="stat"><span class="stat-label">Avg Brightness</span><span class="stat-value">152.4</span></div>
+    <div class="stat"><span class="stat-label">Avg Saturation</span><span class="stat-value">134.5</span></div>
+    <div class="stat"><span class="stat-label">Face Presence</span><span class="stat-value">100%</span></div>
+    <div class="stat"><span class="stat-label">Eye Contact</span><span class="stat-value">98%</span></div>
+    <div class="stat"><span class="stat-label">Text Overlay</span><span class="stat-value">100%</span></div>
+    <div class="stat"><span class="stat-label">Cuts / Pacing</span><span class="stat-value">0 / slow</span></div>
+    <div class="stat"><span class="stat-label">Scripts Detected</span><span class="stat-value">latin, devanagari</span></div>
+  </div>
+
+  <div class="card">
+    <h2>🏠 Scene & Background</h2>
+    <div class="stat"><span class="stat-label">Indoor / Outdoor</span><span class="stat-value">Indoor</span></div>
+    <div class="stat"><span class="stat-label">Setting</span><span class="stat-value">Indoor Busy Background</span></div>
+    <div class="stat"><span class="stat-label">Lighting</span><span class="stat-value">Dim</span></div>
+    <div class="stat"><span class="stat-label">BG Color</span><span class="stat-value">Red Warm</span></div>
+  </div>
+
+  <div class="card">
+    <h2>👥 People in Frame</h2>
+    <div class="stat"><span class="stat-label">Avg People / Frame</span><span class="stat-value">1.0</span></div>
+    <div class="stat"><span class="stat-label">Max People</span><span class="stat-value">1</span></div>
+    <div class="stat"><span class="stat-label">Solo Frames</span><span class="stat-value">68</span></div>
+    <div class="stat"><span class="stat-label">Multi-Person Frames</span><span class="stat-value">0</span></div>
+  </div>
+
+  <div class="card">
+    <h2>🎙️ Transcript Quality</h2>
+    <div class="stat"><span class="stat-label">Quality Score</span>
+      <span class="stat-value" style="color:#f59e0b;">57/100</span></div>
+    <div class="stat"><span class="stat-label">Reliable</span>
+      <span class="stat-value">✅ Yes</span></div>
+    <div class="stat"><span class="stat-label">Script Detected</span>
+      <span class="stat-value">arabic_urdu</span></div>
+    <div class="stat"><span class="stat-label">Avg Log Prob</span>
+      <span class="stat-value">-0.569</span></div>
+    <div class="stat"><span class="stat-label">No-Speech Prob</span>
+      <span class="stat-value">0.27</span></div>
+    <div class="stat"><span class="stat-label">Issues</span>
+      <span class="stat-value" style="font-size:.8em;color:#f59e0b;">wrong_script_urdu</span></div>
+  </div>
+
+  <div class="card" style="opacity:.5;"><h2>🤖 Ollama Content Brief</h2><p style="color:#64748b;">Not available: timed out. Run: <code>ollama pull llama3</code> then restart Ollama.</p></div>
+</div>
+
+<div class="section">
+  <div class="section-title">📈 Audio Energy Over Time</div>
+  <div class="card"><canvas id="energyChart"></canvas></div>
+
+  <div class="section-title">🚀 Recommendations</div>
+  <ul class="rec-list"><li>⚡ Speed up pacing — aim for a cut every 2-3 seconds</li><li>📣 Add a CTA (save, follow, comment) before the end</li></ul>
+
+  <div class="section-title">🎙️ Speech Transcript (Whisper · hi)</div>
+  <div style="background:#0e2d1a;border-left:4px solid #22c55e;padding:10px;border-radius:6px;margin-bottom:10px;color:#86efac;">✅ Transcript quality: 57/100 · Script: arabic_urdu</div><div class="transcript-box">और और कfta ऑे हिगी वीडी वीडी और लिंडली के चरनुसलीद सकते बीडलीची नही् WOMANा नहीं बेडईता आःर है। یہ لوگ ہمےше سے آپہ بھلا کرنے کی پوری چارکھتے ہیں لیکن جب چھوٹی چھوٹی باتوں پر بھی کی نے جب پورا سابت کر دیا جاتا ہے تو یہ لوگ تب بھی ہمےше آپ کے ہلک کر دے ہیں کسی کو پر شاہیں بلکھر بھی دیکھیں نہیں سکھتے ہیں لیکن انے اُن کے بھڑھے کبھی ریورٹ ملتا ہی نہیں ہے اس کے ساتھ کوئی بھی نیکی کبھی نہیں ملتی ہے یہ ہی قارڈ ہے کہ یہ لوگ اتنے آچے ہوتے ہوئے بھی اللہ کی مانے جاتے ہیں لیکن ایک بات اب ضرور یاتر اچھے گا کہ دنیا آپ کی value, سمجھے یا نہ سمجھے لیکن بھگوا بات ہمےше سے آپ کا ساتھ ضرورتے ہیں تو اگر آپ کا بھی بات دیکھ in days میں آتا ہے اور اگر آپ میری پاسے سہمتے ہیں تو آپ ہمیں کمیں ضرور کریں اور اپنے کری بھی کوئی ریورٹ ضرورٹیک کریں</div>
+
+  <div class="section-title">🎬 Replication Shot List</div>
+  <div class="transcript-box">Set ANTHROPIC_API_KEY to generate shot list.</div>
+
+  <div class="section-title">🪝 Hook Variations</div>
+  <div class="transcript-box">Set ANTHROPIC_API_KEY to generate hooks.</div>
+
+  <div class="section-title">📣 Caption Pack</div>
+  <div class="transcript-box">Set ANTHROPIC_API_KEY to generate captions.</div>
+
+  <div class="section-title">📆 Posting Strategy</div>
+  <div class="strategy-box">Set ANTHROPIC_API_KEY to generate strategy.</div>
+
+  <div class="section-title">⚡ Content Improvements</div>
+  <ul class="improve-list"><li>Set ANTHROPIC_API_KEY to generate improvements.</li></ul>
+</div>
+
+<div class="footer">Reel Analyzer v2.2 · Whisper · MediaPipe · EasyOCR (en+hi) · HOG · Ollama (llama3) · Claude</div>
+
+<script>
+const ctx = document.getElementById('energyChart').getContext('2d');
+new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: [0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.0, 10.5, 11.0, 11.5, 12.0, 12.5, 13.0, 13.5, 14.0, 14.5, 15.0, 15.5, 16.0, 16.5, 17.0, 17.5, 18.0, 18.5, 19.0, 19.5, 20.0, 20.5, 21.0, 21.5, 22.0, 22.5, 23.0, 23.5, 24.0, 24.5, 25.0, 25.5, 26.0, 26.5, 27.0, 27.5, 28.0, 28.5, 29.0, 29.5],
+    datasets: [{
+      label: 'Audio Energy',
+      data: [0.1173, 0.1411, 0.1295, 0.1451, 0.1684, 0.1283, 0.1254, 0.18, 0.1456, 0.121, 0.1562, 0.1733, 0.1302, 0.1701, 0.13, 0.1208, 0.1667, 0.1869, 0.1543, 0.1515, 0.2137, 0.1269, 0.1474, 0.1721, 0.1595, 0.1212, 0.1695, 0.162, 0.1817, 0.2458, 0.1411, 0.1255, 0.2167, 0.1345, 0.1213, 0.1318, 0.1393, 0.1921, 0.1066, 0.0727, 0.1581, 0.1588, 0.1703, 0.1496, 0.1562, 0.0683, 0.1684, 0.2141, 0.141, 0.1354, 0.1423, 0.104, 0.1343, 0.1421, 0.1804, 0.1756, 0.2138, 0.0864, 0.1557, 0.1514],
+      borderColor: '#7c3aed',
+      backgroundColor: '#7c3aed22',
+      fill: true,
+      tension: 0.4,
+      pointRadius: 0,
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins:{legend:{labels:{color:'#94a3b8'}}},
+    scales:{
+      x:{ticks:{color:'#64748b'},grid:{color:'#1e1e2e'}},
+      y:{ticks:{color:'#64748b'},grid:{color:'#2d2d44'}},
+    }
+  }
+});
+</script>
+</body>
+</html>

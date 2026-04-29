@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reel Swiper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background: #0a0a0f; 
+            color: white; 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; 
+            height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            overflow: hidden;
+        }
+        header { 
+            padding: 16px; 
+            border-bottom: 1px solid #1e1e2e; 
+            display: flex; 
+            justify-content: space-between;
+            background: rgba(10,10,15,0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+        }
+        .logo { 
+            font-weight: bold; 
+            color: #b300ff; 
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+        .stats { 
+            display: flex; 
+            gap: 20px; 
+            font-size: 12px; 
+            color: #555570; 
+        }
+        .stats span strong { 
+            display: block; 
+            color: white; 
+            font-size: 16px; 
+            text-align: center; 
+        }
+        main { 
+            flex: 1; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        #stack {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .card { 
+            width: min(88vw, 340px); 
+            height: min(76vh, 580px); 
+            background: #13131a; 
+            border-radius: 24px; 
+            border: 2px solid #1e1e2e; 
+            overflow: hidden; 
+            position: absolute;
+            cursor: grab;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+            will-change: transform;
+        }
+        .card.dragging {
+            transition: none;
+        }
+        .card.swipe-right {
+            border-color: #00ff88 !important;
+            box-shadow: 0 0 30px rgba(0,255,136,0.3) !important;
+        }
+        .card.swipe-left {
+            border-color: #ff3366 !important;
+            box-shadow: 0 0 30px rgba(255,51,102,0.3) !important;
+        }
+        video { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            pointer-events: none;
+        }
+        .overlay { 
+            position: absolute; 
+            inset: 0; 
+            background: linear-gradient(to top, rgba(0,0,0,0.95), transparent 60%, transparent);
+            pointer-events: none; 
+        }
+        .info { 
+            position: absolute; 
+            bottom: 0; 
+            left: 0; 
+            right: 0; 
+            padding: 24px; 
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+        }
+        .likes { 
+            font-size: 32px; 
+            font-weight: bold; 
+            line-height: 1; 
+            color: #ff3366;
+        }
+        .likes span { 
+            font-size: 14px; 
+            color: #8888a0; 
+            margin-left: 8px; 
+            font-weight: normal;
+        }
+        .comments {
+            font-size: 14px;
+            color: #8888a0;
+            margin-top: 4px;
+        }
+        .score { 
+            color: #b300ff; 
+            font-size: 13px; 
+            margin-top: 8px; 
+            background: rgba(179,0,255,0.15); 
+            display: inline-block; 
+            padding: 4px 12px; 
+            border-radius: 20px; 
+            font-weight: 500;
+            backdrop-filter: blur(5px);
+        }
+        .caption {
+            font-size: 14px;
+            color: #e0e0e0;
+            margin-top: 8px;
+            opacity: 0.9;
+            max-height: 60px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .actions { 
+            display: flex; 
+            justify-content: center; 
+            gap: 24px; 
+            padding: 16px; 
+            background: rgba(10,10,15,0.95);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid #1e1e2e;
+            z-index: 100;
+        }
+        button { 
+            width: 64px; 
+            height: 64px; 
+            border-radius: 50%; 
+            border: 2px solid; 
+            font-size: 28px; 
+            background: transparent; 
+            cursor: pointer; 
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        button:hover {
+            transform: scale(1.1);
+        }
+        button:active {
+            transform: scale(0.95);
+        }
+        .review { 
+            border-color: #ff3366; 
+            color: #ff3366; 
+            background: rgba(255,51,102,0.1);
+        }
+        .review:hover {
+            background: rgba(255,51,102,0.2);
+            box-shadow: 0 0 20px rgba(255,51,102,0.3);
+        }
+        .post { 
+            border-color: #00ff88; 
+            color: #00ff88; 
+            width: 72px; 
+            height: 72px; 
+            background: rgba(0,255,136,0.1);
+        }
+        .post:hover {
+            background: rgba(0,255,136,0.2);
+            box-shadow: 0 0 20px rgba(0,255,136,0.3);
+        }
+        .stats-btn { 
+            border-color: #b300ff; 
+            color: #b300ff; 
+            background: rgba(179,0,255,0.1);
+        }
+        .stats-btn:hover {
+            background: rgba(179,0,255,0.2);
+            box-shadow: 0 0 20px rgba(179,0,255,0.3);
+        }
+        .toast { 
+            position: fixed; 
+            top: 20px; 
+            left: 50%; 
+            transform: translateX(-50%) translateY(-100px); 
+            background: #1a1a24; 
+            border: 1px solid #2a2a35; 
+            padding: 14px 24px; 
+            border-radius: 40px; 
+            transition: 0.3s; 
+            z-index: 2000; 
+            font-size: 14px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            backdrop-filter: blur(10px);
+            color: white;
+            max-width: 90%;
+            text-align: center;
+        }
+        .toast.show { 
+            transform: translateX(-50%) translateY(0); 
+        }
+        .empty { 
+            display: none; 
+            text-align: center; 
+            color: #555570; 
+            padding: 40px;
+        }
+        .empty h2 { 
+            color: #ffcc00; 
+            font-size: 48px; 
+            margin-bottom: 16px; 
+        }
+        .empty p {
+            font-size: 16px;
+        }
+        .status-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            display: flex;
+            gap: 8px;
+            z-index: 10;
+        }
+        .badge {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .badge.connected {
+            background: #00ff88;
+            box-shadow: 0 0 10px #00ff88;
+        }
+        .badge.disconnected {
+            background: #ff3366;
+            box-shadow: 0 0 10px #ff3366;
+        }
+        .loading {
+            color: #8888a0;
+            text-align: center;
+            padding: 40px;
+        }
+        .drag-indicator {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 16px 32px;
+            border-radius: 60px;
+            font-size: 28px;
+            font-weight: bold;
+            z-index: 1000;
+            transition: all 0.2s;
+            pointer-events: none;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            animation: pulse 1.5s infinite;
+            opacity: 0;
+        }
+        .drag-indicator.show {
+            opacity: 1;
+        }
+        .drag-indicator.right {
+            right: 20px;
+            background: rgba(0,255,136,0.2);
+            color: #00ff88;
+            border: 2px solid #00ff88;
+        }
+        .drag-indicator.left {
+            left: 20px;
+            background: rgba(255,51,102,0.2);
+            color: #ff3366;
+            border: 2px solid #ff3366;
+        }
+        @keyframes pulse {
+            0% { transform: translateY(-50%) scale(1); }
+            50% { transform: translateY(-50%) scale(1.05); }
+            100% { transform: translateY(-50%) scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">🎬 REEL SWIPER</div>
+        <div class="stats">
+            <span><strong id="sp">-</strong>queue</span>
+            <span><strong id="ss">-</strong>posted</span>
+            <span><strong id="sr">-</strong>review</span>
+        </div>
+        <div class="status-badge" id="status-badge">
+            <span class="badge" id="ig-status" title="Instagram"></span>
+            <span class="badge" id="yt-status" title="YouTube"></span>
+        </div>
+    </header>
+    
+    <main>
+        <div id="stack">
+            <div class="loading" id="loading">Loading videos...</div>
+            <div class="empty" id="empty">
+                <h2>✨ ALL DONE</h2>
+                <p>No more reels to process</p>
+            </div>
+        </div>
+    </main>
+    
+    <div class="actions">
+        <button class="review" onclick="manualSwipe('left')" title="Save for review">↩</button>
+        <button class="post" onclick="manualSwipe('right')" title="Post to platforms">🚀</button>
+        <button class="stats-btn" onclick="showStats()" title="View stats">📊</button>
+    </div>
+    
+    <div class="toast" id="toast"></div>
+    <div class="drag-indicator" id="dragIndicator"></div>
+    
+    <script>
+        let videos = [];
+        let current = 0;
+        let dragging = false;
+        let startX = 0;
+        let dx = 0;
+        let isProcessing = false;
+        let currentVideo = null;
+        let dragIndicator = document.getElementById('dragIndicator');
+
+        async function loadVideos() {
+            try {
+                const response = await fetch('/api/videos');
+                videos = await response.json();
+                current = 0;
+                document.getElementById('loading').style.display = 'none';
+                render();
+                loadStats();
+                checkStatus();
+            } catch (error) {
+                showToast('❌ Failed to load videos');
+                console.error(error);
+            }
+        }
+
+        async function loadStats() {
+            try {
+                const response = await fetch('/api/strategy/stats');
+                const stats = await response.json();
+                document.getElementById('sp').textContent = videos.length - current;
+                document.getElementById('ss').textContent = stats.posting_history?.total_posts || 0;
+                document.getElementById('sr').textContent = '0';
+            } catch (error) {
+                console.error('Failed to load stats');
+            }
+        }
+
+        async function checkStatus() {
+            try {
+                const response = await fetch('/api/status');
+                const status = await response.json();
+                
+                document.getElementById('ig-status').className = status.instagram.connected ? 'badge connected' : 'badge disconnected';
+                document.getElementById('yt-status').className = status.youtube.connected ? 'badge connected' : 'badge disconnected';
+            } catch (error) {
+                console.error('Failed to check status');
+            }
+        }
+
+        function render() {
+            const stack = document.getElementById('stack');
+            
+            if (current >= videos.length) {
+                document.getElementById('empty').style.display = 'block';
+                return;
+            }
+            
+            document.getElementById('empty').style.display = 'none';
+            
+            const video = videos[current];
+            const card = document.createElement('div');
+            card.className = 'card';
+            
+            const videoEl = document.createElement('video');
+            videoEl.src = `/api/video/${video.filename}`;
+            videoEl.loop = true;
+            videoEl.muted = true;
+            videoEl.playsInline = true;
+            videoEl.autoplay = true;
+            
+            videoEl.addEventListener('loadeddata', () => {
+                videoEl.play().catch(e => console.log('Autoplay failed:', e));
+            });
+            
+            const overlay = document.createElement('div');
+            overlay.className = 'overlay';
+            
+            const info = document.createElement('div');
+            info.className = 'info';
+            info.innerHTML = `
+                <div class="likes">${formatNumber(video.likes)}<span>likes</span></div>
+                <div class="comments">${formatNumber(video.comments)} comments</div>
+                <div class="score">🎯 Score: ${Math.round(video.content_score * 100)}%</div>
+                <div class="caption">${video.caption || 'No caption'}</div>
+            `;
+            
+            card.appendChild(videoEl);
+            card.appendChild(overlay);
+            card.appendChild(info);
+            
+            stack.innerHTML = '';
+            stack.appendChild(card);
+            
+            attachDrag(card, video);
+            
+            if (currentVideo) {
+                currentVideo.pause();
+            }
+            currentVideo = videoEl;
+        }
+
+        function formatNumber(num) {
+            if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M';
+            if (num >= 1000) return (num / 1000).toFixed(1) + 'K';
+            return num.toString();
+        }
+
+        function attachDrag(card, video) {
+            card.addEventListener('mousedown', startDrag);
+            card.addEventListener('touchstart', startDrag, { passive: false });
+
+            function startDrag(e) {
+                e.preventDefault();
+                dragging = true;
+                const point = e.touches ? e.touches[0] : e;
+                startX = point.clientX;
+                card.classList.add('dragging');
+                
+                window.addEventListener('mousemove', onDrag);
+                window.addEventListener('touchmove', onDrag, { passive: false });
+                window.addEventListener('mouseup', endDrag);
+                window.addEventListener('touchend', endDrag);
+            }
+
+            function onDrag(e) {
+                if (!dragging) return;
+                e.preventDefault();
+                const point = e.touches ? e.touches[0] : e;
+                dx = point.clientX - startX;
+                
+                const rotate = Math.min(Math.max(dx * 0.05, -15), 15);
+                card.style.transform = `translateX(${dx}px) rotate(${rotate}deg)`;
+                
+                // Visual feedback
+                if (dx > 50) {
+                    card.classList.add('swipe-right');
+                    card.classList.remove('swipe-left');
+                    dragIndicator.textContent = '🚀 POST';
+                    dragIndicator.className = 'drag-indicator right show';
+                } else if (dx < -50) {
+                    card.classList.add('swipe-left');
+                    card.classList.remove('swipe-right');
+                    dragIndicator.textContent = '📝 REVIEW';
+                    dragIndicator.className = 'drag-indicator left show';
+                } else {
+                    card.classList.remove('swipe-right', 'swipe-left');
+                    dragIndicator.className = 'drag-indicator';
+                }
+            }
+
+            function endDrag() {
+                if (!dragging) return;
+                dragging = false;
+                card.classList.remove('dragging');
+                dragIndicator.className = 'drag-indicator';
+                
+                window.removeEventListener('mousemove', onDrag);
+                window.removeEventListener('touchmove', onDrag);
+                window.removeEventListener('mouseup', endDrag);
+                window.removeEventListener('touchend', endDrag);
+
+                if (Math.abs(dx) > 80) { // Lowered threshold for easier swiping
+                    swipe(dx > 0 ? 'right' : 'left');
+                } else {
+                    card.style.transition = 'transform 0.3s';
+                    card.style.transform = '';
+                    card.classList.remove('swipe-right', 'swipe-left');
+                }
+                dx = 0;
+            }
+        }
+
+        async function manualSwipe(direction) {
+            if (isProcessing || current >= videos.length) return;
+            
+            const card = document.querySelector('.card');
+            if (card) {
+                card.style.transition = 'transform 0.3s';
+                card.style.transform = direction === 'right' 
+                    ? 'translateX(200px) rotate(10deg)' 
+                    : 'translateX(-200px) rotate(-10deg)';
+            }
+            
+            setTimeout(() => swipe(direction), 100);
+        }
+
+        async function swipe(direction) {
+            if (isProcessing) {
+                showToast('⏳ Please wait...');
+                return;
+            }
+            if (current >= videos.length) {
+                showToast('No more videos!');
+                return;
+            }
+
+            isProcessing = true;
+            const video = videos[current];
+
+            try {
+                showToast(direction === 'right' ? '🚀 Posting...' : '💾 Saving...');
+                
+                const response = await fetch('/api/swipe', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        reelId: video.reelId,
+                        filename: video.filename,
+                        direction: direction
+                    })
+                });
+
+                const data = await response.json();
+
+                if (direction === 'right') {
+                    const results = Object.entries(data.results || {});
+                    const successCount = results.filter(([_, msg]) => msg.includes('✅')).length;
+                    const failCount = results.filter(([_, msg]) => msg.includes('❌')).length;
+                    
+                    if (successCount > 0) {
+                        showToast(`✅ Posted to ${successCount} platform${successCount > 1 ? 's' : ''} ${failCount > 0 ? '(' + failCount + ' failed)' : ''}`);
+                    } else {
+                        showToast('❌ All platforms failed');
+                    }
+                    
+                    console.log('📊 Post Results:', data.results);
+                } else {
+                    showToast('📝 Saved for review');
+                }
+
+                setTimeout(() => {
+                    current++;
+                    render();
+                    loadStats();
+                    isProcessing = false;
+                }, 300);
+
+            } catch (error) {
+                showToast('❌ Error processing swipe');
+                console.error(error);
+                isProcessing = false;
+                
+                const card = document.querySelector('.card');
+                if (card) {
+                    card.style.transform = '';
+                }
+            }
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 3000);
+        }
+
+        function showStats() {
+            fetch('/api/strategy/stats')
+                .then(r => r.json())
+                .then(stats => {
+                    const usage = stats.today_usage;
+                    showToast(`📊 Today: IG ${usage.instagram}/${stats.daily_limits.instagram} · YT ${usage.youtube}/${stats.daily_limits.youtube}`);
+                })
+                .catch(() => showToast('❌ Failed to load stats'));
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') manualSwipe('right');
+            if (e.key === 'ArrowLeft') manualSwipe('left');
+        });
+
+        // Load videos on start
+        loadVideos();
+        setInterval(checkStatus, 30000);
+    </script>
+</body>
+</html>

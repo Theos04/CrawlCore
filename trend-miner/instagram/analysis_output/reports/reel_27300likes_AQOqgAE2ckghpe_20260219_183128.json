@@ -1,0 +1,5228 @@
+{
+  "file": "E:\\reel_27300likes_AQOqgAE2ckghpeGOplku.mp4",
+  "analyzed_at": "2026-02-19T18:31:29.502773",
+  "container": {
+    "duration_sec": 37.57,
+    "fps": 30.0,
+    "resolution": [
+      720,
+      1280
+    ],
+    "aspect_ratio": 0.562,
+    "total_frames": 1127,
+    "has_audio": true,
+    "is_vertical": true,
+    "format_hint": "reel/story"
+  },
+  "speech_transcript": {
+    "transcript": "Xactamer Kina Aditi nam ki ladkiya Kabhi bi Bure ni hoti menju Huh Mani jitni aditi dikiy na aapne jee Ume Bench saari bhood badya maasum Maasum bhe ni toch na saaf dhil ki ya chit ji Koi aditi me naashta gandwari ni dikiy bhai Ol aditi is aar very nice Ol aditi is aar like kavi kavi aditi zindi ki you koi Sura ji moki ga bhol siyoti bhai Aditi nam bhai ladkiya Hai Aditi this is for you You are a very nice person",
+    "language": "hi",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 1.16,
+        "text": "Xactamer"
+      },
+      {
+        "start": 2.0,
+        "end": 2.34,
+        "text": "Kina"
+      },
+      {
+        "start": 3.0,
+        "end": 4.42,
+        "text": "Aditi nam ki ladkiya"
+      },
+      {
+        "start": 5.0,
+        "end": 5.52,
+        "text": "Kabhi bi"
+      },
+      {
+        "start": 5.52,
+        "end": 7.52,
+        "text": "Bure ni hoti menju"
+      },
+      {
+        "start": 7.52,
+        "end": 8.5,
+        "text": "Huh"
+      },
+      {
+        "start": 8.5,
+        "end": 11.36,
+        "text": "Mani jitni aditi dikiy na aapne jee"
+      },
+      {
+        "start": 11.36,
+        "end": 11.54,
+        "text": "Ume"
+      },
+      {
+        "start": 11.54,
+        "end": 14.26,
+        "text": "Bench saari bhood badya maasum"
+      },
+      {
+        "start": 15.0,
+        "end": 17.88,
+        "text": "Maasum bhe ni toch na saaf dhil ki ya chit ji"
+      },
+      {
+        "start": 17.88,
+        "end": 21.18,
+        "text": "Koi aditi me naashta gandwari ni dikiy bhai"
+      },
+      {
+        "start": 21.18,
+        "end": 23.24,
+        "text": "Ol aditi is aar very nice"
+      },
+      {
+        "start": 23.24,
+        "end": 26.8,
+        "text": "Ol aditi is aar like kavi kavi aditi zindi ki you koi"
+      },
+      {
+        "start": 29.12,
+        "end": 31.2,
+        "text": "Sura ji moki ga bhol siyoti bhai"
+      },
+      {
+        "start": 31.2,
+        "end": 32.8,
+        "text": "Aditi nam bhai ladkiya"
+      },
+      {
+        "start": 32.8,
+        "end": 35.16,
+        "text": "Hai Aditi this is for you"
+      },
+      {
+        "start": 35.16,
+        "end": 36.76,
+        "text": "You are a very nice person"
+      }
+    ],
+    "word_timestamps": [
+      {
+        "word": "Xactamer",
+        "start": 0.0,
+        "end": 1.16
+      },
+      {
+        "word": "Kina",
+        "start": 2.0,
+        "end": 2.34
+      },
+      {
+        "word": "Aditi",
+        "start": 2.98,
+        "end": 3.32
+      },
+      {
+        "word": "nam",
+        "start": 3.32,
+        "end": 3.62
+      },
+      {
+        "word": "ki",
+        "start": 3.62,
+        "end": 3.86
+      },
+      {
+        "word": "ladkiya",
+        "start": 3.86,
+        "end": 4.42
+      },
+      {
+        "word": "Kabhi",
+        "start": 5.0,
+        "end": 5.36
+      },
+      {
+        "word": "bi",
+        "start": 5.36,
+        "end": 5.52
+      },
+      {
+        "word": "Bure",
+        "start": 5.52,
+        "end": 6.58
+      },
+      {
+        "word": "ni",
+        "start": 6.58,
+        "end": 6.78
+      },
+      {
+        "word": "hoti",
+        "start": 6.78,
+        "end": 7.18
+      },
+      {
+        "word": "menju",
+        "start": 7.18,
+        "end": 7.52
+      },
+      {
+        "word": "Huh",
+        "start": 7.52,
+        "end": 8.5
+      },
+      {
+        "word": "Mani",
+        "start": 8.5,
+        "end": 9.54
+      },
+      {
+        "word": "jitni",
+        "start": 9.54,
+        "end": 10.02
+      },
+      {
+        "word": "aditi",
+        "start": 10.02,
+        "end": 10.34
+      },
+      {
+        "word": "dikiy",
+        "start": 10.34,
+        "end": 10.8
+      },
+      {
+        "word": "na",
+        "start": 10.8,
+        "end": 10.9
+      },
+      {
+        "word": "aapne",
+        "start": 10.9,
+        "end": 11.16
+      },
+      {
+        "word": "jee",
+        "start": 11.16,
+        "end": 11.36
+      },
+      {
+        "word": "Ume",
+        "start": 11.36,
+        "end": 11.54
+      },
+      {
+        "word": "Bench",
+        "start": 11.54,
+        "end": 12.04
+      },
+      {
+        "word": "saari",
+        "start": 12.04,
+        "end": 12.56
+      },
+      {
+        "word": "bhood",
+        "start": 12.56,
+        "end": 12.9
+      },
+      {
+        "word": "badya",
+        "start": 12.9,
+        "end": 13.44
+      },
+      {
+        "word": "maasum",
+        "start": 13.44,
+        "end": 14.26
+      },
+      {
+        "word": "Maasum",
+        "start": 15.0,
+        "end": 15.38
+      },
+      {
+        "word": "bhe",
+        "start": 15.38,
+        "end": 15.56
+      },
+      {
+        "word": "ni",
+        "start": 15.56,
+        "end": 15.66
+      },
+      {
+        "word": "toch",
+        "start": 15.66,
+        "end": 15.92
+      },
+      {
+        "word": "na",
+        "start": 15.92,
+        "end": 16.0
+      },
+      {
+        "word": "saaf",
+        "start": 16.0,
+        "end": 16.4
+      },
+      {
+        "word": "dhil",
+        "start": 16.4,
+        "end": 16.68
+      },
+      {
+        "word": "ki",
+        "start": 16.68,
+        "end": 16.82
+      },
+      {
+        "word": "ya",
+        "start": 16.82,
+        "end": 17.02
+      },
+      {
+        "word": "chit",
+        "start": 17.02,
+        "end": 17.34
+      },
+      {
+        "word": "ji",
+        "start": 17.34,
+        "end": 17.88
+      },
+      {
+        "word": "Koi",
+        "start": 17.88,
+        "end": 19.04
+      },
+      {
+        "word": "aditi",
+        "start": 19.04,
+        "end": 19.38
+      },
+      {
+        "word": "me",
+        "start": 19.38,
+        "end": 19.58
+      },
+      {
+        "word": "naashta",
+        "start": 19.58,
+        "end": 19.98
+      },
+      {
+        "word": "gandwari",
+        "start": 19.98,
+        "end": 20.48
+      },
+      {
+        "word": "ni",
+        "start": 20.48,
+        "end": 20.58
+      },
+      {
+        "word": "dikiy",
+        "start": 20.58,
+        "end": 20.92
+      },
+      {
+        "word": "bhai",
+        "start": 20.92,
+        "end": 21.18
+      },
+      {
+        "word": "Ol",
+        "start": 21.18,
+        "end": 21.74
+      },
+      {
+        "word": "aditi",
+        "start": 21.74,
+        "end": 22.18
+      },
+      {
+        "word": "is",
+        "start": 22.18,
+        "end": 22.44
+      },
+      {
+        "word": "aar",
+        "start": 22.44,
+        "end": 22.58
+      },
+      {
+        "word": "very",
+        "start": 22.58,
+        "end": 22.9
+      },
+      {
+        "word": "nice",
+        "start": 22.9,
+        "end": 23.24
+      },
+      {
+        "word": "Ol",
+        "start": 23.24,
+        "end": 23.86
+      },
+      {
+        "word": "aditi",
+        "start": 23.86,
+        "end": 24.24
+      },
+      {
+        "word": "is",
+        "start": 24.24,
+        "end": 24.48
+      },
+      {
+        "word": "aar",
+        "start": 24.48,
+        "end": 24.64
+      },
+      {
+        "word": "like",
+        "start": 24.64,
+        "end": 24.78
+      },
+      {
+        "word": "kavi",
+        "start": 24.78,
+        "end": 25.1
+      },
+      {
+        "word": "kavi",
+        "start": 25.1,
+        "end": 25.3
+      },
+      {
+        "word": "aditi",
+        "start": 25.3,
+        "end": 25.62
+      },
+      {
+        "word": "zindi",
+        "start": 25.62,
+        "end": 26.06
+      },
+      {
+        "word": "ki",
+        "start": 26.06,
+        "end": 26.16
+      },
+      {
+        "word": "you",
+        "start": 26.16,
+        "end": 26.3
+      },
+      {
+        "word": "koi",
+        "start": 26.3,
+        "end": 26.8
+      },
+      {
+        "word": "Sura",
+        "start": 29.12,
+        "end": 29.68
+      },
+      {
+        "word": "ji",
+        "start": 29.68,
+        "end": 29.82
+      },
+      {
+        "word": "moki",
+        "start": 29.82,
+        "end": 30.04
+      },
+      {
+        "word": "ga",
+        "start": 30.04,
+        "end": 30.18
+      },
+      {
+        "word": "bhol",
+        "start": 30.18,
+        "end": 30.46
+      },
+      {
+        "word": "siyoti",
+        "start": 30.46,
+        "end": 30.9
+      },
+      {
+        "word": "bhai",
+        "start": 30.9,
+        "end": 31.2
+      },
+      {
+        "word": "Aditi",
+        "start": 31.2,
+        "end": 31.7
+      },
+      {
+        "word": "nam",
+        "start": 31.7,
+        "end": 31.98
+      },
+      {
+        "word": "bhai",
+        "start": 31.98,
+        "end": 32.22
+      },
+      {
+        "word": "ladkiya",
+        "start": 32.22,
+        "end": 32.8
+      },
+      {
+        "word": "Hai",
+        "start": 32.8,
+        "end": 33.9
+      },
+      {
+        "word": "Aditi",
+        "start": 33.9,
+        "end": 34.12
+      },
+      {
+        "word": "this",
+        "start": 34.12,
+        "end": 34.42
+      },
+      {
+        "word": "is",
+        "start": 34.42,
+        "end": 34.6
+      },
+      {
+        "word": "for",
+        "start": 34.6,
+        "end": 34.88
+      },
+      {
+        "word": "you",
+        "start": 34.88,
+        "end": 35.16
+      },
+      {
+        "word": "You",
+        "start": 35.16,
+        "end": 35.58
+      },
+      {
+        "word": "are",
+        "start": 35.58,
+        "end": 35.78
+      },
+      {
+        "word": "a",
+        "start": 35.78,
+        "end": 35.9
+      },
+      {
+        "word": "very",
+        "start": 35.9,
+        "end": 36.1
+      },
+      {
+        "word": "nice",
+        "start": 36.1,
+        "end": 36.3
+      },
+      {
+        "word": "person",
+        "start": 36.3,
+        "end": 36.76
+      }
+    ],
+    "word_count": 86,
+    "speaking_rate_wpm": 140.4
+  },
+  "audio_analysis": {
+    "tempo_bpm": 95.7,
+    "detected_key": "E major",
+    "dominant_note": "A",
+    "beat_times": [
+      0.28,
+      0.98,
+      1.63,
+      2.3,
+      3.07,
+      3.81,
+      4.46,
+      5.13,
+      5.76,
+      6.41,
+      7.08,
+      7.76,
+      8.41,
+      9.13,
+      9.91,
+      10.57,
+      11.17,
+      11.82,
+      12.47,
+      13.1
+    ],
+    "beat_count": 52,
+    "onset_times": [
+      0.28,
+      0.42,
+      0.58,
+      0.98,
+      1.37,
+      2.11,
+      2.28,
+      2.62,
+      3.07,
+      3.2,
+      3.37,
+      3.55,
+      3.81,
+      4.16,
+      5.13,
+      5.29,
+      5.46,
+      6.25,
+      6.41,
+      6.57
+    ],
+    "onset_count": 127,
+    "rms_mean": 0.0897,
+    "rms_peak": 0.4381,
+    "silence_ratio": 0.093,
+    "energy_over_time": [
+      {
+        "sec": 0.0,
+        "energy": 0.0517
+      },
+      {
+        "sec": 0.5,
+        "energy": 0.1815
+      },
+      {
+        "sec": 1.0,
+        "energy": 0.0534
+      },
+      {
+        "sec": 1.5,
+        "energy": 0.0101
+      },
+      {
+        "sec": 2.0,
+        "energy": 0.0914
+      },
+      {
+        "sec": 2.5,
+        "energy": 0.0038
+      },
+      {
+        "sec": 3.0,
+        "energy": 0.2274
+      },
+      {
+        "sec": 3.5,
+        "energy": 0.1916
+      },
+      {
+        "sec": 4.0,
+        "energy": 0.095
+      },
+      {
+        "sec": 4.5,
+        "energy": 0.0035
+      },
+      {
+        "sec": 5.0,
+        "energy": 0.1276
+      },
+      {
+        "sec": 5.5,
+        "energy": 0.079
+      },
+      {
+        "sec": 6.0,
+        "energy": 0.0817
+      },
+      {
+        "sec": 6.5,
+        "energy": 0.2358
+      },
+      {
+        "sec": 7.0,
+        "energy": 0.0439
+      },
+      {
+        "sec": 7.5,
+        "energy": 0.004
+      },
+      {
+        "sec": 8.0,
+        "energy": 0.0613
+      },
+      {
+        "sec": 8.5,
+        "energy": 0.0168
+      },
+      {
+        "sec": 9.0,
+        "energy": 0.1614
+      },
+      {
+        "sec": 9.5,
+        "energy": 0.1137
+      },
+      {
+        "sec": 10.0,
+        "energy": 0.2088
+      },
+      {
+        "sec": 10.5,
+        "energy": 0.1303
+      },
+      {
+        "sec": 11.0,
+        "energy": 0.0864
+      },
+      {
+        "sec": 11.5,
+        "energy": 0.0894
+      },
+      {
+        "sec": 12.0,
+        "energy": 0.1407
+      },
+      {
+        "sec": 12.5,
+        "energy": 0.1494
+      },
+      {
+        "sec": 13.0,
+        "energy": 0.1792
+      },
+      {
+        "sec": 13.5,
+        "energy": 0.121
+      },
+      {
+        "sec": 14.0,
+        "energy": 0.082
+      },
+      {
+        "sec": 14.5,
+        "energy": 0.0111
+      },
+      {
+        "sec": 15.0,
+        "energy": 0.2043
+      },
+      {
+        "sec": 15.5,
+        "energy": 0.163
+      },
+      {
+        "sec": 16.0,
+        "energy": 0.1072
+      },
+      {
+        "sec": 16.5,
+        "energy": 0.0985
+      },
+      {
+        "sec": 17.0,
+        "energy": 0.0614
+      },
+      {
+        "sec": 17.5,
+        "energy": 0.083
+      },
+      {
+        "sec": 18.0,
+        "energy": 0.0066
+      },
+      {
+        "sec": 18.5,
+        "energy": 0.1941
+      },
+      {
+        "sec": 19.0,
+        "energy": 0.2397
+      },
+      {
+        "sec": 19.5,
+        "energy": 0.1477
+      },
+      {
+        "sec": 20.0,
+        "energy": 0.15
+      },
+      {
+        "sec": 20.5,
+        "energy": 0.0999
+      },
+      {
+        "sec": 21.0,
+        "energy": 0.0186
+      },
+      {
+        "sec": 21.5,
+        "energy": 0.2287
+      },
+      {
+        "sec": 22.0,
+        "energy": 0.2072
+      },
+      {
+        "sec": 22.5,
+        "energy": 0.1873
+      },
+      {
+        "sec": 23.0,
+        "energy": 0.0885
+      },
+      {
+        "sec": 23.5,
+        "energy": 0.2225
+      },
+      {
+        "sec": 24.0,
+        "energy": 0.1793
+      },
+      {
+        "sec": 24.5,
+        "energy": 0.1962
+      },
+      {
+        "sec": 25.0,
+        "energy": 0.0838
+      },
+      {
+        "sec": 25.5,
+        "energy": 0.0571
+      },
+      {
+        "sec": 26.0,
+        "energy": 0.0395
+      },
+      {
+        "sec": 26.5,
+        "energy": 0.0103
+      },
+      {
+        "sec": 27.0,
+        "energy": 0.0022
+      },
+      {
+        "sec": 27.5,
+        "energy": 0.0024
+      },
+      {
+        "sec": 28.0,
+        "energy": 0.0028
+      },
+      {
+        "sec": 28.5,
+        "energy": 0.073
+      },
+      {
+        "sec": 29.0,
+        "energy": 0.0061
+      },
+      {
+        "sec": 29.5,
+        "energy": 0.2229
+      },
+      {
+        "sec": 30.0,
+        "energy": 0.2104
+      },
+      {
+        "sec": 30.5,
+        "energy": 0.0988
+      },
+      {
+        "sec": 31.0,
+        "energy": 0.1058
+      },
+      {
+        "sec": 31.5,
+        "energy": 0.0864
+      },
+      {
+        "sec": 32.0,
+        "energy": 0.0716
+      },
+      {
+        "sec": 32.5,
+        "energy": 0.0266
+      },
+      {
+        "sec": 33.0,
+        "energy": 0.0148
+      },
+      {
+        "sec": 33.5,
+        "energy": 0.1675
+      },
+      {
+        "sec": 34.0,
+        "energy": 0.0802
+      },
+      {
+        "sec": 34.5,
+        "energy": 0.0915
+      },
+      {
+        "sec": 35.0,
+        "energy": 0.0443
+      },
+      {
+        "sec": 35.5,
+        "energy": 0.1168
+      },
+      {
+        "sec": 36.0,
+        "energy": 0.1056
+      },
+      {
+        "sec": 36.5,
+        "energy": 0.0395
+      },
+      {
+        "sec": 37.0,
+        "energy": 0.0046
+      }
+    ],
+    "energy_drops": [
+      7.0,
+      36.5
+    ],
+    "energy_builds": [
+      0.5,
+      3.0,
+      6.5,
+      9.0,
+      15.0,
+      18.5,
+      21.5,
+      23.5,
+      29.5,
+      33.5
+    ],
+    "spectral_centroid_mean": 2209.8,
+    "spectral_rolloff_mean": 4365.7,
+    "spectral_bandwidth_mean": 2305.1,
+    "zero_crossing_mean": 0.0991,
+    "chroma_profile": [
+      0.296,
+      0.292,
+      0.303,
+      0.321,
+      0.32,
+      0.277,
+      0.277,
+      0.335,
+      0.385,
+      0.415,
+      0.395,
+      0.333
+    ],
+    "mfcc_signature": [
+      -282.76,
+      69.94,
+      10.48,
+      20.97,
+      -7.5,
+      8.54,
+      -3.54,
+      -11.85,
+      0.15,
+      -12.18,
+      -4.49,
+      -5.74,
+      -5.92
+    ],
+    "harmony_pct": 56.2,
+    "percussion_pct": 43.8,
+    "audio_type": "speech_over_music",
+    "audio_mood": "neutral_background",
+    "has_voice": true,
+    "is_music": true,
+    "is_speech": true
+  },
+  "visual_summary": {
+    "duration_sec": 37.57,
+    "avg_brightness": 150.884,
+    "avg_saturation": 54.345,
+    "avg_sharpness": 39.868,
+    "avg_motion": 5.884,
+    "avg_edge_density": 2.623,
+    "face_presence_ratio": 1.0,
+    "eye_contact_ratio": 0.316,
+    "text_overlay_ratio": 0.0,
+    "estimated_cuts": 0,
+    "scene_changes": [],
+    "pacing": "slow",
+    "dominant_camera_move": "static",
+    "dominant_gaze": "looking_left",
+    "dominant_color_mood": "neutral",
+    "all_ocr_text": "",
+    "avg_text_readability": 0.0,
+    "style": "talking_head",
+    "crowd": {
+      "peak_person_count": 0,
+      "avg_person_count": 0.0,
+      "dominant_crowd_density": "unknown",
+      "dominant_scene_type": "political_rally",
+      "dominant_energy": "calm",
+      "dominant_framing": "unknown",
+      "avg_subject_isolation": 0,
+      "crowd_frames_ratio": 0.0,
+      "is_crowd_content": true,
+      "crowd_content_note": "🏛️ Political event with ~0 detected crowd members. Engagement driven by public figure presence, not typical creator metrics.",
+      "count_timeline": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "content_category": {
+    "detected_niche": "tech_ai",
+    "niche_scores": {
+      "tech_ai": 1
+    },
+    "content_format": "political_rally",
+    "hook_formats": [
+      "storytelling"
+    ],
+    "speaking_style": "conversational",
+    "audio_mood": "neutral_background",
+    "audio_type": "speech_over_music",
+    "duration_category": "long",
+    "viral_score": 48,
+    "recommendations": [
+      "🎯 Make the VIP/subject stand out more from the crowd",
+      "🏛️ Leverage patriotic colors and symbols in framing",
+      "⚡ Add upbeat music to match crowd energy expectations",
+      "👥 This is crowd content - viral score reflects spectacle, not creator metrics"
+    ],
+    "replication_template": {
+      "format": "political_rally",
+      "hook_style": "storytelling",
+      "audio_mood": "neutral_background",
+      "pacing": "slow",
+      "use_face": true,
+      "use_eye_contact": true,
+      "use_text": false,
+      "target_bpm": 96,
+      "niche": "tech_ai",
+      "speaking_style": "conversational",
+      "is_crowd_content": true,
+      "crowd_type": "political_rally"
+    }
+  },
+  "crowd_analysis": {
+    "peak_person_count": 0,
+    "avg_person_count": 0.0,
+    "dominant_crowd_density": "unknown",
+    "dominant_scene_type": "political_rally",
+    "dominant_energy": "calm",
+    "dominant_framing": "unknown",
+    "avg_subject_isolation": 0,
+    "crowd_frames_ratio": 0.0,
+    "is_crowd_content": true,
+    "crowd_content_note": "🏛️ Political event with ~0 detected crowd members. Engagement driven by public figure presence, not typical creator metrics.",
+    "count_timeline": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "crowd_frame_data": [
+    {
+      "sec": 0.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "press_conference",
+        "scene_confidence": 0.43,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 3,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 2,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": false,
+        "is_one_on_one": true,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 1.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 2.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 3.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 4.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 5.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 6.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "sports_event",
+        "scene_confidence": 0.3,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 2,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 2,
+          "sports_event": 3,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [
+          "high_motion"
+        ],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "active"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 7.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 8.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 9.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 10.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 11.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 12.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 13.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 14.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 15.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 16.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 17.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 18.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 19.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 20.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 21.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [
+          "high_motion"
+        ],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 22.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 23.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 24.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 25.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 26.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 27.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 28.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 29.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [
+          "high_motion"
+        ],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 30.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 31.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 32.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 33.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 34.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 35.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 36.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    },
+    {
+      "sec": 37.0,
+      "person_data": {
+        "person_count": 0,
+        "persons": [],
+        "dominant_person": null,
+        "foreground_persons": [],
+        "midground_persons": [],
+        "background_persons": [],
+        "crowd_density": "unknown",
+        "spatial_distribution": "n/a",
+        "total_person_area": 0,
+        "crowd_estimate": {
+          "method": "n/a",
+          "estimate": 0
+        },
+        "has_crowd": false
+      },
+      "subject_data": {
+        "subject_identified": false,
+        "subject_isolation": 0,
+        "subject_role": "unknown",
+        "prominence_gap": 0,
+        "framing_type": "unknown",
+        "crowd_vs_subject": 0
+      },
+      "scene_context": {
+        "scene_type": "political_rally",
+        "scene_confidence": 0.67,
+        "scene_scores": {
+          "political_rally": 2,
+          "concert_festival": 0,
+          "press_conference": 1,
+          "street_scene": 0,
+          "protest_march": 0,
+          "sports_event": 0,
+          "interview_podcast": 0,
+          "solo_creator": 0
+        },
+        "scene_tags": [],
+        "is_public_event": true,
+        "is_one_on_one": false,
+        "crowd_energy": "calm"
+      },
+      "crowd_motion": {
+        "crowd_flow_x": 0,
+        "crowd_flow_y": 0,
+        "crowd_direction": "static",
+        "crowd_motion_energy": 0,
+        "camera_vs_crowd": "unknown"
+      }
+    }
+  ],
+  "frame_analysis": [
+    {
+      "frame": 0,
+      "sec": 0.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.52,
+          "cy": 0.715,
+          "size_ratio": 0.2888,
+          "confidence": 0.91,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_left",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 0.0,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 49.7,
+      "edge_density": 2.486,
+      "hue": 51.3,
+      "saturation": 44.2,
+      "brightness": 161.7,
+      "perceptual_lightness": 153.8,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 30,
+      "sec": 1.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.533,
+          "cy": 0.628,
+          "size_ratio": 0.302,
+          "confidence": 0.88,
+          "is_close_up": true,
+          "position": "center"
+        }
+      ],
+      "gaze_direction": "looking_left",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 5.139,
+      "camera_move": "tilt_up",
+      "scene_change": false,
+      "sharpness": 33.6,
+      "edge_density": 2.424,
+      "hue": 55.1,
+      "saturation": 54.8,
+      "brightness": 144.0,
+      "perceptual_lightness": 134.3,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 60,
+      "sec": 2.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.606,
+          "cy": 0.651,
+          "size_ratio": 0.3471,
+          "confidence": 0.93,
+          "is_close_up": true,
+          "position": "center"
+        }
+      ],
+      "gaze_direction": "looking_at_camera",
+      "eye_contact": true,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 6.404,
+      "camera_move": "pan_right",
+      "scene_change": false,
+      "sharpness": 42.4,
+      "edge_density": 2.673,
+      "hue": 53.5,
+      "saturation": 53.9,
+      "brightness": 144.3,
+      "perceptual_lightness": 134.4,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 90,
+      "sec": 3.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.616,
+          "cy": 0.689,
+          "size_ratio": 0.4161,
+          "confidence": 0.9,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_left",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 7.688,
+      "camera_move": "pan_right",
+      "scene_change": false,
+      "sharpness": 44.7,
+      "edge_density": 3.097,
+      "hue": 51.5,
+      "saturation": 51.8,
+      "brightness": 148.6,
+      "perceptual_lightness": 138.9,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 120,
+      "sec": 4.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.596,
+          "cy": 0.687,
+          "size_ratio": 0.3783,
+          "confidence": 0.92,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_right",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 7.629,
+      "camera_move": "tilt_up",
+      "scene_change": false,
+      "sharpness": 40.0,
+      "edge_density": 2.743,
+      "hue": 49.4,
+      "saturation": 58.9,
+      "brightness": 141.2,
+      "perceptual_lightness": 130.6,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 150,
+      "sec": 5.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.586,
+          "cy": 0.675,
+          "size_ratio": 0.4082,
+          "confidence": 0.94,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_right",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 7.58,
+      "camera_move": "pan_left",
+      "scene_change": false,
+      "sharpness": 87.0,
+      "edge_density": 4.795,
+      "hue": 49.0,
+      "saturation": 57.9,
+      "brightness": 143.0,
+      "perceptual_lightness": 132.4,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 180,
+      "sec": 6.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.526,
+          "cy": 0.671,
+          "size_ratio": 0.4119,
+          "confidence": 0.92,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_left",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 11.761,
+      "camera_move": "pan_left",
+      "scene_change": false,
+      "sharpness": 51.6,
+      "edge_density": 3.311,
+      "hue": 54.6,
+      "saturation": 56.2,
+      "brightness": 144.1,
+      "perceptual_lightness": 133.7,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 210,
+      "sec": 7.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.525,
+          "cy": 0.593,
+          "size_ratio": 0.2487,
+          "confidence": 0.94,
+          "is_close_up": true,
+          "position": "center"
+        }
+      ],
+      "gaze_direction": "looking_at_camera",
+      "eye_contact": true,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 7.417,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 39.7,
+      "edge_density": 3.002,
+      "hue": 53.1,
+      "saturation": 52.0,
+      "brightness": 145.2,
+      "perceptual_lightness": 135.7,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 240,
+      "sec": 8.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.565,
+          "cy": 0.651,
+          "size_ratio": 0.3071,
+          "confidence": 0.96,
+          "is_close_up": true,
+          "position": "center"
+        }
+      ],
+      "gaze_direction": "looking_left",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 7.323,
+      "camera_move": "pan_right",
+      "scene_change": false,
+      "sharpness": 57.7,
+      "edge_density": 4.042,
+      "hue": 50.6,
+      "saturation": 54.4,
+      "brightness": 142.9,
+      "perceptual_lightness": 133.2,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 270,
+      "sec": 9.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.548,
+          "cy": 0.632,
+          "size_ratio": 0.3182,
+          "confidence": 0.91,
+          "is_close_up": true,
+          "position": "center"
+        }
+      ],
+      "gaze_direction": "looking_left",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 6.586,
+      "camera_move": "pan_left",
+      "scene_change": false,
+      "sharpness": 31.1,
+      "edge_density": 1.653,
+      "hue": 51.6,
+      "saturation": 52.4,
+      "brightness": 145.6,
+      "perceptual_lightness": 136.4,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 300,
+      "sec": 10.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.575,
+          "cy": 0.666,
+          "size_ratio": 0.354,
+          "confidence": 0.88,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_left",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 6.309,
+      "camera_move": "pan_right",
+      "scene_change": false,
+      "sharpness": 52.5,
+      "edge_density": 2.898,
+      "hue": 44.7,
+      "saturation": 55.5,
+      "brightness": 149.2,
+      "perceptual_lightness": 138.9,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 330,
+      "sec": 11.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.564,
+          "cy": 0.648,
+          "size_ratio": 0.2997,
+          "confidence": 0.95,
+          "is_close_up": true,
+          "position": "center"
+        }
+      ],
+      "gaze_direction": "looking_left",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 6.884,
+      "camera_move": "tilt_up",
+      "scene_change": false,
+      "sharpness": 56.6,
+      "edge_density": 3.127,
+      "hue": 50.0,
+      "saturation": 54.3,
+      "brightness": 146.8,
+      "perceptual_lightness": 136.9,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 360,
+      "sec": 12.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.613,
+          "cy": 0.704,
+          "size_ratio": 0.3105,
+          "confidence": 0.93,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_at_camera",
+      "eye_contact": true,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 5.134,
+      "camera_move": "tilt_down",
+      "scene_change": false,
+      "sharpness": 27.0,
+      "edge_density": 1.73,
+      "hue": 40.3,
+      "saturation": 54.1,
+      "brightness": 153.5,
+      "perceptual_lightness": 143.5,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 390,
+      "sec": 13.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.559,
+          "cy": 0.678,
+          "size_ratio": 0.3627,
+          "confidence": 0.87,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_right",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 5.561,
+      "camera_move": "tilt_up",
+      "scene_change": false,
+      "sharpness": 37.2,
+      "edge_density": 3.037,
+      "hue": 48.5,
+      "saturation": 58.2,
+      "brightness": 149.8,
+      "perceptual_lightness": 138.2,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 420,
+      "sec": 14.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.578,
+          "cy": 0.644,
+          "size_ratio": 0.2616,
+          "confidence": 0.95,
+          "is_close_up": true,
+          "position": "center"
+        }
+      ],
+      "gaze_direction": "looking_right",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 7.254,
+      "camera_move": "pan_right",
+      "scene_change": false,
+      "sharpness": 45.6,
+      "edge_density": 3.108,
+      "hue": 47.6,
+      "saturation": 55.4,
+      "brightness": 147.5,
+      "perceptual_lightness": 137.6,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 450,
+      "sec": 15.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.557,
+          "cy": 0.697,
+          "size_ratio": 0.3336,
+          "confidence": 0.92,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_at_camera",
+      "eye_contact": true,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 5.07,
+      "camera_move": "pan_left",
+      "scene_change": false,
+      "sharpness": 37.5,
+      "edge_density": 2.448,
+      "hue": 46.2,
+      "saturation": 53.6,
+      "brightness": 149.8,
+      "perceptual_lightness": 140.3,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 480,
+      "sec": 16.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.546,
+          "cy": 0.668,
+          "size_ratio": 0.3209,
+          "confidence": 0.96,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_left",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 5.339,
+      "camera_move": "pan_left",
+      "scene_change": false,
+      "sharpness": 40.0,
+      "edge_density": 2.644,
+      "hue": 47.6,
+      "saturation": 54.4,
+      "brightness": 147.4,
+      "perceptual_lightness": 137.9,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 510,
+      "sec": 17.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.559,
+          "cy": 0.689,
+          "size_ratio": 0.3256,
+          "confidence": 0.93,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_left",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 5.111,
+      "camera_move": "pan_right",
+      "scene_change": false,
+      "sharpness": 40.7,
+      "edge_density": 2.858,
+      "hue": 44.2,
+      "saturation": 53.9,
+      "brightness": 149.5,
+      "perceptual_lightness": 140.1,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 540,
+      "sec": 18.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.545,
+          "cy": 0.711,
+          "size_ratio": 0.3663,
+          "confidence": 0.93,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_left",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 5.625,
+      "camera_move": "tilt_down",
+      "scene_change": false,
+      "sharpness": 39.8,
+      "edge_density": 2.843,
+      "hue": 48.0,
+      "saturation": 51.3,
+      "brightness": 148.9,
+      "perceptual_lightness": 139.9,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 570,
+      "sec": 19.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.536,
+          "cy": 0.738,
+          "size_ratio": 0.3216,
+          "confidence": 0.8,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_left",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 5.353,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 33.8,
+      "edge_density": 1.777,
+      "hue": 41.9,
+      "saturation": 53.6,
+      "brightness": 157.3,
+      "perceptual_lightness": 147.6,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 600,
+      "sec": 20.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.525,
+          "cy": 0.668,
+          "size_ratio": 0.305,
+          "confidence": 0.96,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_left",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 5.396,
+      "camera_move": "pan_left",
+      "scene_change": false,
+      "sharpness": 47.9,
+      "edge_density": 2.896,
+      "hue": 45.8,
+      "saturation": 52.7,
+      "brightness": 147.0,
+      "perceptual_lightness": 138.2,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 630,
+      "sec": 21.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.576,
+          "cy": 0.668,
+          "size_ratio": 0.2924,
+          "confidence": 0.93,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_left",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 8.327,
+      "camera_move": "pan_right",
+      "scene_change": false,
+      "sharpness": 42.0,
+      "edge_density": 2.966,
+      "hue": 52.5,
+      "saturation": 50.1,
+      "brightness": 146.2,
+      "perceptual_lightness": 137.1,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 660,
+      "sec": 22.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.643,
+          "cy": 0.744,
+          "size_ratio": 0.3515,
+          "confidence": 0.87,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_left",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "motion_score": 5.36,
+      "camera_move": "tilt_down",
+      "scene_change": false,
+      "sharpness": 32.1,
+      "edge_density": 2.304,
+      "hue": 44.4,
+      "saturation": 53.5,
+      "brightness": 152.9,
+      "perceptual_lightness": 143.3,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 690,
+      "sec": 23.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.514,
+          "cy": 0.646,
+          "size_ratio": 0.2439,
+          "confidence": 0.88,
+          "is_close_up": true,
+          "position": "center"
+        }
+      ],
+      "gaze_direction": "looking_right",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 5.682,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 28.1,
+      "edge_density": 2.096,
+      "hue": 39.1,
+      "saturation": 57.3,
+      "brightness": 156.3,
+      "perceptual_lightness": 144.8,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 720,
+      "sec": 24.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.59,
+          "cy": 0.75,
+          "size_ratio": 0.453,
+          "confidence": 0.93,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_left",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 4.895,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 37.3,
+      "edge_density": 2.604,
+      "hue": 42.0,
+      "saturation": 55.6,
+      "brightness": 157.4,
+      "perceptual_lightness": 146.9,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 750,
+      "sec": 25.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.634,
+          "cy": 0.743,
+          "size_ratio": 0.3649,
+          "confidence": 0.88,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_left",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 5.022,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 27.7,
+      "edge_density": 1.931,
+      "hue": 39.2,
+      "saturation": 56.9,
+      "brightness": 155.9,
+      "perceptual_lightness": 145.1,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 780,
+      "sec": 26.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.721,
+          "cy": 0.647,
+          "size_ratio": 0.2414,
+          "confidence": 0.77,
+          "is_close_up": true,
+          "position": "center"
+        }
+      ],
+      "gaze_direction": "looking_at_camera",
+      "eye_contact": true,
+      "body_detected": false,
+      "hands_raised": false,
+      "motion_score": 4.456,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 19.8,
+      "edge_density": 1.409,
+      "hue": 35.3,
+      "saturation": 54.5,
+      "brightness": 167.6,
+      "perceptual_lightness": 155.0,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 810,
+      "sec": 27.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.535,
+          "cy": 0.669,
+          "size_ratio": 0.3139,
+          "confidence": 0.93,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_at_camera",
+      "eye_contact": true,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 5.228,
+      "camera_move": "tilt_down",
+      "scene_change": false,
+      "sharpness": 47.9,
+      "edge_density": 3.397,
+      "hue": 53.3,
+      "saturation": 51.8,
+      "brightness": 143.3,
+      "perceptual_lightness": 134.3,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 840,
+      "sec": 28.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.527,
+          "cy": 0.685,
+          "size_ratio": 0.3148,
+          "confidence": 0.94,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_at_camera",
+      "eye_contact": true,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 7.247,
+      "camera_move": "tilt_down",
+      "scene_change": false,
+      "sharpness": 61.3,
+      "edge_density": 4.072,
+      "hue": 55.7,
+      "saturation": 50.0,
+      "brightness": 146.8,
+      "perceptual_lightness": 137.9,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 870,
+      "sec": 29.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.532,
+          "cy": 0.673,
+          "size_ratio": 0.366,
+          "confidence": 0.92,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_at_camera",
+      "eye_contact": true,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 8.461,
+      "camera_move": "tilt_up",
+      "scene_change": false,
+      "sharpness": 39.4,
+      "edge_density": 2.667,
+      "hue": 48.8,
+      "saturation": 52.0,
+      "brightness": 143.7,
+      "perceptual_lightness": 134.5,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 900,
+      "sec": 30.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.661,
+          "cy": 0.663,
+          "size_ratio": 0.2612,
+          "confidence": 0.93,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_left",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 5.992,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 33.8,
+      "edge_density": 1.871,
+      "hue": 46.3,
+      "saturation": 47.2,
+      "brightness": 152.4,
+      "perceptual_lightness": 143.7,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 930,
+      "sec": 31.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.714,
+          "cy": 0.652,
+          "size_ratio": 0.1835,
+          "confidence": 0.88,
+          "is_close_up": true,
+          "position": "center"
+        }
+      ],
+      "gaze_direction": "looking_left",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 4.109,
+      "camera_move": "tilt_up",
+      "scene_change": false,
+      "sharpness": 30.6,
+      "edge_density": 1.954,
+      "hue": 38.4,
+      "saturation": 60.2,
+      "brightness": 151.9,
+      "perceptual_lightness": 140.1,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 960,
+      "sec": 32.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.579,
+          "cy": 0.646,
+          "size_ratio": 0.2575,
+          "confidence": 0.9,
+          "is_close_up": true,
+          "position": "center"
+        }
+      ],
+      "gaze_direction": "looking_at_camera",
+      "eye_contact": true,
+      "body_detected": false,
+      "hands_raised": false,
+      "motion_score": 3.633,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 24.7,
+      "edge_density": 1.59,
+      "hue": 37.4,
+      "saturation": 61.1,
+      "brightness": 160.5,
+      "perceptual_lightness": 146.2,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 990,
+      "sec": 33.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.496,
+          "cy": 0.673,
+          "size_ratio": 0.3919,
+          "confidence": 0.91,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_left",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 4.468,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 33.4,
+      "edge_density": 2.283,
+      "hue": 60.9,
+      "saturation": 53.3,
+      "brightness": 137.9,
+      "perceptual_lightness": 129.1,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 1020,
+      "sec": 34.0,
+      "face_count": 2,
+      "face_positions": [
+        {
+          "cx": 0.745,
+          "cy": 0.698,
+          "size_ratio": 0.3575,
+          "confidence": 0.54,
+          "is_close_up": true,
+          "position": "bottom"
+        },
+        {
+          "cx": 0.493,
+          "cy": 0.59,
+          "size_ratio": 0.0785,
+          "confidence": 0.52,
+          "is_close_up": false,
+          "position": "center"
+        }
+      ],
+      "gaze_direction": "looking_at_camera",
+      "eye_contact": true,
+      "body_detected": false,
+      "hands_raised": false,
+      "motion_score": 5.912,
+      "camera_move": "tilt_down",
+      "scene_change": false,
+      "sharpness": 23.3,
+      "edge_density": 1.712,
+      "hue": 35.1,
+      "saturation": 58.8,
+      "brightness": 179.1,
+      "perceptual_lightness": 163.8,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 1050,
+      "sec": 35.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.486,
+          "cy": 0.686,
+          "size_ratio": 0.3436,
+          "confidence": 0.86,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_at_camera",
+      "eye_contact": true,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 4.671,
+      "camera_move": "pan_right",
+      "scene_change": false,
+      "sharpness": 44.0,
+      "edge_density": 3.2,
+      "hue": 44.6,
+      "saturation": 55.2,
+      "brightness": 161.1,
+      "perceptual_lightness": 149.3,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 1080,
+      "sec": 36.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.681,
+          "cy": 0.679,
+          "size_ratio": 0.3654,
+          "confidence": 0.82,
+          "is_close_up": true,
+          "position": "bottom"
+        }
+      ],
+      "gaze_direction": "looking_at_camera",
+      "eye_contact": true,
+      "body_detected": true,
+      "hands_raised": false,
+      "motion_score": 5.494,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 22.9,
+      "edge_density": 1.858,
+      "hue": 43.7,
+      "saturation": 49.0,
+      "brightness": 168.3,
+      "perceptual_lightness": 157.5,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    },
+    {
+      "frame": 1110,
+      "sec": 37.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.684,
+          "cy": 0.607,
+          "size_ratio": 0.355,
+          "confidence": 0.87,
+          "is_close_up": true,
+          "position": "center"
+        }
+      ],
+      "gaze_direction": "looking_right",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "motion_score": 4.085,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 30.6,
+      "edge_density": 2.153,
+      "hue": 47.6,
+      "saturation": 65.1,
+      "brightness": 145.0,
+      "perceptual_lightness": 131.8,
+      "color_temp": "warm",
+      "brightest_region": "top_left",
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "person_count": 0,
+      "crowd_density": "unknown",
+      "has_crowd": false
+    }
+  ],
+  "color_analysis": [
+    {
+      "sec": 0.0,
+      "mean_rgb": [
+        160.5,
+        146.0,
+        138.8
+      ],
+      "stddev_rgb": [
+        74.7,
+        75.9,
+        70.0
+      ],
+      "dominant_colors": [
+        [
+          73,
+          56,
+          57
+        ],
+        [
+          217,
+          211,
+          198
+        ],
+        [
+          229,
+          223,
+          210
+        ],
+        [
+          166,
+          128,
+          118
+        ],
+        [
+          238,
+          235,
+          223
+        ],
+        [
+          106,
+          85,
+          85
+        ]
+      ],
+      "perceived_brightness": 149.5,
+      "color_mood": "neutral",
+      "contrast_score": 73.5,
+      "color_variance": 9.0
+    },
+    {
+      "sec": 3.0,
+      "mean_rgb": [
+        147.0,
+        130.8,
+        123.2
+      ],
+      "stddev_rgb": [
+        78.1,
+        76.7,
+        70.5
+      ],
+      "dominant_colors": [
+        [
+          222,
+          215,
+          197
+        ],
+        [
+          81,
+          76,
+          81
+        ],
+        [
+          57,
+          46,
+          46
+        ],
+        [
+          149,
+          101,
+          91
+        ],
+        [
+          29,
+          25,
+          27
+        ],
+        [
+          210,
+          200,
+          185
+        ]
+      ],
+      "perceived_brightness": 134.8,
+      "color_mood": "neutral",
+      "contrast_score": 75.1,
+      "color_variance": 9.9
+    },
+    {
+      "sec": 6.0,
+      "mean_rgb": [
+        142.7,
+        124.9,
+        117.7
+      ],
+      "stddev_rgb": [
+        76.8,
+        75.2,
+        68.9
+      ],
+      "dominant_colors": [
+        [
+          224,
+          216,
+          196
+        ],
+        [
+          82,
+          75,
+          80
+        ],
+        [
+          167,
+          125,
+          114
+        ],
+        [
+          28,
+          22,
+          23
+        ],
+        [
+          62,
+          48,
+          48
+        ],
+        [
+          235,
+          230,
+          216
+        ]
+      ],
+      "perceived_brightness": 129.4,
+      "color_mood": "neutral",
+      "contrast_score": 73.6,
+      "color_variance": 10.5
+    },
+    {
+      "sec": 9.0,
+      "mean_rgb": [
+        144.3,
+        128.0,
+        120.1
+      ],
+      "stddev_rgb": [
+        76.0,
+        75.5,
+        69.2
+      ],
+      "dominant_colors": [
+        [
+          225,
+          217,
+          196
+        ],
+        [
+          85,
+          78,
+          82
+        ],
+        [
+          31,
+          26,
+          27
+        ],
+        [
+          133,
+          95,
+          86
+        ],
+        [
+          161,
+          126,
+          117
+        ],
+        [
+          237,
+          233,
+          220
+        ]
+      ],
+      "perceived_brightness": 132.0,
+      "color_mood": "neutral",
+      "contrast_score": 73.6,
+      "color_variance": 10.1
+    },
+    {
+      "sec": 12.0,
+      "mean_rgb": [
+        152.4,
+        135.3,
+        124.9
+      ],
+      "stddev_rgb": [
+        76.7,
+        75.6,
+        68.4
+      ],
+      "dominant_colors": [
+        [
+          225,
+          216,
+          194
+        ],
+        [
+          90,
+          82,
+          85
+        ],
+        [
+          33,
+          27,
+          25
+        ],
+        [
+          213,
+          204,
+          183
+        ],
+        [
+          196,
+          158,
+          147
+        ],
+        [
+          236,
+          231,
+          213
+        ]
+      ],
+      "perceived_brightness": 139.2,
+      "color_mood": "neutral",
+      "contrast_score": 73.6,
+      "color_variance": 11.3
+    },
+    {
+      "sec": 15.0,
+      "mean_rgb": [
+        148.6,
+        132.3,
+        122.8
+      ],
+      "stddev_rgb": [
+        76.6,
+        76.0,
+        69.1
+      ],
+      "dominant_colors": [
+        [
+          223,
+          215,
+          195
+        ],
+        [
+          88,
+          82,
+          87
+        ],
+        [
+          211,
+          201,
+          181
+        ],
+        [
+          31,
+          23,
+          22
+        ],
+        [
+          147,
+          103,
+          92
+        ],
+        [
+          59,
+          48,
+          48
+        ]
+      ],
+      "perceived_brightness": 136.1,
+      "color_mood": "neutral",
+      "contrast_score": 73.9,
+      "color_variance": 10.7
+    },
+    {
+      "sec": 18.0,
+      "mean_rgb": [
+        147.5,
+        131.8,
+        123.4
+      ],
+      "stddev_rgb": [
+        76.0,
+        75.4,
+        69.0
+      ],
+      "dominant_colors": [
+        [
+          221,
+          214,
+          195
+        ],
+        [
+          88,
+          83,
+          87
+        ],
+        [
+          209,
+          200,
+          183
+        ],
+        [
+          28,
+          23,
+          24
+        ],
+        [
+          147,
+          100,
+          90
+        ],
+        [
+          62,
+          51,
+          51
+        ]
+      ],
+      "perceived_brightness": 135.5,
+      "color_mood": "neutral",
+      "contrast_score": 73.5,
+      "color_variance": 10.0
+    },
+    {
+      "sec": 21.0,
+      "mean_rgb": [
+        144.8,
+        129.1,
+        121.5
+      ],
+      "stddev_rgb": [
+        77.4,
+        76.0,
+        69.3
+      ],
+      "dominant_colors": [
+        [
+          222,
+          214,
+          195
+        ],
+        [
+          85,
+          79,
+          83
+        ],
+        [
+          30,
+          23,
+          23
+        ],
+        [
+          178,
+          137,
+          126
+        ],
+        [
+          210,
+          198,
+          183
+        ],
+        [
+          137,
+          98,
+          91
+        ]
+      ],
+      "perceived_brightness": 132.9,
+      "color_mood": "neutral",
+      "contrast_score": 74.2,
+      "color_variance": 9.7
+    },
+    {
+      "sec": 24.0,
+      "mean_rgb": [
+        156.0,
+        137.9,
+        128.7
+      ],
+      "stddev_rgb": [
+        72.5,
+        74.1,
+        69.9
+      ],
+      "dominant_colors": [
+        [
+          224,
+          218,
+          201
+        ],
+        [
+          104,
+          95,
+          98
+        ],
+        [
+          32,
+          26,
+          24
+        ],
+        [
+          167,
+          107,
+          88
+        ],
+        [
+          210,
+          203,
+          187
+        ],
+        [
+          238,
+          236,
+          223
+        ]
+      ],
+      "perceived_brightness": 142.3,
+      "color_mood": "neutral",
+      "contrast_score": 72.2,
+      "color_variance": 11.3
+    },
+    {
+      "sec": 27.0,
+      "mean_rgb": [
+        141.9,
+        126.2,
+        119.5
+      ],
+      "stddev_rgb": [
+        76.1,
+        75.4,
+        69.5
+      ],
+      "dominant_colors": [
+        [
+          220,
+          214,
+          197
+        ],
+        [
+          80,
+          74,
+          80
+        ],
+        [
+          172,
+          132,
+          121
+        ],
+        [
+          30,
+          23,
+          23
+        ],
+        [
+          56,
+          46,
+          46
+        ],
+        [
+          129,
+          94,
+          88
+        ]
+      ],
+      "perceived_brightness": 130.1,
+      "color_mood": "neutral",
+      "contrast_score": 73.7,
+      "color_variance": 9.4
+    },
+    {
+      "sec": 30.0,
+      "mean_rgb": [
+        151.2,
+        136.3,
+        128.7
+      ],
+      "stddev_rgb": [
+        79.1,
+        78.4,
+        72.5
+      ],
+      "dominant_colors": [
+        [
+          212,
+          205,
+          190
+        ],
+        [
+          223,
+          217,
+          201
+        ],
+        [
+          27,
+          23,
+          24
+        ],
+        [
+          92,
+          83,
+          87
+        ],
+        [
+          160,
+          110,
+          99
+        ],
+        [
+          54,
+          44,
+          44
+        ]
+      ],
+      "perceived_brightness": 139.9,
+      "color_mood": "neutral",
+      "contrast_score": 76.7,
+      "color_variance": 9.4
+    },
+    {
+      "sec": 33.0,
+      "mean_rgb": [
+        136.0,
+        121.0,
+        116.5
+      ],
+      "stddev_rgb": [
+        75.9,
+        74.8,
+        69.1
+      ],
+      "dominant_colors": [
+        [
+          217,
+          211,
+          197
+        ],
+        [
+          76,
+          70,
+          77
+        ],
+        [
+          161,
+          120,
+          111
+        ],
+        [
+          25,
+          19,
+          21
+        ],
+        [
+          54,
+          45,
+          48
+        ],
+        [
+          121,
+          90,
+          87
+        ]
+      ],
+      "perceived_brightness": 125.0,
+      "color_mood": "neutral",
+      "contrast_score": 73.3,
+      "color_variance": 8.3
+    },
+    {
+      "sec": 36.0,
+      "mean_rgb": [
+        166.8,
+        148.4,
+        141.2
+      ],
+      "stddev_rgb": [
+        71.6,
+        72.9,
+        68.1
+      ],
+      "dominant_colors": [
+        [
+          225,
+          222,
+          208
+        ],
+        [
+          92,
+          72,
+          74
+        ],
+        [
+          203,
+          169,
+          163
+        ],
+        [
+          240,
+          240,
+          228
+        ],
+        [
+          183,
+          131,
+          118
+        ],
+        [
+          217,
+          208,
+          195
+        ]
+      ],
+      "perceived_brightness": 153.1,
+      "color_mood": "neutral",
+      "contrast_score": 70.8,
+      "color_variance": 10.8
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+# env files
+.env
+
+# main venv
+trend_env/
+
+# nested envs (IMPORTANT)
+**/env/
+**/venv/
+**/*_env/
+**/Lib/
+**/site-packages/
+
+# python cache
+__pycache__/
+*.pyc
+
+# logs
+logs/

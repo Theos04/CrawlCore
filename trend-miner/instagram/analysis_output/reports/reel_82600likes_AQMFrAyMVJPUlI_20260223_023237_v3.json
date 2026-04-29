@@ -1,0 +1,3546 @@
+{
+  "file": "E:\\reel_82600likes_AQMFrAyMVJPUlIYOD56b.mp4",
+  "analyzed_at": "2026-02-23T02:34:22.697425",
+  "container": {
+    "duration_sec": 11.75,
+    "fps": 30.0,
+    "resolution": [
+      720,
+      1280
+    ],
+    "aspect_ratio": 0.562,
+    "total_frames": 352,
+    "has_audio": true,
+    "is_vertical": true,
+    "format_hint": "reel/story"
+  },
+  "speech_transcript": {
+    "transcript": "",
+    "language": "unknown",
+    "segments": [],
+    "word_timestamps": [],
+    "quality": {
+      "score": 0,
+      "reliable": false,
+      "detected_script": "unknown"
+    }
+  },
+  "audio_analysis": {
+    "tempo_bpm": 92.3,
+    "detected_key": "D# major",
+    "dominant_note": "G",
+    "layers_detected": [
+      "speech",
+      "bass_heavy"
+    ],
+    "layer_count": 2,
+    "primary_layer": "speech",
+    "voice_confidence": 99.8,
+    "music_confidence": 15.3,
+    "has_speech": true,
+    "has_music": false,
+    "is_music_only": false,
+    "is_speech_only": true,
+    "is_speech_with_music": false,
+    "beat_strength": 1.175,
+    "beat_times": [
+      0.06965986394557823,
+      0.6965986394557823,
+      1.3003174603174603,
+      1.9040362811791383,
+      2.5309750566893423,
+      3.1811337868480725,
+      3.7848526077097504,
+      4.388571428571429,
+      4.992290249433107,
+      5.642448979591837,
+      6.292607709750567,
+      6.989206349206349,
+      7.685804988662132,
+      8.382403628117913,
+      9.05578231292517,
+      9.7059410430839,
+      10.356099773242631,
+      11.029478458049887
+    ],
+    "beat_count": 18,
+    "harmonic_content": 0.0007,
+    "percussive_content": 0.0003,
+    "harmony_pct": 66.0,
+    "percussion_pct": 34.0,
+    "spectral_centroid_mean": 1196.5,
+    "spectral_rolloff_mean": 2190.7,
+    "audio_complexity": 2,
+    "rms_mean": 0.0011,
+    "energy_over_time": [
+      {
+        "sec": 0.0,
+        "energy": 0.0022
+      },
+      {
+        "sec": 0.5,
+        "energy": 0.0027
+      },
+      {
+        "sec": 1.0,
+        "energy": 0.0012
+      },
+      {
+        "sec": 1.5,
+        "energy": 0.0011
+      },
+      {
+        "sec": 2.0,
+        "energy": 0.0012
+      },
+      {
+        "sec": 2.5,
+        "energy": 0.0012
+      },
+      {
+        "sec": 3.0,
+        "energy": 0.0011
+      },
+      {
+        "sec": 3.5,
+        "energy": 0.001
+      },
+      {
+        "sec": 4.0,
+        "energy": 0.001
+      },
+      {
+        "sec": 4.5,
+        "energy": 0.0009
+      },
+      {
+        "sec": 5.0,
+        "energy": 0.001
+      },
+      {
+        "sec": 5.5,
+        "energy": 0.001
+      },
+      {
+        "sec": 6.0,
+        "energy": 0.001
+      },
+      {
+        "sec": 6.5,
+        "energy": 0.003
+      },
+      {
+        "sec": 7.0,
+        "energy": 0.0009
+      },
+      {
+        "sec": 7.5,
+        "energy": 0.001
+      },
+      {
+        "sec": 8.0,
+        "energy": 0.001
+      },
+      {
+        "sec": 8.5,
+        "energy": 0.001
+      },
+      {
+        "sec": 9.0,
+        "energy": 0.0009
+      },
+      {
+        "sec": 9.5,
+        "energy": 0.001
+      },
+      {
+        "sec": 10.0,
+        "energy": 0.001
+      },
+      {
+        "sec": 10.5,
+        "energy": 0.001
+      },
+      {
+        "sec": 11.0,
+        "energy": 0.0009
+      }
+    ],
+    "audio_events": [
+      {
+        "class": "Silence",
+        "confidence": 0.83
+      }
+    ]
+  },
+  "visual_summary": {
+    "duration_sec": 11.75,
+    "avg_brightness": 110.1,
+    "avg_saturation": 110.554,
+    "avg_sharpness": 1723.642,
+    "avg_motion": 12.664,
+    "avg_edge_density": 32.958,
+    "face_presence_ratio": 0.0,
+    "eye_contact_ratio": 0.0,
+    "text_overlay_ratio": 0.0,
+    "estimated_cuts": 1,
+    "pacing": "slow",
+    "dominant_camera_move": "static",
+    "dominant_gaze": "unknown",
+    "dominant_color_mood": "neutral",
+    "all_ocr_text": "",
+    "all_hindi_ocr_text": "",
+    "all_english_ocr_text": "",
+    "scripts_detected": [],
+    "avg_text_readability": 0.0,
+    "dominant_setting": "outdoor_street_or_open",
+    "indoor_outdoor": "outdoor",
+    "dominant_lighting": "dim",
+    "dominant_wall_color": "grey_50",
+    "avg_people_in_frame": 0.083,
+    "max_people_in_frame": 2,
+    "solo_presenter_frames": 0,
+    "multi_person_frames": 1,
+    "distinct_people_count": 3,
+    "dominant_scene_type": "unknown",
+    "dominant_activity": "scenic/b-roll",
+    "indoor_percentage": 0.0,
+    "outdoor_percentage": 0.0,
+    "nature_percentage": 0.0,
+    "avg_aesthetic_score": 54.6,
+    "object_diversity": 4,
+    "top_objects_detected": [
+      "dog",
+      "chair",
+      "bear",
+      "person",
+      "bench"
+    ],
+    "object_category_counts": {
+      "people": 12,
+      "animal": 39,
+      "furniture": 28,
+      "vehicle": 1
+    },
+    "has_people_in_video": true,
+    "has_pets_in_video": true,
+    "has_technology_in_video": false,
+    "style": "action_dynamic"
+  },
+  "content_category": {
+    "detected_niche": "education",
+    "niche_scores": {},
+    "content_format": "action_broll",
+    "hook_formats": [],
+    "speaking_style": "no_speech",
+    "audio_mood": "unknown",
+    "audio_type": "unknown",
+    "duration_category": "short",
+    "viral_score": 0,
+    "recommendations": [
+      "⚡ Speed up pacing — aim for a cut every 2-3 seconds",
+      "🪝 Add a stronger hook in the first 1-2 seconds",
+      "📝 Add text overlays — 85% of reels watched on mute",
+      "🎵 Use faster trending audio (100-130 BPM performs best)",
+      "👤 Add a face — videos with faces get 38% more engagement",
+      "📣 Add a CTA (save, follow, comment) before the end",
+      "🎙️ Audio quality may be unclear — consider adding subtitle text overlays"
+    ],
+    "transcript_reliable": false,
+    "replication_template": {
+      "format": "action_broll",
+      "hook_style": "unknown",
+      "audio_mood": "unknown",
+      "pacing": "slow",
+      "use_face": false,
+      "use_eye_contact": false,
+      "use_text": false,
+      "target_bpm": 92,
+      "niche": "education",
+      "speaking_style": "no_speech"
+    },
+    "weak_supervision_labels": [
+      {
+        "label": "tutorial",
+        "confidence": 0.0,
+        "evidence": []
+      },
+      {
+        "label": "entertainment",
+        "confidence": 0.0,
+        "evidence": []
+      },
+      {
+        "label": "educational",
+        "confidence": 0.0,
+        "evidence": []
+      }
+    ]
+  },
+  "frame_analysis": [
+    {
+      "frame": 0,
+      "sec": 0.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 2,
+      "body_count_hog": 2,
+      "body_positions": [
+        {
+          "cx": 0.113,
+          "cy": 0.533,
+          "pos_v": "center",
+          "pos_h": "left"
+        },
+        {
+          "cx": 0.489,
+          "cy": 0.595,
+          "pos_v": "center",
+          "pos_h": "center"
+        }
+      ],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_street_or_open",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 48.3,
+      "sky_ratio": 0.625,
+      "green_ratio": 0.001,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        96.0,
+        88.3,
+        97.8
+      ],
+      "motion_score": 0.0,
+      "camera_move": "static",
+      "scene_change": true,
+      "sharpness": 1472.1,
+      "edge_density": 24.395,
+      "perceptual_lightness": 99.8,
+      "color_temp": "neutral",
+      "hue": 69.3,
+      "saturation": 126.2,
+      "brightness": 129.8,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "has_text_overlay": false,
+      "text_readability": 0,
+      "hook_text": "",
+      "ocr_words": [],
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "ocr_engine_used": "none",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "person",
+          "confidence": 81.8,
+          "category": "people",
+          "position": {
+            "cx": 0.49,
+            "cy": 0.5
+          },
+          "bbox": [
+            0,
+            1,
+            705,
+            1278
+          ],
+          "size_ratio": 0.9774117574159108,
+          "person_id": 0
+        },
+        {
+          "class": "cow",
+          "confidence": 47.7,
+          "category": "animal",
+          "position": {
+            "cx": 0.114,
+            "cy": 0.863
+          },
+          "bbox": [
+            0,
+            992,
+            162,
+            1215
+          ],
+          "size_ratio": 0.03917172762157861
+        },
+        {
+          "class": "bench",
+          "confidence": 29.2,
+          "category": "furniture",
+          "position": {
+            "cx": 0.112,
+            "cy": 0.611
+          },
+          "bbox": [
+            1,
+            660,
+            160,
+            904
+          ],
+          "size_ratio": 0.04226575670694729
+        }
+      ],
+      "object_count": 3,
+      "object_categories": {
+        "people": 1,
+        "animal": 1,
+        "furniture": 1
+      },
+      "has_people": true,
+      "has_pets": true,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 45,
+      "aesthetic_factors": [
+        "color_harmony",
+        "busy_background",
+        "blurry"
+      ],
+      "has_sam_segmentation": false,
+      "clip_embedding": null,
+      "primary_activity_smoothed": "scenic/b-roll"
+    },
+    {
+      "frame": 15,
+      "sec": 0.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_street_or_open",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 52.0,
+      "sky_ratio": 0.45,
+      "green_ratio": 0.0,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        98.6,
+        84.8,
+        89.2
+      ],
+      "motion_score": 10.613,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 1271.7,
+      "edge_density": 26.956,
+      "perceptual_lightness": 96.0,
+      "color_temp": "warm",
+      "hue": 63.5,
+      "saturation": 118.2,
+      "brightness": 122.3,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "has_text_overlay": false,
+      "text_readability": 0,
+      "hook_text": "",
+      "ocr_words": [],
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "ocr_engine_used": "none",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "dog",
+          "confidence": 68.9,
+          "category": "animal",
+          "position": {
+            "cx": 0.271,
+            "cy": 0.756
+          },
+          "bbox": [
+            113,
+            873,
+            276,
+            1062
+          ],
+          "size_ratio": 0.033604718853279744
+        },
+        {
+          "class": "chair",
+          "confidence": 66.6,
+          "category": "furniture",
+          "position": {
+            "cx": 0.182,
+            "cy": 0.537
+          },
+          "bbox": [
+            1,
+            571,
+            260,
+            803
+          ],
+          "size_ratio": 0.06509909700980643
+        },
+        {
+          "class": "person",
+          "confidence": 65.3,
+          "category": "people",
+          "position": {
+            "cx": 0.709,
+            "cy": 0.492
+          },
+          "bbox": [
+            301,
+            0,
+            720,
+            1260
+          ],
+          "size_ratio": 0.5729202199175133,
+          "person_id": 0
+        },
+        {
+          "class": "person",
+          "confidence": 58.5,
+          "category": "people",
+          "position": {
+            "cx": 0.502,
+            "cy": 0.435
+          },
+          "bbox": [
+            2,
+            0,
+            720,
+            1112
+          ],
+          "size_ratio": 0.8666981204100739,
+          "person_id": 0
+        },
+        {
+          "class": "chair",
+          "confidence": 55.8,
+          "category": "furniture",
+          "position": {
+            "cx": 0.518,
+            "cy": 0.529
+          },
+          "bbox": [
+            284,
+            565,
+            461,
+            787
+          ],
+          "size_ratio": 0.04258220419287682
+        },
+        {
+          "class": "bench",
+          "confidence": 33.2,
+          "category": "furniture",
+          "position": {
+            "cx": 0.518,
+            "cy": 0.53
+          },
+          "bbox": [
+            283,
+            565,
+            462,
+            789
+          ],
+          "size_ratio": 0.04345535003565601
+        }
+      ],
+      "object_count": 6,
+      "object_categories": {
+        "animal": 1,
+        "furniture": 3,
+        "people": 2
+      },
+      "has_people": true,
+      "has_pets": true,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 60,
+      "aesthetic_factors": [
+        "good_composition",
+        "good_contrast",
+        "color_harmony",
+        "busy_background",
+        "blurry"
+      ],
+      "has_sam_segmentation": false,
+      "clip_embedding": null,
+      "primary_activity_smoothed": "scenic/b-roll"
+    },
+    {
+      "frame": 30,
+      "sec": 1.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_street_or_open",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 50.0,
+      "sky_ratio": 0.745,
+      "green_ratio": 0.0,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        82.0,
+        83.2,
+        89.2
+      ],
+      "motion_score": 14.038,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 1865.2,
+      "edge_density": 36.255,
+      "perceptual_lightness": 90.3,
+      "color_temp": "neutral",
+      "hue": 60.5,
+      "saturation": 116.9,
+      "brightness": 112.5,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "has_text_overlay": false,
+      "text_readability": 0,
+      "hook_text": "",
+      "ocr_words": [],
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "ocr_engine_used": "none",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "chair",
+          "confidence": 71.9,
+          "category": "furniture",
+          "position": {
+            "cx": 0.743,
+            "cy": 0.439
+          },
+          "bbox": [
+            405,
+            449,
+            664,
+            675
+          ],
+          "size_ratio": 0.0633125970344554
+        },
+        {
+          "class": "person",
+          "confidence": 56.9,
+          "category": "people",
+          "position": {
+            "cx": 0.874,
+            "cy": 0.469
+          },
+          "bbox": [
+            539,
+            74,
+            719,
+            1127
+          ],
+          "size_ratio": 0.20569361494184704,
+          "person_id": 0
+        },
+        {
+          "class": "bench",
+          "confidence": 54.5,
+          "category": "furniture",
+          "position": {
+            "cx": 0.268,
+            "cy": 0.447
+          },
+          "bbox": [
+            3,
+            455,
+            382,
+            687
+          ],
+          "size_ratio": 0.09560443047662678
+        },
+        {
+          "class": "dog",
+          "confidence": 53.1,
+          "category": "animal",
+          "position": {
+            "cx": 0.481,
+            "cy": 0.628
+          },
+          "bbox": [
+            274,
+            715,
+            417,
+            892
+          ],
+          "size_ratio": 0.027319707196147645
+        },
+        {
+          "class": "chair",
+          "confidence": 41.2,
+          "category": "furniture",
+          "position": {
+            "cx": 0.268,
+            "cy": 0.447
+          },
+          "bbox": [
+            3,
+            458,
+            382,
+            684
+          ],
+          "size_ratio": 0.0930732997868472
+        }
+      ],
+      "object_count": 5,
+      "object_categories": {
+        "furniture": 3,
+        "people": 1,
+        "animal": 1
+      },
+      "has_people": true,
+      "has_pets": true,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 55,
+      "aesthetic_factors": [
+        "decent_composition",
+        "good_contrast",
+        "color_harmony",
+        "busy_background",
+        "blurry"
+      ],
+      "has_sam_segmentation": false,
+      "clip_embedding": null,
+      "primary_activity_smoothed": "scenic/b-roll"
+    },
+    {
+      "frame": 45,
+      "sec": 1.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_street_or_open",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 51.9,
+      "sky_ratio": 0.747,
+      "green_ratio": 0.001,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        89.4,
+        84.9,
+        86.4
+      ],
+      "motion_score": 9.756,
+      "camera_move": "pan_left",
+      "scene_change": false,
+      "sharpness": 1455.6,
+      "edge_density": 32.851,
+      "perceptual_lightness": 92.8,
+      "color_temp": "neutral",
+      "hue": 48.2,
+      "saturation": 113.0,
+      "brightness": 114.0,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "has_text_overlay": false,
+      "text_readability": 0,
+      "hook_text": "",
+      "ocr_words": [],
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "ocr_engine_used": "none",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "chair",
+          "confidence": 61.9,
+          "category": "furniture",
+          "position": {
+            "cx": 0.456,
+            "cy": 0.356
+          },
+          "bbox": [
+            138,
+            336,
+            518,
+            575
+          ],
+          "size_ratio": 0.0982912605869933
+        },
+        {
+          "class": "chair",
+          "confidence": 59.9,
+          "category": "furniture",
+          "position": {
+            "cx": 0.874,
+            "cy": 0.349
+          },
+          "bbox": [
+            539,
+            325,
+            720,
+            567
+          ],
+          "size_ratio": 0.04742176693816469
+        },
+        {
+          "class": "cow",
+          "confidence": 47.6,
+          "category": "animal",
+          "position": {
+            "cx": 0.281,
+            "cy": 0.726
+          },
+          "bbox": [
+            0,
+            579,
+            405,
+            1279
+          ],
+          "size_ratio": 0.3076712109002983
+        },
+        {
+          "class": "bench",
+          "confidence": 45.0,
+          "category": "furniture",
+          "position": {
+            "cx": 0.454,
+            "cy": 0.357
+          },
+          "bbox": [
+            137,
+            336,
+            515,
+            577
+          ],
+          "size_ratio": 0.09905373309109868
+        },
+        {
+          "class": "dog",
+          "confidence": 35.5,
+          "category": "animal",
+          "position": {
+            "cx": 0.694,
+            "cy": 0.517
+          },
+          "bbox": [
+            429,
+            573,
+            570,
+            749
+          ],
+          "size_ratio": 0.02703452665048341
+        },
+        {
+          "class": "dog",
+          "confidence": 27.8,
+          "category": "animal",
+          "position": {
+            "cx": 0.279,
+            "cy": 0.723
+          },
+          "bbox": [
+            0,
+            571,
+            400,
+            1278
+          ],
+          "size_ratio": 0.3065810498264909
+        }
+      ],
+      "object_count": 6,
+      "object_categories": {
+        "furniture": 3,
+        "animal": 3
+      },
+      "has_people": false,
+      "has_pets": true,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 55,
+      "aesthetic_factors": [
+        "decent_composition",
+        "good_contrast",
+        "color_harmony",
+        "busy_background",
+        "blurry"
+      ],
+      "has_sam_segmentation": false,
+      "clip_embedding": null,
+      "primary_activity_smoothed": "scenic/b-roll"
+    },
+    {
+      "frame": 60,
+      "sec": 2.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_street_or_open",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 52.8,
+      "sky_ratio": 0.54,
+      "green_ratio": 0.002,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        95.2,
+        85.7,
+        81.4
+      ],
+      "motion_score": 11.006,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 688.4,
+      "edge_density": 19.364,
+      "perceptual_lightness": 94.3,
+      "color_temp": "warm",
+      "hue": 41.4,
+      "saturation": 108.7,
+      "brightness": 113.1,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "has_text_overlay": false,
+      "text_readability": 0,
+      "hook_text": "",
+      "ocr_words": [],
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "ocr_engine_used": "none",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "bear",
+          "confidence": 86.1,
+          "category": "animal",
+          "position": {
+            "cx": 0.383,
+            "cy": 0.68
+          },
+          "bbox": [
+            0,
+            461,
+            550,
+            1278
+          ],
+          "size_ratio": 0.48736635510150034
+        },
+        {
+          "class": "chair",
+          "confidence": 79.3,
+          "category": "furniture",
+          "position": {
+            "cx": 0.622,
+            "cy": 0.31
+          },
+          "bbox": [
+            257,
+            271,
+            638,
+            521
+          ],
+          "size_ratio": 0.10350397268178413
+        },
+        {
+          "class": "cat",
+          "confidence": 47.9,
+          "category": "animal",
+          "position": {
+            "cx": 0.386,
+            "cy": 0.678
+          },
+          "bbox": [
+            0,
+            456,
+            554,
+            1278
+          ],
+          "size_ratio": 0.4945245370690827
+        },
+        {
+          "class": "dog",
+          "confidence": 40.0,
+          "category": "animal",
+          "position": {
+            "cx": 0.853,
+            "cy": 0.466
+          },
+          "bbox": [
+            547,
+            507,
+            680,
+            684
+          ],
+          "size_ratio": 0.025582272668058674
+        },
+        {
+          "class": "car",
+          "confidence": 38.7,
+          "category": "vehicle",
+          "position": {
+            "cx": 0.072,
+            "cy": 0.364
+          },
+          "bbox": [
+            0,
+            424,
+            102,
+            507
+          ],
+          "size_ratio": 0.009204949754760794
+        }
+      ],
+      "object_count": 5,
+      "object_categories": {
+        "animal": 3,
+        "furniture": 1,
+        "vehicle": 1
+      },
+      "has_people": false,
+      "has_pets": true,
+      "has_technology": false,
+      "primary_activity": "driving/traveling",
+      "activity_confidence": 30,
+      "aesthetic_score": 55,
+      "aesthetic_factors": [
+        "good_composition",
+        "good_contrast",
+        "busy_background",
+        "blurry"
+      ],
+      "has_sam_segmentation": false,
+      "clip_embedding": null,
+      "primary_activity_smoothed": "scenic/b-roll"
+    },
+    {
+      "frame": 75,
+      "sec": 2.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_street_or_open",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 52.7,
+      "sky_ratio": 0.437,
+      "green_ratio": 0.003,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        98.0,
+        85.5,
+        79.0
+      ],
+      "motion_score": 16.296,
+      "camera_move": "pan_right",
+      "scene_change": false,
+      "sharpness": 629.7,
+      "edge_density": 20.271,
+      "perceptual_lightness": 94.5,
+      "color_temp": "warm",
+      "hue": 42.0,
+      "saturation": 107.3,
+      "brightness": 112.6,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "has_text_overlay": false,
+      "text_readability": 0,
+      "hook_text": "",
+      "ocr_words": [],
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "ocr_engine_used": "none",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "chair",
+          "confidence": 68.0,
+          "category": "furniture",
+          "position": {
+            "cx": 0.669,
+            "cy": 0.289
+          },
+          "bbox": [
+            288,
+            243,
+            674,
+            495
+          ],
+          "size_ratio": 0.10572565141300098
+        },
+        {
+          "class": "bear",
+          "confidence": 66.0,
+          "category": "animal",
+          "position": {
+            "cx": 0.408,
+            "cy": 0.667
+          },
+          "bbox": [
+            1,
+            429,
+            585,
+            1276
+          ],
+          "size_ratio": 0.5372418921288045
+        },
+        {
+          "class": "cat",
+          "confidence": 39.3,
+          "category": "animal",
+          "position": {
+            "cx": 0.904,
+            "cy": 0.442
+          },
+          "bbox": [
+            583,
+            473,
+            718,
+            658
+          ],
+          "size_ratio": 0.027058894749736485
+        },
+        {
+          "class": "cat",
+          "confidence": 36.3,
+          "category": "animal",
+          "position": {
+            "cx": 0.406,
+            "cy": 0.667
+          },
+          "bbox": [
+            1,
+            426,
+            582,
+            1279
+          ],
+          "size_ratio": 0.5380448058038019
+        },
+        {
+          "class": "dog",
+          "confidence": 34.6,
+          "category": "animal",
+          "position": {
+            "cx": 0.905,
+            "cy": 0.442
+          },
+          "bbox": [
+            583,
+            472,
+            719,
+            658
+          ],
+          "size_ratio": 0.02740125726850238
+        }
+      ],
+      "object_count": 5,
+      "object_categories": {
+        "furniture": 1,
+        "animal": 4
+      },
+      "has_people": false,
+      "has_pets": true,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 55,
+      "aesthetic_factors": [
+        "good_composition",
+        "good_contrast",
+        "busy_background",
+        "blurry"
+      ],
+      "has_sam_segmentation": false,
+      "clip_embedding": null,
+      "primary_activity_smoothed": "scenic/b-roll"
+    },
+    {
+      "frame": 90,
+      "sec": 3.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_street_or_open",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 53.0,
+      "sky_ratio": 0.402,
+      "green_ratio": 0.004,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        98.5,
+        85.0,
+        77.4
+      ],
+      "motion_score": 14.671,
+      "camera_move": "tilt_up",
+      "scene_change": false,
+      "sharpness": 726.4,
+      "edge_density": 21.257,
+      "perceptual_lightness": 94.0,
+      "color_temp": "warm",
+      "hue": 41.5,
+      "saturation": 107.4,
+      "brightness": 111.7,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "has_text_overlay": false,
+      "text_readability": 0,
+      "hook_text": "",
+      "ocr_words": [],
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "ocr_engine_used": "none",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "bear",
+          "confidence": 64.2,
+          "category": "animal",
+          "position": {
+            "cx": 0.409,
+            "cy": 0.659
+          },
+          "bbox": [
+            1,
+            411,
+            587,
+            1275
+          ],
+          "size_ratio": 0.5498247072509063
+        },
+        {
+          "class": "chair",
+          "confidence": 57.1,
+          "category": "furniture",
+          "position": {
+            "cx": 0.68,
+            "cy": 0.254
+          },
+          "bbox": [
+            293,
+            167,
+            685,
+            482
+          ],
+          "size_ratio": 0.1342410260351168
+        },
+        {
+          "class": "dog",
+          "confidence": 36.6,
+          "category": "animal",
+          "position": {
+            "cx": 0.892,
+            "cy": 0.433
+          },
+          "bbox": [
+            565,
+            463,
+            719,
+            644
+          ],
+          "size_ratio": 0.030268710404893175
+        },
+        {
+          "class": "cat",
+          "confidence": 36.5,
+          "category": "animal",
+          "position": {
+            "cx": 0.406,
+            "cy": 0.652
+          },
+          "bbox": [
+            0,
+            413,
+            584,
+            1256
+          ],
+          "size_ratio": 0.5341253848688211
+        }
+      ],
+      "object_count": 4,
+      "object_categories": {
+        "animal": 3,
+        "furniture": 1
+      },
+      "has_people": false,
+      "has_pets": true,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 55,
+      "aesthetic_factors": [
+        "good_composition",
+        "good_contrast",
+        "busy_background",
+        "blurry"
+      ],
+      "has_sam_segmentation": false,
+      "clip_embedding": null,
+      "primary_activity_smoothed": "scenic/b-roll"
+    },
+    {
+      "frame": 105,
+      "sec": 3.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_street_or_open",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 53.0,
+      "sky_ratio": 0.381,
+      "green_ratio": 0.003,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        99.0,
+        84.7,
+        77.1
+      ],
+      "motion_score": 9.232,
+      "camera_move": "pan_right",
+      "scene_change": false,
+      "sharpness": 738.4,
+      "edge_density": 21.2,
+      "perceptual_lightness": 94.0,
+      "color_temp": "warm",
+      "hue": 42.2,
+      "saturation": 107.0,
+      "brightness": 111.7,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "has_text_overlay": false,
+      "text_readability": 0,
+      "hook_text": "",
+      "ocr_words": [],
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "ocr_engine_used": "none",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "chair",
+          "confidence": 78.9,
+          "category": "furniture",
+          "position": {
+            "cx": 0.698,
+            "cy": 0.275
+          },
+          "bbox": [
+            307,
+            224,
+            697,
+            478
+          ],
+          "size_ratio": 0.10705276558124752
+        },
+        {
+          "class": "bear",
+          "confidence": 62.6,
+          "category": "animal",
+          "position": {
+            "cx": 0.412,
+            "cy": 0.654
+          },
+          "bbox": [
+            3,
+            401,
+            590,
+            1273
+          ],
+          "size_ratio": 0.5548835556830858
+        },
+        {
+          "class": "dog",
+          "confidence": 60.3,
+          "category": "animal",
+          "position": {
+            "cx": 0.895,
+            "cy": 0.431
+          },
+          "bbox": [
+            569,
+            460,
+            719,
+            644
+          ],
+          "size_ratio": 0.029865227541304194
+        },
+        {
+          "class": "dog",
+          "confidence": 32.9,
+          "category": "animal",
+          "position": {
+            "cx": 0.414,
+            "cy": 0.644
+          },
+          "bbox": [
+            2,
+            402,
+            594,
+            1246
+          ],
+          "size_ratio": 0.5422858728646598
+        }
+      ],
+      "object_count": 4,
+      "object_categories": {
+        "furniture": 1,
+        "animal": 3
+      },
+      "has_people": false,
+      "has_pets": true,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 60,
+      "aesthetic_factors": [
+        "good_composition",
+        "good_contrast",
+        "color_harmony",
+        "busy_background",
+        "blurry"
+      ],
+      "has_sam_segmentation": false,
+      "clip_embedding": null,
+      "primary_activity_smoothed": "scenic/b-roll"
+    },
+    {
+      "frame": 120,
+      "sec": 4.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_street_or_open",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 53.5,
+      "sky_ratio": 0.352,
+      "green_ratio": 0.005,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        98.8,
+        84.6,
+        76.1
+      ],
+      "motion_score": 16.015,
+      "camera_move": "pan_right",
+      "scene_change": false,
+      "sharpness": 937.1,
+      "edge_density": 22.083,
+      "perceptual_lightness": 93.7,
+      "color_temp": "warm",
+      "hue": 41.2,
+      "saturation": 107.3,
+      "brightness": 111.0,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "has_text_overlay": false,
+      "text_readability": 0,
+      "hook_text": "",
+      "ocr_words": [],
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "ocr_engine_used": "none",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "chair",
+          "confidence": 76.1,
+          "category": "furniture",
+          "position": {
+            "cx": 0.719,
+            "cy": 0.27
+          },
+          "bbox": [
+            326,
+            215,
+            708,
+            476
+          ],
+          "size_ratio": 0.10815514885191482
+        },
+        {
+          "class": "bear",
+          "confidence": 67.3,
+          "category": "animal",
+          "position": {
+            "cx": 0.424,
+            "cy": 0.648
+          },
+          "bbox": [
+            0,
+            385,
+            610,
+            1274
+          ],
+          "size_ratio": 0.587779229140142
+        },
+        {
+          "class": "dog",
+          "confidence": 44.1,
+          "category": "animal",
+          "position": {
+            "cx": 0.425,
+            "cy": 0.64
+          },
+          "bbox": [
+            0,
+            388,
+            611,
+            1250
+          ],
+          "size_ratio": 0.5721897649057307
+        },
+        {
+          "class": "dog",
+          "confidence": 40.1,
+          "category": "animal",
+          "position": {
+            "cx": 0.899,
+            "cy": 0.432
+          },
+          "bbox": [
+            574,
+            462,
+            719,
+            642
+          ],
+          "size_ratio": 0.028455071917301716
+        }
+      ],
+      "object_count": 4,
+      "object_categories": {
+        "furniture": 1,
+        "animal": 3
+      },
+      "has_people": false,
+      "has_pets": true,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 60,
+      "aesthetic_factors": [
+        "good_composition",
+        "good_contrast",
+        "color_harmony",
+        "busy_background",
+        "blurry"
+      ],
+      "has_sam_segmentation": false,
+      "clip_embedding": null,
+      "primary_activity_smoothed": "scenic/b-roll"
+    },
+    {
+      "frame": 135,
+      "sec": 4.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_street_or_open",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 53.4,
+      "sky_ratio": 0.328,
+      "green_ratio": 0.004,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        100.5,
+        85.8,
+        77.9
+      ],
+      "motion_score": 14.645,
+      "camera_move": "tilt_down",
+      "scene_change": false,
+      "sharpness": 653.3,
+      "edge_density": 20.073,
+      "perceptual_lightness": 95.1,
+      "color_temp": "warm",
+      "hue": 42.7,
+      "saturation": 104.1,
+      "brightness": 112.4,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "has_text_overlay": false,
+      "text_readability": 0,
+      "hook_text": "",
+      "ocr_words": [],
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "ocr_engine_used": "none",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "bear",
+          "confidence": 62.6,
+          "category": "animal",
+          "position": {
+            "cx": 0.413,
+            "cy": 0.654
+          },
+          "bbox": [
+            0,
+            397,
+            594,
+            1275
+          ],
+          "size_ratio": 0.5656560149958467
+        },
+        {
+          "class": "chair",
+          "confidence": 60.5,
+          "category": "furniture",
+          "position": {
+            "cx": 0.736,
+            "cy": 0.252
+          },
+          "bbox": [
+            346,
+            168,
+            713,
+            478
+          ],
+          "size_ratio": 0.12353388638051305
+        },
+        {
+          "class": "cat",
+          "confidence": 38.4,
+          "category": "animal",
+          "position": {
+            "cx": 0.415,
+            "cy": 0.637
+          },
+          "bbox": [
+            1,
+            391,
+            596,
+            1240
+          ],
+          "size_ratio": 0.5480145293263033
+        },
+        {
+          "class": "dog",
+          "confidence": 33.9,
+          "category": "animal",
+          "position": {
+            "cx": 0.909,
+            "cy": 0.436
+          },
+          "bbox": [
+            589,
+            470,
+            719,
+            645
+          ],
+          "size_ratio": 0.024840641721853494
+        }
+      ],
+      "object_count": 4,
+      "object_categories": {
+        "animal": 3,
+        "furniture": 1
+      },
+      "has_people": false,
+      "has_pets": true,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 60,
+      "aesthetic_factors": [
+        "good_composition",
+        "good_contrast",
+        "color_harmony",
+        "busy_background",
+        "blurry"
+      ],
+      "has_sam_segmentation": false,
+      "clip_embedding": null,
+      "primary_activity_smoothed": "scenic/b-roll"
+    },
+    {
+      "frame": 150,
+      "sec": 5.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_street_or_open",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 53.5,
+      "sky_ratio": 0.308,
+      "green_ratio": 0.006,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        99.9,
+        86.0,
+        76.3
+      ],
+      "motion_score": 14.057,
+      "camera_move": "tilt_up",
+      "scene_change": false,
+      "sharpness": 1022.4,
+      "edge_density": 21.319,
+      "perceptual_lightness": 94.9,
+      "color_temp": "warm",
+      "hue": 39.4,
+      "saturation": 105.4,
+      "brightness": 111.5,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "has_text_overlay": false,
+      "text_readability": 0,
+      "hook_text": "",
+      "ocr_words": [],
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "ocr_engine_used": "none",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "chair",
+          "confidence": 79.9,
+          "category": "furniture",
+          "position": {
+            "cx": 0.735,
+            "cy": 0.276
+          },
+          "bbox": [
+            347,
+            229,
+            711,
+            477
+          ],
+          "size_ratio": 0.09785784332712208
+        },
+        {
+          "class": "bear",
+          "confidence": 70.0,
+          "category": "animal",
+          "position": {
+            "cx": 0.408,
+            "cy": 0.658
+          },
+          "bbox": [
+            1,
+            414,
+            585,
+            1268
+          ],
+          "size_ratio": 0.5408025434256868
+        },
+        {
+          "class": "dog",
+          "confidence": 40.4,
+          "category": "animal",
+          "position": {
+            "cx": 0.914,
+            "cy": 0.441
+          },
+          "bbox": [
+            595,
+            475,
+            719,
+            652
+          ],
+          "size_ratio": 0.023855097921914422
+        },
+        {
+          "class": "dog",
+          "confidence": 35.9,
+          "category": "animal",
+          "position": {
+            "cx": 0.407,
+            "cy": 0.649
+          },
+          "bbox": [
+            1,
+            411,
+            584,
+            1249
+          ],
+          "size_ratio": 0.529497882817935
+        }
+      ],
+      "object_count": 4,
+      "object_categories": {
+        "furniture": 1,
+        "animal": 3
+      },
+      "has_people": false,
+      "has_pets": true,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 55,
+      "aesthetic_factors": [
+        "good_composition",
+        "good_contrast",
+        "busy_background",
+        "blurry"
+      ],
+      "has_sam_segmentation": false,
+      "clip_embedding": null,
+      "primary_activity_smoothed": "scenic/b-roll"
+    },
+    {
+      "frame": 165,
+      "sec": 5.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_street_or_open",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 52.5,
+      "sky_ratio": 0.312,
+      "green_ratio": 0.003,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        99.7,
+        85.3,
+        76.4
+      ],
+      "motion_score": 10.662,
+      "camera_move": "pan_left",
+      "scene_change": false,
+      "sharpness": 752.4,
+      "edge_density": 20.658,
+      "perceptual_lightness": 94.4,
+      "color_temp": "warm",
+      "hue": 42.2,
+      "saturation": 105.3,
+      "brightness": 111.3,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "has_text_overlay": false,
+      "text_readability": 0,
+      "hook_text": "",
+      "ocr_words": [],
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "ocr_engine_used": "none",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "chair",
+          "confidence": 73.1,
+          "category": "furniture",
+          "position": {
+            "cx": 0.744,
+            "cy": 0.279
+          },
+          "bbox": [
+            356,
+            233,
+            714,
+            479
+          ],
+          "size_ratio": 0.09603565607379803
+        },
+        {
+          "class": "bear",
+          "confidence": 58.9,
+          "category": "animal",
+          "position": {
+            "cx": 0.4,
+            "cy": 0.65
+          },
+          "bbox": [
+            4,
+            401,
+            570,
+            1262
+          ],
+          "size_ratio": 0.5288520010169466
+        },
+        {
+          "class": "dog",
+          "confidence": 38.1,
+          "category": "animal",
+          "position": {
+            "cx": 0.912,
+            "cy": 0.441
+          },
+          "bbox": [
+            593,
+            476,
+            719,
+            651
+          ],
+          "size_ratio": 0.024006880564346727
+        }
+      ],
+      "object_count": 3,
+      "object_categories": {
+        "furniture": 1,
+        "animal": 2
+      },
+      "has_people": false,
+      "has_pets": true,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 55,
+      "aesthetic_factors": [
+        "good_composition",
+        "good_contrast",
+        "busy_background",
+        "blurry"
+      ],
+      "has_sam_segmentation": false,
+      "clip_embedding": null,
+      "primary_activity_smoothed": "scenic/b-roll"
+    },
+    {
+      "frame": 180,
+      "sec": 6.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_street_or_open",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 51.9,
+      "sky_ratio": 0.388,
+      "green_ratio": 0.002,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        96.8,
+        83.8,
+        76.5
+      ],
+      "motion_score": 17.865,
+      "camera_move": "pan_left",
+      "scene_change": false,
+      "sharpness": 805.9,
+      "edge_density": 21.551,
+      "perceptual_lightness": 92.7,
+      "color_temp": "warm",
+      "hue": 42.9,
+      "saturation": 107.4,
+      "brightness": 110.2,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "has_text_overlay": false,
+      "text_readability": 0,
+      "hook_text": "",
+      "ocr_words": [],
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "ocr_engine_used": "none",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "bear",
+          "confidence": 62.9,
+          "category": "animal",
+          "position": {
+            "cx": 0.419,
+            "cy": 0.654
+          },
+          "bbox": [
+            1,
+            404,
+            602,
+            1269
+          ],
+          "size_ratio": 0.5632984792907114
+        },
+        {
+          "class": "chair",
+          "confidence": 62.5,
+          "category": "furniture",
+          "position": {
+            "cx": 0.712,
+            "cy": 0.288
+          },
+          "bbox": [
+            316,
+            244,
+            707,
+            491
+          ],
+          "size_ratio": 0.1046984304205398
+        },
+        {
+          "class": "dog",
+          "confidence": 41.0,
+          "category": "animal",
+          "position": {
+            "cx": 0.88,
+            "cy": 0.445
+          },
+          "bbox": [
+            548,
+            483,
+            719,
+            654
+          ],
+          "size_ratio": 0.03183129227176929
+        }
+      ],
+      "object_count": 3,
+      "object_categories": {
+        "animal": 2,
+        "furniture": 1
+      },
+      "has_people": false,
+      "has_pets": true,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 60,
+      "aesthetic_factors": [
+        "good_composition",
+        "good_contrast",
+        "color_harmony",
+        "busy_background",
+        "blurry"
+      ],
+      "has_sam_segmentation": false,
+      "clip_embedding": null,
+      "primary_activity_smoothed": "scenic/b-roll"
+    },
+    {
+      "frame": 195,
+      "sec": 6.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_street_or_open",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 51.1,
+      "sky_ratio": 0.612,
+      "green_ratio": 0.001,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        95.5,
+        85.4,
+        80.2
+      ],
+      "motion_score": 13.059,
+      "camera_move": "pan_left",
+      "scene_change": false,
+      "sharpness": 747.1,
+      "edge_density": 22.685,
+      "perceptual_lightness": 94.1,
+      "color_temp": "warm",
+      "hue": 44.6,
+      "saturation": 113.7,
+      "brightness": 113.5,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "has_text_overlay": false,
+      "text_readability": 0,
+      "hook_text": "",
+      "ocr_words": [],
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "ocr_engine_used": "none",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "chair",
+          "confidence": 55.2,
+          "category": "furniture",
+          "position": {
+            "cx": 0.469,
+            "cy": 0.306
+          },
+          "bbox": [
+            147,
+            271,
+            528,
+            510
+          ],
+          "size_ratio": 0.09886880345158311
+        },
+        {
+          "class": "chair",
+          "confidence": 53.1,
+          "category": "furniture",
+          "position": {
+            "cx": 0.875,
+            "cy": 0.295
+          },
+          "bbox": [
+            540,
+            257,
+            719,
+            497
+          ],
+          "size_ratio": 0.046612187390888314
+        },
+        {
+          "class": "dog",
+          "confidence": 36.1,
+          "category": "animal",
+          "position": {
+            "cx": 0.4,
+            "cy": 0.639
+          },
+          "bbox": [
+            0,
+            441,
+            576,
+            1195
+          ],
+          "size_ratio": 0.471726183936375
+        },
+        {
+          "class": "bear",
+          "confidence": 34.8,
+          "category": "animal",
+          "position": {
+            "cx": 0.404,
+            "cy": 0.643
+          },
+          "bbox": [
+            0,
+            441,
+            582,
+            1204
+          ],
+          "size_ratio": 0.48208974967317775
+        },
+        {
+          "class": "dog",
+          "confidence": 26.7,
+          "category": "animal",
+          "position": {
+            "cx": 0.695,
+            "cy": 0.447
+          },
+          "bbox": [
+            419,
+            496,
+            580,
+            648
+          ],
+          "size_ratio": 0.026467161939581273
+        }
+      ],
+      "object_count": 5,
+      "object_categories": {
+        "furniture": 2,
+        "animal": 3
+      },
+      "has_people": false,
+      "has_pets": true,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 50,
+      "aesthetic_factors": [
+        "decent_composition",
+        "good_contrast",
+        "busy_background",
+        "blurry"
+      ],
+      "has_sam_segmentation": false,
+      "clip_embedding": null,
+      "primary_activity_smoothed": "scenic/b-roll"
+    },
+    {
+      "frame": 210,
+      "sec": 7.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "indoor",
+      "setting_type": "indoor_busy_background",
+      "room_type": "cluttered_or_bookshelf",
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 55.4,
+      "sky_ratio": 0.018,
+      "green_ratio": 0.005,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        103.9,
+        80.5,
+        58.8
+      ],
+      "motion_score": 10.304,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 2485.3,
+      "edge_density": 42.619,
+      "perceptual_lightness": 89.7,
+      "color_temp": "warm",
+      "hue": 23.6,
+      "saturation": 125.2,
+      "brightness": 104.4,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "has_text_overlay": false,
+      "text_readability": 0,
+      "hook_text": "",
+      "ocr_words": [],
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "ocr_engine_used": "none",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "bear",
+          "confidence": 25.7,
+          "category": "animal",
+          "position": {
+            "cx": 0.512,
+            "cy": 0.373
+          },
+          "bbox": [
+            144,
+            71,
+            593,
+            883
+          ],
+          "size_ratio": 0.39560096860708854
+        }
+      ],
+      "object_count": 1,
+      "object_categories": {
+        "animal": 1
+      },
+      "has_people": false,
+      "has_pets": true,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 55,
+      "aesthetic_factors": [
+        "decent_composition",
+        "good_contrast",
+        "color_harmony",
+        "busy_background",
+        "blurry"
+      ],
+      "has_sam_segmentation": false,
+      "clip_embedding": null,
+      "primary_activity_smoothed": "scenic/b-roll"
+    },
+    {
+      "frame": 225,
+      "sec": 7.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "indoor",
+      "setting_type": "indoor_busy_background",
+      "room_type": "cluttered_or_bookshelf",
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 56.2,
+      "sky_ratio": 0.031,
+      "green_ratio": 0.004,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        105.9,
+        82.0,
+        61.2
+      ],
+      "motion_score": 17.207,
+      "camera_move": "tilt_down",
+      "scene_change": false,
+      "sharpness": 2110.6,
+      "edge_density": 42.988,
+      "perceptual_lightness": 91.5,
+      "color_temp": "warm",
+      "hue": 26.4,
+      "saturation": 122.0,
+      "brightness": 106.5,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "has_text_overlay": false,
+      "text_readability": 0,
+      "hook_text": "",
+      "ocr_words": [],
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "ocr_engine_used": "none",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "bench",
+          "confidence": 42.6,
+          "category": "furniture",
+          "position": {
+            "cx": 0.791,
+            "cy": 0.056
+          },
+          "bbox": [
+            419,
+            0,
+            719,
+            143
+          ],
+          "size_ratio": 0.04669008262089695
+        },
+        {
+          "class": "bear",
+          "confidence": 40.5,
+          "category": "animal",
+          "position": {
+            "cx": 0.481,
+            "cy": 0.406
+          },
+          "bbox": [
+            102,
+            128,
+            590,
+            911
+          ],
+          "size_ratio": 0.414521951267442
+        }
+      ],
+      "object_count": 2,
+      "object_categories": {
+        "furniture": 1,
+        "animal": 1
+      },
+      "has_people": false,
+      "has_pets": true,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 55,
+      "aesthetic_factors": [
+        "decent_composition",
+        "good_contrast",
+        "color_harmony",
+        "busy_background",
+        "blurry"
+      ],
+      "has_sam_segmentation": false,
+      "clip_embedding": null,
+      "primary_activity_smoothed": "scenic/b-roll"
+    },
+    {
+      "frame": 240,
+      "sec": 8.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "indoor",
+      "setting_type": "indoor_busy_background",
+      "room_type": "cluttered_or_bookshelf",
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 56.7,
+      "sky_ratio": 0.044,
+      "green_ratio": 0.004,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        106.1,
+        82.8,
+        62.1
+      ],
+      "motion_score": 15.449,
+      "camera_move": "tilt_down",
+      "scene_change": false,
+      "sharpness": 2385.6,
+      "edge_density": 45.5,
+      "perceptual_lightness": 92.1,
+      "color_temp": "warm",
+      "hue": 27.2,
+      "saturation": 121.4,
+      "brightness": 106.8,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "has_text_overlay": false,
+      "text_readability": 0,
+      "hook_text": "",
+      "ocr_words": [],
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "ocr_engine_used": "none",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "dog",
+          "confidence": 47.5,
+          "category": "animal",
+          "position": {
+            "cx": 0.456,
+            "cy": 0.469
+          },
+          "bbox": [
+            122,
+            256,
+            533,
+            943
+          ],
+          "size_ratio": 0.30694483374889386
+        },
+        {
+          "class": "bench",
+          "confidence": 39.6,
+          "category": "furniture",
+          "position": {
+            "cx": 0.764,
+            "cy": 0.066
+          },
+          "bbox": [
+            380,
+            0,
+            719,
+            168
+          ],
+          "size_ratio": 0.06207745315152958
+        }
+      ],
+      "object_count": 2,
+      "object_categories": {
+        "animal": 1,
+        "furniture": 1
+      },
+      "has_people": false,
+      "has_pets": true,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 55,
+      "aesthetic_factors": [
+        "decent_composition",
+        "good_contrast",
+        "color_harmony",
+        "busy_background",
+        "blurry"
+      ],
+      "has_sam_segmentation": false,
+      "clip_embedding": null,
+      "primary_activity_smoothed": "scenic/b-roll"
+    },
+    {
+      "frame": 255,
+      "sec": 8.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "indoor",
+      "setting_type": "indoor_busy_background",
+      "room_type": "cluttered_or_bookshelf",
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 58.2,
+      "sky_ratio": 0.042,
+      "green_ratio": 0.001,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        109.1,
+        86.3,
+        67.4
+      ],
+      "motion_score": 11.973,
+      "camera_move": "tilt_up",
+      "scene_change": false,
+      "sharpness": 1698.0,
+      "edge_density": 43.144,
+      "perceptual_lightness": 95.7,
+      "color_temp": "warm",
+      "hue": 30.6,
+      "saturation": 115.3,
+      "brightness": 110.0,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "has_text_overlay": false,
+      "text_readability": 0,
+      "hook_text": "",
+      "ocr_words": [],
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "ocr_engine_used": "none",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "bench",
+          "confidence": 55.3,
+          "category": "furniture",
+          "position": {
+            "cx": 0.705,
+            "cy": 0.091
+          },
+          "bbox": [
+            298,
+            0,
+            717,
+            231
+          ],
+          "size_ratio": 0.10550425544000366
+        },
+        {
+          "class": "bear",
+          "confidence": 25.6,
+          "category": "animal",
+          "position": {
+            "cx": 0.414,
+            "cy": 0.571
+          },
+          "bbox": [
+            103,
+            413,
+            493,
+            1047
+          ],
+          "size_ratio": 0.2690247622004244
+        }
+      ],
+      "object_count": 2,
+      "object_categories": {
+        "furniture": 1,
+        "animal": 1
+      },
+      "has_people": false,
+      "has_pets": true,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 55,
+      "aesthetic_factors": [
+        "decent_composition",
+        "good_contrast",
+        "color_harmony",
+        "busy_background",
+        "blurry"
+      ],
+      "has_sam_segmentation": false,
+      "clip_embedding": null,
+      "primary_activity_smoothed": "scenic/b-roll"
+    },
+    {
+      "frame": 270,
+      "sec": 9.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "indoor",
+      "setting_type": "indoor_busy_background",
+      "room_type": "cluttered_or_bookshelf",
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 59.1,
+      "sky_ratio": 0.038,
+      "green_ratio": 0.0,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        104.7,
+        84.7,
+        69.0
+      ],
+      "motion_score": 11.535,
+      "camera_move": "tilt_down",
+      "scene_change": false,
+      "sharpness": 2008.5,
+      "edge_density": 42.568,
+      "perceptual_lightness": 93.3,
+      "color_temp": "warm",
+      "hue": 38.4,
+      "saturation": 111.6,
+      "brightness": 106.9,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "has_text_overlay": false,
+      "text_readability": 0,
+      "hook_text": "",
+      "ocr_words": [],
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "ocr_engine_used": "none",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "person",
+          "confidence": 84.2,
+          "category": "people",
+          "position": {
+            "cx": 0.84,
+            "cy": 0.306
+          },
+          "bbox": [
+            490,
+            0,
+            718,
+            781
+          ],
+          "size_ratio": 0.19307084975444014,
+          "person_id": 1
+        },
+        {
+          "class": "bench",
+          "confidence": 45.1,
+          "category": "furniture",
+          "position": {
+            "cx": 0.525,
+            "cy": 0.159
+          },
+          "bbox": [
+            195,
+            68,
+            561,
+            339
+          ],
+          "size_ratio": 0.1075351848727496
+        }
+      ],
+      "object_count": 2,
+      "object_categories": {
+        "people": 1,
+        "furniture": 1
+      },
+      "has_people": true,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 55,
+      "aesthetic_factors": [
+        "decent_composition",
+        "good_contrast",
+        "color_harmony",
+        "busy_background",
+        "blurry"
+      ],
+      "has_sam_segmentation": false,
+      "clip_embedding": null,
+      "primary_activity_smoothed": "scenic/b-roll"
+    },
+    {
+      "frame": 285,
+      "sec": 9.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "indoor",
+      "setting_type": "indoor_busy_background",
+      "room_type": "cluttered_or_bookshelf",
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 58.4,
+      "sky_ratio": 0.047,
+      "green_ratio": 0.0,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        100.9,
+        83.4,
+        72.0
+      ],
+      "motion_score": 11.312,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 2642.6,
+      "edge_density": 44.485,
+      "perceptual_lightness": 91.5,
+      "color_temp": "warm",
+      "hue": 51.4,
+      "saturation": 102.5,
+      "brightness": 104.2,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "has_text_overlay": false,
+      "text_readability": 0,
+      "hook_text": "",
+      "ocr_words": [],
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "ocr_engine_used": "none",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "person",
+          "confidence": 83.7,
+          "category": "people",
+          "position": {
+            "cx": 0.577,
+            "cy": 0.372
+          },
+          "bbox": [
+            110,
+            0,
+            720,
+            952
+          ],
+          "size_ratio": 0.6298589708924435,
+          "person_id": 1
+        },
+        {
+          "class": "person",
+          "confidence": 64.3,
+          "category": "people",
+          "position": {
+            "cx": 0.771,
+            "cy": 0.368
+          },
+          "bbox": [
+            390,
+            1,
+            720,
+            941
+          ],
+          "size_ratio": 0.3359463076349736,
+          "person_id": 1
+        },
+        {
+          "class": "person",
+          "confidence": 39.7,
+          "category": "people",
+          "position": {
+            "cx": 0.369,
+            "cy": 0.235
+          },
+          "bbox": [
+            101,
+            218,
+            429,
+            384
+          ],
+          "size_ratio": 0.059200455082873304,
+          "person_id": 2
+        },
+        {
+          "class": "bench",
+          "confidence": 36.9,
+          "category": "furniture",
+          "position": {
+            "cx": 0.441,
+            "cy": 0.316
+          },
+          "bbox": [
+            185,
+            346,
+            449,
+            461
+          ],
+          "size_ratio": 0.03281633813133845
+        }
+      ],
+      "object_count": 4,
+      "object_categories": {
+        "people": 3,
+        "furniture": 1
+      },
+      "has_people": true,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "concert/event",
+      "activity_confidence": 40,
+      "aesthetic_score": 55,
+      "aesthetic_factors": [
+        "good_composition",
+        "good_contrast",
+        "busy_background",
+        "blurry"
+      ],
+      "has_sam_segmentation": false,
+      "clip_embedding": null,
+      "primary_activity_smoothed": "scenic/b-roll"
+    },
+    {
+      "frame": 300,
+      "sec": 10.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_street_or_open",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 55.0,
+      "sky_ratio": 0.219,
+      "green_ratio": 0.001,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        96.8,
+        83.9,
+        73.6
+      ],
+      "motion_score": 11.611,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 4313.0,
+      "edge_density": 47.826,
+      "perceptual_lightness": 91.4,
+      "color_temp": "warm",
+      "hue": 55.5,
+      "saturation": 99.3,
+      "brightness": 103.3,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "has_text_overlay": false,
+      "text_readability": 0,
+      "hook_text": "",
+      "ocr_words": [],
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "ocr_engine_used": "none",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "person",
+          "confidence": 90.4,
+          "category": "people",
+          "position": {
+            "cx": 0.537,
+            "cy": 0.433
+          },
+          "bbox": [
+            53,
+            32,
+            720,
+            1075
+          ],
+          "size_ratio": 0.7552849325698723,
+          "person_id": 1
+        },
+        {
+          "class": "chair",
+          "confidence": 54.2,
+          "category": "furniture",
+          "position": {
+            "cx": 0.31,
+            "cy": 0.343
+          },
+          "bbox": [
+            97,
+            324,
+            348,
+            554
+          ],
+          "size_ratio": 0.062459217371997514
+        }
+      ],
+      "object_count": 2,
+      "object_categories": {
+        "people": 1,
+        "furniture": 1
+      },
+      "has_people": true,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 50,
+      "aesthetic_factors": [
+        "decent_composition",
+        "good_contrast",
+        "busy_background",
+        "blurry"
+      ],
+      "has_sam_segmentation": false,
+      "clip_embedding": null,
+      "primary_activity_smoothed": "scenic/b-roll"
+    },
+    {
+      "frame": 315,
+      "sec": 10.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_street_or_open",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 53.2,
+      "sky_ratio": 0.307,
+      "green_ratio": 0.001,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        96.4,
+        84.5,
+        76.0
+      ],
+      "motion_score": 13.321,
+      "camera_move": "pan_left",
+      "scene_change": false,
+      "sharpness": 2964.4,
+      "edge_density": 48.056,
+      "perceptual_lightness": 92.1,
+      "color_temp": "warm",
+      "hue": 56.4,
+      "saturation": 98.8,
+      "brightness": 104.7,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "has_text_overlay": false,
+      "text_readability": 0,
+      "hook_text": "",
+      "ocr_words": [],
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "ocr_engine_used": "none",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "person",
+          "confidence": 91.7,
+          "category": "people",
+          "position": {
+            "cx": 0.476,
+            "cy": 0.468
+          },
+          "bbox": [
+            2,
+            96,
+            682,
+            1101
+          ],
+          "size_ratio": 0.7416255769581221,
+          "person_id": 1
+        }
+      ],
+      "object_count": 1,
+      "object_categories": {
+        "people": 1
+      },
+      "has_people": true,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 50,
+      "aesthetic_factors": [
+        "decent_composition",
+        "good_contrast",
+        "busy_background",
+        "blurry"
+      ],
+      "has_sam_segmentation": false,
+      "clip_embedding": null,
+      "primary_activity_smoothed": "scenic/b-roll"
+    },
+    {
+      "frame": 330,
+      "sec": 11.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_street_or_open",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 52.9,
+      "sky_ratio": 0.196,
+      "green_ratio": 0.001,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        94.9,
+        81.3,
+        70.1
+      ],
+      "motion_score": 17.339,
+      "camera_move": "tilt_up",
+      "scene_change": false,
+      "sharpness": 3371.9,
+      "edge_density": 51.113,
+      "perceptual_lightness": 88.8,
+      "color_temp": "warm",
+      "hue": 51.9,
+      "saturation": 101.7,
+      "brightness": 100.3,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "has_text_overlay": false,
+      "text_readability": 0,
+      "hook_text": "",
+      "ocr_words": [],
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "ocr_engine_used": "none",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "person",
+          "confidence": 91.6,
+          "category": "people",
+          "position": {
+            "cx": 0.478,
+            "cy": 0.434
+          },
+          "bbox": [
+            11,
+            65,
+            677,
+            1044
+          ],
+          "size_ratio": 0.7083520475485178,
+          "person_id": 1
+        }
+      ],
+      "object_count": 1,
+      "object_categories": {
+        "people": 1
+      },
+      "has_people": true,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 50,
+      "aesthetic_factors": [
+        "decent_composition",
+        "good_contrast",
+        "busy_background",
+        "blurry"
+      ],
+      "has_sam_segmentation": false,
+      "clip_embedding": null,
+      "primary_activity_smoothed": "scenic/b-roll"
+    },
+    {
+      "frame": 345,
+      "sec": 11.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "indoor",
+      "setting_type": "indoor_busy_background",
+      "room_type": "cluttered_or_bookshelf",
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 53.8,
+      "sky_ratio": 0.028,
+      "green_ratio": 0.001,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        95.8,
+        78.7,
+        63.8
+      ],
+      "motion_score": 11.981,
+      "camera_move": "tilt_up",
+      "scene_change": false,
+      "sharpness": 3621.8,
+      "edge_density": 51.772,
+      "perceptual_lightness": 86.5,
+      "color_temp": "warm",
+      "hue": 44.8,
+      "saturation": 107.6,
+      "brightness": 97.7,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "has_text_overlay": false,
+      "text_readability": 0,
+      "hook_text": "",
+      "ocr_words": [],
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "ocr_engine_used": "none",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "person",
+          "confidence": 92.2,
+          "category": "people",
+          "position": {
+            "cx": 0.525,
+            "cy": 0.361
+          },
+          "bbox": [
+            42,
+            0,
+            713,
+            922
+          ],
+          "size_ratio": 0.671735496725499,
+          "person_id": 1
+        },
+        {
+          "class": "bench",
+          "confidence": 27.7,
+          "category": "furniture",
+          "position": {
+            "cx": 0.207,
+            "cy": 0.292
+          },
+          "bbox": [
+            2,
+            264,
+            295,
+            482
+          ],
+          "size_ratio": 0.06929105673128409
+        }
+      ],
+      "object_count": 2,
+      "object_categories": {
+        "people": 1,
+        "furniture": 1
+      },
+      "has_people": true,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 50,
+      "aesthetic_factors": [
+        "decent_composition",
+        "good_contrast",
+        "busy_background",
+        "blurry"
+      ],
+      "has_sam_segmentation": false,
+      "clip_embedding": null,
+      "primary_activity_smoothed": "scenic/b-roll"
+    }
+  ],
+  "color_analysis": [
+    {
+      "sec": 0.0,
+      "mean_rgb": [
+        96.0,
+        88.3,
+        97.8
+      ],
+      "stddev_rgb": [
+        65.6,
+        48.9,
+        64.1
+      ],
+      "dominant_colors": [
+        [
+          182,
+          148,
+          126
+        ],
+        [
+          37,
+          102,
+          169
+        ],
+        [
+          58,
+          53,
+          51
+        ],
+        [
+          38,
+          24,
+          27
+        ],
+        [
+          130,
+          84,
+          72
+        ],
+        [
+          92,
+          52,
+          47
+        ]
+      ],
+      "perceived_brightness": 91.7,
+      "color_mood": "neutral",
+      "contrast_score": 59.5,
+      "color_variance": 4.1
+    },
+    {
+      "sec": 3.0,
+      "mean_rgb": [
+        98.5,
+        85.0,
+        77.4
+      ],
+      "stddev_rgb": [
+        57.6,
+        54.5,
+        63.3
+      ],
+      "dominant_colors": [
+        [
+          137,
+          103,
+          69
+        ],
+        [
+          52,
+          42,
+          39
+        ],
+        [
+          103,
+          73,
+          52
+        ],
+        [
+          150,
+          162,
+          173
+        ],
+        [
+          94,
+          96,
+          96
+        ],
+        [
+          27,
+          18,
+          18
+        ]
+      ],
+      "perceived_brightness": 88.1,
+      "color_mood": "neutral",
+      "contrast_score": 58.5,
+      "color_variance": 8.7
+    },
+    {
+      "sec": 6.0,
+      "mean_rgb": [
+        96.8,
+        83.8,
+        76.5
+      ],
+      "stddev_rgb": [
+        56.9,
+        53.1,
+        62.1
+      ],
+      "dominant_colors": [
+        [
+          133,
+          100,
+          69
+        ],
+        [
+          60,
+          38,
+          31
+        ],
+        [
+          93,
+          95,
+          96
+        ],
+        [
+          145,
+          157,
+          168
+        ],
+        [
+          113,
+          68,
+          41
+        ],
+        [
+          26,
+          19,
+          20
+        ]
+      ],
+      "perceived_brightness": 86.9,
+      "color_mood": "neutral",
+      "contrast_score": 57.4,
+      "color_variance": 8.4
+    },
+    {
+      "sec": 9.0,
+      "mean_rgb": [
+        104.7,
+        84.7,
+        69.0
+      ],
+      "stddev_rgb": [
+        64.1,
+        59.0,
+        54.6
+      ],
+      "dominant_colors": [
+        [
+          132,
+          97,
+          63
+        ],
+        [
+          74,
+          58,
+          46
+        ],
+        [
+          99,
+          66,
+          42
+        ],
+        [
+          187,
+          174,
+          160
+        ],
+        [
+          152,
+          121,
+          94
+        ],
+        [
+          51,
+          44,
+          45
+        ]
+      ],
+      "perceived_brightness": 88.9,
+      "color_mood": "neutral",
+      "contrast_score": 59.2,
+      "color_variance": 14.6
+    }
+  ],
+  "ollama_analysis": {
+    "content_summary": "Short video with unclear spoken content",
+    "topic_niche": "education",
+    "sub_topic": "unknown",
+    "emotional_tone": "serious",
+    "key_phrases": [
+      "unknown",
+      "unknown",
+      "unknown"
+    ],
+    "target_audience": "general audience",
+    "content_language": "English",
+    "secondary_languages": [],
+    "has_horoscope_elements": false,
+    "has_advice_elements": false,
+    "has_background_music": true,
+    "is_multilingual": false,
+    "confidence": 75,
+    "available": true,
+    "model_used": "llama3"
+  }
+}

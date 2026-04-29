@@ -1,0 +1,3042 @@
+{
+  "file": "E:\\reel_54700likes_AQPzLHjsLLuTXO-0r6la.mp4",
+  "analyzed_at": "2026-02-20T18:56:21.509331",
+  "container": {
+    "duration_sec": 13.95,
+    "fps": 30.0,
+    "resolution": [
+      720,
+      1280
+    ],
+    "aspect_ratio": 0.562,
+    "total_frames": 418,
+    "has_audio": true,
+    "is_vertical": true,
+    "format_hint": "reel/story"
+  },
+  "speech_transcript": {
+    "transcript": "यह एक हिंदी वीडियो है।",
+    "transcript_display": "यह एक हिंदी वीडियो है।",
+    "language": "hi",
+    "segments": [
+      {
+        "start": 12.52,
+        "end": 13.92,
+        "text": "यह एक हिंदी वीडियो है।",
+        "avg_logprob": -0.474,
+        "no_speech_prob": 0.889,
+        "compression_ratio": 0.967
+      }
+    ],
+    "word_timestamps": [
+      {
+        "word": "यह",
+        "start": 12.52,
+        "end": 13.92
+      },
+      {
+        "word": "एक",
+        "start": 13.92,
+        "end": 13.92
+      },
+      {
+        "word": "हिंदी",
+        "start": 13.92,
+        "end": 13.92
+      },
+      {
+        "word": "वीडियो",
+        "start": 13.92,
+        "end": 13.92
+      },
+      {
+        "word": "है।",
+        "start": 13.92,
+        "end": 13.92
+      }
+    ],
+    "word_count": 5,
+    "speaking_rate_wpm": 21.6,
+    "quality": {
+      "score": 50,
+      "issues": [
+        "mostly_no_speech"
+      ],
+      "reliable": false,
+      "avg_logprob": -0.474,
+      "avg_no_speech": 0.889,
+      "avg_compression": 0.967,
+      "detected_script": "devanagari",
+      "wpm_estimated": 21.5
+    },
+    "detected_script": "devanagari"
+  },
+  "audio_analysis": {
+    "tempo_bpm": 136.0,
+    "detected_key": "D major",
+    "dominant_note": "F#",
+    "layers_detected": [
+      "speech",
+      "music",
+      "rhythmic"
+    ],
+    "layer_count": 3,
+    "primary_layer": "speech",
+    "voice_confidence": 98.2,
+    "music_confidence": 22.2,
+    "has_speech": true,
+    "has_music": true,
+    "is_music_only": false,
+    "is_speech_only": false,
+    "is_speech_with_music": true,
+    "beat_strength": 0.8608,
+    "beat_times": [
+      0.06965986394557823,
+      0.5108390022675737,
+      0.9752380952380952,
+      1.4396371882086167,
+      1.8575963718820863,
+      2.36843537414966,
+      2.8328344671201813,
+      3.274013605442177,
+      3.7151927437641725,
+      4.133151927437642,
+      4.6439909297052155,
+      5.131609977324263,
+      5.572789115646258,
+      6.060408163265306,
+      6.524807256235827,
+      6.965986394557823,
+      7.4071655328798185,
+      7.825124716553288,
+      8.266303854875284,
+      8.684263038548753
+    ],
+    "beat_count": 31,
+    "harmonic_content": 0.053,
+    "percussive_content": 0.0451,
+    "harmony_pct": 54.1,
+    "percussion_pct": 45.9,
+    "spectral_centroid_mean": 2682.0,
+    "spectral_rolloff_mean": 6391.7,
+    "audio_complexity": 3,
+    "rms_mean": 0.1196,
+    "energy_over_time": [
+      {
+        "sec": 0.0,
+        "energy": 0.1125
+      },
+      {
+        "sec": 0.5,
+        "energy": 0.1171
+      },
+      {
+        "sec": 1.0,
+        "energy": 0.1153
+      },
+      {
+        "sec": 1.5,
+        "energy": 0.1179
+      },
+      {
+        "sec": 2.0,
+        "energy": 0.1145
+      },
+      {
+        "sec": 2.5,
+        "energy": 0.1179
+      },
+      {
+        "sec": 3.0,
+        "energy": 0.1197
+      },
+      {
+        "sec": 3.5,
+        "energy": 0.1179
+      },
+      {
+        "sec": 4.0,
+        "energy": 0.1363
+      },
+      {
+        "sec": 4.5,
+        "energy": 0.1466
+      },
+      {
+        "sec": 5.0,
+        "energy": 0.1435
+      },
+      {
+        "sec": 5.5,
+        "energy": 0.1362
+      },
+      {
+        "sec": 6.0,
+        "energy": 0.1337
+      },
+      {
+        "sec": 6.5,
+        "energy": 0.1392
+      },
+      {
+        "sec": 7.0,
+        "energy": 0.1427
+      },
+      {
+        "sec": 7.5,
+        "energy": 0.1426
+      },
+      {
+        "sec": 8.0,
+        "energy": 0.1426
+      },
+      {
+        "sec": 8.5,
+        "energy": 0.1434
+      },
+      {
+        "sec": 9.0,
+        "energy": 0.1423
+      },
+      {
+        "sec": 9.5,
+        "energy": 0.1441
+      },
+      {
+        "sec": 10.0,
+        "energy": 0.1159
+      },
+      {
+        "sec": 10.5,
+        "energy": 0.0885
+      },
+      {
+        "sec": 11.0,
+        "energy": 0.0924
+      },
+      {
+        "sec": 11.5,
+        "energy": 0.0919
+      },
+      {
+        "sec": 12.0,
+        "energy": 0.092
+      },
+      {
+        "sec": 12.5,
+        "energy": 0.0882
+      },
+      {
+        "sec": 13.0,
+        "energy": 0.0907
+      }
+    ]
+  },
+  "visual_summary": {
+    "duration_sec": 13.95,
+    "avg_brightness": 72.179,
+    "avg_saturation": 94.357,
+    "avg_sharpness": 1945.114,
+    "avg_motion": 2.477,
+    "avg_edge_density": 38.701,
+    "face_presence_ratio": 0.0,
+    "eye_contact_ratio": 0.0,
+    "text_overlay_ratio": 0.75,
+    "estimated_cuts": 0,
+    "pacing": "slow",
+    "dominant_camera_move": "static",
+    "dominant_gaze": "unknown",
+    "dominant_color_mood": "neutral",
+    "all_ocr_text": "Pm in a live stream Sor m in a live streatn Sor miin a live streain Sor min a live streamn Sor min a live stream Sore min a live streain min a live stream Sorry ] can t, Im ina live stream Socry [ can t Tm in aslive stream Sorry I can t Tm in a live stream Tm in atlive streain Tm in aslive streaim Sotry [ canit Tm in aslive stream Tmin a ve stream inatrve strean Lm in aथve streani Lm Lmin atlve stream Tm",
+    "all_hindi_ocr_text": "in aथve streani",
+    "all_english_ocr_text": "Pm in a live stream Sor m in a live streatn Sor miin a live streain Sor min a live streamn Sor min a live stream Sore min a live streain min a live stream Sorry ] can t, Im ina live stream Socry [ can t Tm in aslive stream Sorry I can t Tm in a live stream Tm in atlive streain Tm in aslive streaim Sotry [ canit Tm in aslive stream Tmin a ve stream inatrve strean Lm Lm Lmin atlve stream Tm",
+    "scripts_detected": [
+      "latin",
+      "devanagari"
+    ],
+    "avg_text_readability": 75.0,
+    "dominant_setting": "outdoor_nature",
+    "indoor_outdoor": "outdoor",
+    "dominant_lighting": "dim",
+    "dominant_wall_color": "grey_50",
+    "avg_people_in_frame": 0.0,
+    "max_people_in_frame": 0,
+    "solo_presenter_frames": 0,
+    "multi_person_frames": 0,
+    "distinct_people_count": 6,
+    "dominant_scene_type": "unknown",
+    "dominant_activity": "scenic/b-roll",
+    "indoor_percentage": 0.0,
+    "outdoor_percentage": 0.0,
+    "nature_percentage": 0.0,
+    "avg_aesthetic_score": 45.9,
+    "object_diversity": 2,
+    "top_objects_detected": [
+      "person",
+      "bird"
+    ],
+    "object_category_counts": {
+      "animal": 1,
+      "people": 8
+    },
+    "has_people_in_video": true,
+    "has_pets_in_video": true,
+    "has_technology_in_video": false,
+    "style": "text_educational"
+  },
+  "content_category": {
+    "detected_niche": "humor_relatable",
+    "niche_scores": {
+      "food": 1,
+      "tech_ai": 1
+    },
+    "content_format": "text_only",
+    "hook_formats": [],
+    "speaking_style": "slow_dramatic",
+    "audio_mood": "unknown",
+    "audio_type": "unknown",
+    "duration_category": "short",
+    "viral_score": 14,
+    "recommendations": [
+      "⚡ Speed up pacing — aim for a cut every 2-3 seconds",
+      "🪝 Add a stronger hook in the first 1-2 seconds",
+      "👤 Add a face — videos with faces get 38% more engagement",
+      "📣 Add a CTA (save, follow, comment) before the end",
+      "🎙️ Audio quality may be unclear — consider adding subtitle text overlays"
+    ],
+    "transcript_reliable": false,
+    "replication_template": {
+      "format": "text_only",
+      "hook_style": "unknown",
+      "audio_mood": "unknown",
+      "pacing": "slow",
+      "use_face": false,
+      "use_eye_contact": false,
+      "use_text": true,
+      "target_bpm": 136,
+      "niche": "humor_relatable",
+      "speaking_style": "slow_dramatic"
+    }
+  },
+  "frame_analysis": [
+    {
+      "frame": 0,
+      "sec": 0.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_nature",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 34.8,
+      "sky_ratio": 0.0,
+      "green_ratio": 0.284,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        63.3,
+        67.2,
+        48.2
+      ],
+      "motion_score": 0.0,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 2332.9,
+      "edge_density": 38.686,
+      "perceptual_lightness": 69.5,
+      "color_temp": "warm",
+      "hue": 47.0,
+      "saturation": 95.2,
+      "brightness": 71.0,
+      "ocr_text": "Pm in a live stream",
+      "ocr_word_count": 5,
+      "ocr_words": [
+        {
+          "text": "Pm in a live stream",
+          "confidence": 0.34,
+          "bbox": [
+            158,
+            401,
+            558,
+            454
+          ],
+          "pos_v": "middle",
+          "pos_h": "center",
+          "font_size": 53,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "Pm in a live stream",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "Pm in a live stream",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [],
+      "object_count": 0,
+      "object_categories": {},
+      "has_people": false,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 45,
+      "aesthetic_factors": [
+        "blurry"
+      ]
+    },
+    {
+      "frame": 15,
+      "sec": 0.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_nature",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 34.0,
+      "sky_ratio": 0.0,
+      "green_ratio": 0.284,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        63.6,
+        67.2,
+        48.6
+      ],
+      "motion_score": 1.314,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 1676.6,
+      "edge_density": 35.154,
+      "perceptual_lightness": 69.6,
+      "color_temp": "warm",
+      "hue": 46.8,
+      "saturation": 92.4,
+      "brightness": 71.1,
+      "ocr_text": "Sor m in a live streatn",
+      "ocr_word_count": 6,
+      "ocr_words": [
+        {
+          "text": "Sor",
+          "confidence": 1.0,
+          "bbox": [
+            220,
+            342,
+            322,
+            394
+          ],
+          "pos_v": "top",
+          "pos_h": "center",
+          "font_size": 52,
+          "is_large": true,
+          "script": "latin"
+        },
+        {
+          "text": "m in a live streatn",
+          "confidence": 0.46,
+          "bbox": [
+            184,
+            401,
+            560,
+            454
+          ],
+          "pos_v": "middle",
+          "pos_h": "center",
+          "font_size": 53,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "Sor m in a live streatn",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "Sor m in a live streatn",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [],
+      "object_count": 0,
+      "object_categories": {},
+      "has_people": false,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 45,
+      "aesthetic_factors": [
+        "blurry"
+      ]
+    },
+    {
+      "frame": 30,
+      "sec": 1.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_nature",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 34.0,
+      "sky_ratio": 0.0,
+      "green_ratio": 0.286,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        63.2,
+        66.8,
+        48.4
+      ],
+      "motion_score": 1.216,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 1650.9,
+      "edge_density": 34.895,
+      "perceptual_lightness": 69.1,
+      "color_temp": "warm",
+      "hue": 46.5,
+      "saturation": 92.0,
+      "brightness": 70.6,
+      "ocr_text": "Sor miin a live streain",
+      "ocr_word_count": 5,
+      "ocr_words": [
+        {
+          "text": "Sor",
+          "confidence": 0.7,
+          "bbox": [
+            220,
+            344,
+            296,
+            394
+          ],
+          "pos_v": "top",
+          "pos_h": "center",
+          "font_size": 50,
+          "is_large": true,
+          "script": "latin"
+        },
+        {
+          "text": "miin a",
+          "confidence": 0.75,
+          "bbox": [
+            185,
+            409,
+            319,
+            451
+          ],
+          "pos_v": "middle",
+          "pos_h": "center",
+          "font_size": 42,
+          "is_large": true,
+          "script": "latin"
+        },
+        {
+          "text": "live streain",
+          "confidence": 0.62,
+          "bbox": [
+            312,
+            400,
+            560,
+            457
+          ],
+          "pos_v": "middle",
+          "pos_h": "center",
+          "font_size": 57,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "Sor miin a live streain",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "Sor miin a live streain",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [],
+      "object_count": 0,
+      "object_categories": {},
+      "has_people": false,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 45,
+      "aesthetic_factors": [
+        "blurry"
+      ]
+    },
+    {
+      "frame": 45,
+      "sec": 1.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_nature",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 34.1,
+      "sky_ratio": 0.0,
+      "green_ratio": 0.283,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        63.0,
+        66.5,
+        48.6
+      ],
+      "motion_score": 1.36,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 1698.5,
+      "edge_density": 34.62,
+      "perceptual_lightness": 68.9,
+      "color_temp": "warm",
+      "hue": 47.1,
+      "saturation": 90.7,
+      "brightness": 70.4,
+      "ocr_text": "Sor min a live streamn",
+      "ocr_word_count": 5,
+      "ocr_words": [
+        {
+          "text": "Sor",
+          "confidence": 0.99,
+          "bbox": [
+            220,
+            342,
+            306,
+            394
+          ],
+          "pos_v": "top",
+          "pos_h": "center",
+          "font_size": 52,
+          "is_large": true,
+          "script": "latin"
+        },
+        {
+          "text": "min a live streamn",
+          "confidence": 0.4,
+          "bbox": [
+            184,
+            401,
+            560,
+            454
+          ],
+          "pos_v": "middle",
+          "pos_h": "center",
+          "font_size": 53,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "Sor min a live streamn",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "Sor min a live streamn",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "bird",
+          "confidence": 33.9,
+          "category": "animal",
+          "position": {
+            "cx": 0.673,
+            "cy": 0.629
+          },
+          "bbox": [
+            387,
+            763,
+            581,
+            845
+          ],
+          "size_ratio": 0.01738313484626512
+        }
+      ],
+      "object_count": 1,
+      "object_categories": {
+        "animal": 1
+      },
+      "has_people": false,
+      "has_pets": true,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 55,
+      "aesthetic_factors": [
+        "good_composition",
+        "blurry"
+      ]
+    },
+    {
+      "frame": 60,
+      "sec": 2.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_nature",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 34.3,
+      "sky_ratio": 0.0,
+      "green_ratio": 0.278,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        62.4,
+        66.1,
+        48.4
+      ],
+      "motion_score": 1.051,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 1831.2,
+      "edge_density": 35.533,
+      "perceptual_lightness": 68.4,
+      "color_temp": "warm",
+      "hue": 47.6,
+      "saturation": 91.2,
+      "brightness": 69.9,
+      "ocr_text": "Sor min a live stream",
+      "ocr_word_count": 5,
+      "ocr_words": [
+        {
+          "text": "Sor",
+          "confidence": 1.0,
+          "bbox": [
+            220,
+            344,
+            308,
+            394
+          ],
+          "pos_v": "top",
+          "pos_h": "center",
+          "font_size": 50,
+          "is_large": true,
+          "script": "latin"
+        },
+        {
+          "text": "min a live stream",
+          "confidence": 0.96,
+          "bbox": [
+            184,
+            400,
+            560,
+            454
+          ],
+          "pos_v": "middle",
+          "pos_h": "center",
+          "font_size": 54,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "Sor min a live stream",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "Sor min a live stream",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "person",
+          "confidence": 64.4,
+          "category": "people",
+          "position": {
+            "cx": 0.611,
+            "cy": 0.653
+          },
+          "bbox": [
+            325,
+            790,
+            554,
+            881
+          ],
+          "size_ratio": 0.022503605816552107,
+          "person_id": 0
+        }
+      ],
+      "object_count": 1,
+      "object_categories": {
+        "people": 1
+      },
+      "has_people": true,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 55,
+      "aesthetic_factors": [
+        "good_composition",
+        "blurry"
+      ]
+    },
+    {
+      "frame": 75,
+      "sec": 2.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_nature",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 34.3,
+      "sky_ratio": 0.0,
+      "green_ratio": 0.269,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        62.3,
+        65.9,
+        48.5
+      ],
+      "motion_score": 1.306,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 1702.4,
+      "edge_density": 34.911,
+      "perceptual_lightness": 68.2,
+      "color_temp": "warm",
+      "hue": 47.7,
+      "saturation": 90.5,
+      "brightness": 69.8,
+      "ocr_text": "Sor min a live stream",
+      "ocr_word_count": 5,
+      "ocr_words": [
+        {
+          "text": "Sor",
+          "confidence": 0.76,
+          "bbox": [
+            220,
+            344,
+            310,
+            394
+          ],
+          "pos_v": "top",
+          "pos_h": "center",
+          "font_size": 50,
+          "is_large": true,
+          "script": "latin"
+        },
+        {
+          "text": "min a live stream",
+          "confidence": 0.82,
+          "bbox": [
+            184,
+            401,
+            560,
+            454
+          ],
+          "pos_v": "middle",
+          "pos_h": "center",
+          "font_size": 53,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "Sor min a live stream",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "Sor min a live stream",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "person",
+          "confidence": 73.8,
+          "category": "people",
+          "position": {
+            "cx": 0.525,
+            "cy": 0.665
+          },
+          "bbox": [
+            252,
+            787,
+            503,
+            916
+          ],
+          "size_ratio": 0.03511656389972712,
+          "person_id": 0
+        }
+      ],
+      "object_count": 1,
+      "object_categories": {
+        "people": 1
+      },
+      "has_people": true,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 50,
+      "aesthetic_factors": [
+        "decent_composition",
+        "blurry"
+      ]
+    },
+    {
+      "frame": 90,
+      "sec": 3.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_nature",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 34.5,
+      "sky_ratio": 0.0,
+      "green_ratio": 0.275,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        62.0,
+        65.7,
+        48.4
+      ],
+      "motion_score": 1.223,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 1797.8,
+      "edge_density": 35.447,
+      "perceptual_lightness": 68.0,
+      "color_temp": "warm",
+      "hue": 48.6,
+      "saturation": 91.2,
+      "brightness": 69.7,
+      "ocr_text": "Sore min a live streain",
+      "ocr_word_count": 5,
+      "ocr_words": [
+        {
+          "text": "Sore",
+          "confidence": 0.25,
+          "bbox": [
+            220,
+            344,
+            346,
+            394
+          ],
+          "pos_v": "top",
+          "pos_h": "center",
+          "font_size": 50,
+          "is_large": true,
+          "script": "latin"
+        },
+        {
+          "text": "min a live streain",
+          "confidence": 0.4,
+          "bbox": [
+            184,
+            401,
+            560,
+            454
+          ],
+          "pos_v": "middle",
+          "pos_h": "center",
+          "font_size": 53,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "Sore min a live streain",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "Sore min a live streain",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "person",
+          "confidence": 88.8,
+          "category": "people",
+          "position": {
+            "cx": 0.405,
+            "cy": 0.69
+          },
+          "bbox": [
+            148,
+            801,
+            434,
+            964
+          ],
+          "size_ratio": 0.050542578765501577,
+          "person_id": 0
+        }
+      ],
+      "object_count": 1,
+      "object_categories": {
+        "people": 1
+      },
+      "has_people": true,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 55,
+      "aesthetic_factors": [
+        "good_composition",
+        "blurry"
+      ]
+    },
+    {
+      "frame": 105,
+      "sec": 3.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_nature",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 34.6,
+      "sky_ratio": 0.0,
+      "green_ratio": 0.278,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        61.6,
+        65.3,
+        48.4
+      ],
+      "motion_score": 1.131,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 1846.6,
+      "edge_density": 35.724,
+      "perceptual_lightness": 67.5,
+      "color_temp": "warm",
+      "hue": 49.2,
+      "saturation": 91.3,
+      "brightness": 69.4,
+      "ocr_text": "min a live stream",
+      "ocr_word_count": 4,
+      "ocr_words": [
+        {
+          "text": "min a live stream",
+          "confidence": 0.79,
+          "bbox": [
+            184,
+            401,
+            560,
+            454
+          ],
+          "pos_v": "middle",
+          "pos_h": "center",
+          "font_size": 53,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "min a live stream",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "min a live stream",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [],
+      "object_count": 0,
+      "object_categories": {},
+      "has_people": false,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 45,
+      "aesthetic_factors": [
+        "blurry"
+      ]
+    },
+    {
+      "frame": 120,
+      "sec": 4.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_nature",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 34.5,
+      "sky_ratio": 0.0,
+      "green_ratio": 0.284,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        61.2,
+        65.1,
+        47.0
+      ],
+      "motion_score": 1.319,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 1735.3,
+      "edge_density": 35.639,
+      "perceptual_lightness": 67.2,
+      "color_temp": "warm",
+      "hue": 48.6,
+      "saturation": 94.8,
+      "brightness": 69.0,
+      "ocr_text": "min a live stream",
+      "ocr_word_count": 4,
+      "ocr_words": [
+        {
+          "text": "min a live stream",
+          "confidence": 0.69,
+          "bbox": [
+            184,
+            401,
+            560,
+            454
+          ],
+          "pos_v": "middle",
+          "pos_h": "center",
+          "font_size": 53,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "min a live stream",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "min a live stream",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [],
+      "object_count": 0,
+      "object_categories": {},
+      "has_people": false,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 45,
+      "aesthetic_factors": [
+        "blurry"
+      ]
+    },
+    {
+      "frame": 135,
+      "sec": 4.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_other",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 38.6,
+      "sky_ratio": 0.0,
+      "green_ratio": 0.18,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        70.0,
+        70.6,
+        54.9
+      ],
+      "motion_score": 10.732,
+      "camera_move": "pan_right",
+      "scene_change": false,
+      "sharpness": 2129.1,
+      "edge_density": 46.966,
+      "perceptual_lightness": 73.9,
+      "color_temp": "warm",
+      "hue": 42.5,
+      "saturation": 89.4,
+      "brightness": 75.5,
+      "ocr_text": "Sorry ] can t, Im ina live stream",
+      "ocr_word_count": 8,
+      "ocr_words": [
+        {
+          "text": "Sorry ] can t,",
+          "confidence": 0.45,
+          "bbox": [
+            215,
+            335,
+            504,
+            402
+          ],
+          "pos_v": "top",
+          "pos_h": "center",
+          "font_size": 67,
+          "is_large": true,
+          "script": "latin"
+        },
+        {
+          "text": "Im ina live stream",
+          "confidence": 0.56,
+          "bbox": [
+            154,
+            398,
+            559,
+            454
+          ],
+          "pos_v": "middle",
+          "pos_h": "center",
+          "font_size": 56,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "Sorry ] can t, Im ina live stream",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "Sorry ] can t, Im ina live stream",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [],
+      "object_count": 0,
+      "object_categories": {},
+      "has_people": false,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 45,
+      "aesthetic_factors": [
+        "blurry"
+      ]
+    },
+    {
+      "frame": 150,
+      "sec": 5.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_other",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 39.2,
+      "sky_ratio": 0.0,
+      "green_ratio": 0.182,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        69.3,
+        70.4,
+        55.9
+      ],
+      "motion_score": 1.025,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 2553.4,
+      "edge_density": 51.269,
+      "perceptual_lightness": 73.6,
+      "color_temp": "warm",
+      "hue": 44.5,
+      "saturation": 87.8,
+      "brightness": 75.4,
+      "ocr_text": "Socry [ can t Tm in aslive stream",
+      "ocr_word_count": 8,
+      "ocr_words": [
+        {
+          "text": "Socry [ can t",
+          "confidence": 0.35,
+          "bbox": [
+            215,
+            341,
+            495,
+            402
+          ],
+          "pos_v": "top",
+          "pos_h": "center",
+          "font_size": 61,
+          "is_large": true,
+          "script": "latin"
+        },
+        {
+          "text": "Tm in aslive stream",
+          "confidence": 0.85,
+          "bbox": [
+            154,
+            400,
+            558,
+            454
+          ],
+          "pos_v": "middle",
+          "pos_h": "center",
+          "font_size": 54,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "Socry [ can t Tm in aslive stream",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "Socry [ can t Tm in aslive stream",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [],
+      "object_count": 0,
+      "object_categories": {},
+      "has_people": false,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 45,
+      "aesthetic_factors": [
+        "blurry"
+      ]
+    },
+    {
+      "frame": 165,
+      "sec": 5.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_other",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 38.8,
+      "sky_ratio": 0.0,
+      "green_ratio": 0.181,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        69.2,
+        70.0,
+        56.0
+      ],
+      "motion_score": 1.309,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 2384.9,
+      "edge_density": 48.818,
+      "perceptual_lightness": 73.3,
+      "color_temp": "warm",
+      "hue": 45.3,
+      "saturation": 88.2,
+      "brightness": 75.5,
+      "ocr_text": "Sorry I can t Tm in a live stream",
+      "ocr_word_count": 9,
+      "ocr_words": [
+        {
+          "text": "Sorry I can t",
+          "confidence": 0.38,
+          "bbox": [
+            215,
+            341,
+            495,
+            402
+          ],
+          "pos_v": "top",
+          "pos_h": "center",
+          "font_size": 61,
+          "is_large": true,
+          "script": "latin"
+        },
+        {
+          "text": "Tm in a live stream",
+          "confidence": 0.78,
+          "bbox": [
+            155,
+            395,
+            560,
+            458
+          ],
+          "pos_v": "middle",
+          "pos_h": "center",
+          "font_size": 63,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "Sorry I can t Tm in a live stream",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "Sorry I can t Tm in a live stream",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [],
+      "object_count": 0,
+      "object_categories": {},
+      "has_people": false,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 45,
+      "aesthetic_factors": [
+        "blurry"
+      ]
+    },
+    {
+      "frame": 180,
+      "sec": 6.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_other",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 39.2,
+      "sky_ratio": 0.0,
+      "green_ratio": 0.177,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        69.4,
+        69.8,
+        55.6
+      ],
+      "motion_score": 1.354,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 2433.4,
+      "edge_density": 49.53,
+      "perceptual_lightness": 73.1,
+      "color_temp": "warm",
+      "hue": 45.0,
+      "saturation": 86.9,
+      "brightness": 75.0,
+      "ocr_text": "Tm in atlive streain",
+      "ocr_word_count": 4,
+      "ocr_words": [
+        {
+          "text": "Tm in atlive streain",
+          "confidence": 0.3,
+          "bbox": [
+            154,
+            400,
+            556,
+            452
+          ],
+          "pos_v": "middle",
+          "pos_h": "center",
+          "font_size": 52,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "Tm in atlive streain",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "Tm in atlive streain",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [],
+      "object_count": 0,
+      "object_categories": {},
+      "has_people": false,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 45,
+      "aesthetic_factors": [
+        "blurry"
+      ]
+    },
+    {
+      "frame": 195,
+      "sec": 6.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_other",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 39.4,
+      "sky_ratio": 0.0,
+      "green_ratio": 0.176,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        69.5,
+        70.0,
+        55.8
+      ],
+      "motion_score": 1.103,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 2480.6,
+      "edge_density": 49.718,
+      "perceptual_lightness": 73.3,
+      "color_temp": "warm",
+      "hue": 44.4,
+      "saturation": 86.6,
+      "brightness": 75.1,
+      "ocr_text": "Tm in aslive streaim",
+      "ocr_word_count": 4,
+      "ocr_words": [
+        {
+          "text": "Tm in aslive streaim",
+          "confidence": 0.34,
+          "bbox": [
+            154,
+            400,
+            558,
+            452
+          ],
+          "pos_v": "middle",
+          "pos_h": "center",
+          "font_size": 52,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "Tm in aslive streaim",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "Tm in aslive streaim",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [],
+      "object_count": 0,
+      "object_categories": {},
+      "has_people": false,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 45,
+      "aesthetic_factors": [
+        "blurry"
+      ]
+    },
+    {
+      "frame": 210,
+      "sec": 7.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_other",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 40.7,
+      "sky_ratio": 0.0,
+      "green_ratio": 0.176,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        69.7,
+        71.1,
+        57.1
+      ],
+      "motion_score": 0.857,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 2568.5,
+      "edge_density": 50.806,
+      "perceptual_lightness": 74.2,
+      "color_temp": "warm",
+      "hue": 45.1,
+      "saturation": 86.4,
+      "brightness": 75.9,
+      "ocr_text": "Sotry [ canit Tm in aslive stream",
+      "ocr_word_count": 7,
+      "ocr_words": [
+        {
+          "text": "Sotry [ canit",
+          "confidence": 0.66,
+          "bbox": [
+            216,
+            344,
+            494,
+            399
+          ],
+          "pos_v": "top",
+          "pos_h": "center",
+          "font_size": 55,
+          "is_large": true,
+          "script": "latin"
+        },
+        {
+          "text": "Tm in aslive stream",
+          "confidence": 0.53,
+          "bbox": [
+            156,
+            400,
+            558,
+            454
+          ],
+          "pos_v": "middle",
+          "pos_h": "center",
+          "font_size": 54,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "Sotry [ canit Tm in aslive stream",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "Sotry [ canit Tm in aslive stream",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [],
+      "object_count": 0,
+      "object_categories": {},
+      "has_people": false,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 45,
+      "aesthetic_factors": [
+        "blurry"
+      ]
+    },
+    {
+      "frame": 225,
+      "sec": 7.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "indoor",
+      "setting_type": "indoor_room",
+      "room_type": "generic_indoor",
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 37.0,
+      "sky_ratio": 0.005,
+      "green_ratio": 0.126,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        65.9,
+        67.0,
+        49.8
+      ],
+      "motion_score": 10.593,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 1880.7,
+      "edge_density": 37.929,
+      "perceptual_lightness": 70.0,
+      "color_temp": "warm",
+      "hue": 50.0,
+      "saturation": 100.3,
+      "brightness": 72.5,
+      "ocr_text": "Tmin a ve stream",
+      "ocr_word_count": 4,
+      "ocr_words": [
+        {
+          "text": "Tmin a ve stream",
+          "confidence": 0.21,
+          "bbox": [
+            158,
+            404,
+            558,
+            452
+          ],
+          "pos_v": "middle",
+          "pos_h": "center",
+          "font_size": 48,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "Tmin a ve stream",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "Tmin a ve stream",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [],
+      "object_count": 0,
+      "object_categories": {},
+      "has_people": false,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 45,
+      "aesthetic_factors": [
+        "blurry"
+      ]
+    },
+    {
+      "frame": 240,
+      "sec": 8.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "indoor",
+      "setting_type": "indoor_room",
+      "room_type": "generic_indoor",
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 36.9,
+      "sky_ratio": 0.005,
+      "green_ratio": 0.128,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        66.2,
+        67.3,
+        49.5
+      ],
+      "motion_score": 2.788,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 1993.4,
+      "edge_density": 40.368,
+      "perceptual_lightness": 70.2,
+      "color_temp": "warm",
+      "hue": 49.1,
+      "saturation": 100.2,
+      "brightness": 72.5,
+      "ocr_text": "inatrve strean Lm",
+      "ocr_word_count": 3,
+      "ocr_words": [
+        {
+          "text": "inatrve strean",
+          "confidence": 0.26,
+          "bbox": [
+            227,
+            404,
+            556,
+            456
+          ],
+          "pos_v": "middle",
+          "pos_h": "center",
+          "font_size": 52,
+          "is_large": true,
+          "script": "latin"
+        },
+        {
+          "text": "Lm",
+          "confidence": 0.29,
+          "bbox": [
+            160,
+            400,
+            229,
+            454
+          ],
+          "pos_v": "middle",
+          "pos_h": "left",
+          "font_size": 54,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "inatrve strean Lm",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "inatrve strean Lm",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [],
+      "object_count": 0,
+      "object_categories": {},
+      "has_people": false,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 45,
+      "aesthetic_factors": [
+        "blurry"
+      ]
+    },
+    {
+      "frame": 255,
+      "sec": 8.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "indoor",
+      "setting_type": "indoor_room",
+      "room_type": "generic_indoor",
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 37.0,
+      "sky_ratio": 0.005,
+      "green_ratio": 0.129,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        66.2,
+        67.4,
+        50.7
+      ],
+      "motion_score": 2.759,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 1944.4,
+      "edge_density": 39.45,
+      "perceptual_lightness": 70.3,
+      "color_temp": "warm",
+      "hue": 51.0,
+      "saturation": 97.7,
+      "brightness": 72.8,
+      "ocr_text": "in aथve streani",
+      "ocr_word_count": 3,
+      "ocr_words": [
+        {
+          "text": "in aथve streani",
+          "confidence": 0.27,
+          "bbox": [
+            227,
+            402,
+            562,
+            453
+          ],
+          "pos_v": "middle",
+          "pos_h": "center",
+          "font_size": 51,
+          "is_large": true,
+          "script": "devanagari"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "in aथve streani",
+      "scripts_detected": [
+        "devanagari"
+      ],
+      "hindi_text": "in aथve streani",
+      "english_text": "",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [],
+      "object_count": 0,
+      "object_categories": {},
+      "has_people": false,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 45,
+      "aesthetic_factors": [
+        "blurry"
+      ]
+    },
+    {
+      "frame": 270,
+      "sec": 9.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "indoor",
+      "setting_type": "indoor_room",
+      "room_type": "generic_indoor",
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 37.3,
+      "sky_ratio": 0.006,
+      "green_ratio": 0.143,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        66.0,
+        67.7,
+        51.8
+      ],
+      "motion_score": 3.04,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 1996.9,
+      "edge_density": 39.983,
+      "perceptual_lightness": 70.6,
+      "color_temp": "warm",
+      "hue": 52.5,
+      "saturation": 96.2,
+      "brightness": 73.1,
+      "ocr_text": "Lm",
+      "ocr_word_count": 1,
+      "ocr_words": [
+        {
+          "text": "Lm",
+          "confidence": 0.57,
+          "bbox": [
+            161,
+            400,
+            227,
+            455
+          ],
+          "pos_v": "middle",
+          "pos_h": "left",
+          "font_size": 55,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "Lm",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "Lm",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [],
+      "object_count": 0,
+      "object_categories": {},
+      "has_people": false,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 45,
+      "aesthetic_factors": [
+        "blurry"
+      ]
+    },
+    {
+      "frame": 285,
+      "sec": 9.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "indoor",
+      "setting_type": "indoor_room",
+      "room_type": "generic_indoor",
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 37.0,
+      "sky_ratio": 0.006,
+      "green_ratio": 0.145,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        65.9,
+        68.0,
+        53.0
+      ],
+      "motion_score": 3.067,
+      "camera_move": "tilt_down",
+      "scene_change": false,
+      "sharpness": 1985.9,
+      "edge_density": 39.391,
+      "perceptual_lightness": 71.0,
+      "color_temp": "warm",
+      "hue": 53.3,
+      "saturation": 94.9,
+      "brightness": 73.8,
+      "ocr_text": "Lmin atlve stream",
+      "ocr_word_count": 3,
+      "ocr_words": [
+        {
+          "text": "Lmin atlve stream",
+          "confidence": 0.35,
+          "bbox": [
+            160,
+            404,
+            558,
+            452
+          ],
+          "pos_v": "middle",
+          "pos_h": "center",
+          "font_size": 48,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "Lmin atlve stream",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "Lmin atlve stream",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "person",
+          "confidence": 55.3,
+          "category": "people",
+          "position": {
+            "cx": 0.553,
+            "cy": 0.613
+          },
+          "bbox": [
+            373,
+            757,
+            422,
+            811
+          ],
+          "size_ratio": 0.002879272480559949,
+          "person_id": 1
+        },
+        {
+          "class": "person",
+          "confidence": 40.8,
+          "category": "people",
+          "position": {
+            "cx": 0.569,
+            "cy": 0.613
+          },
+          "bbox": [
+            374,
+            757,
+            444,
+            812
+          ],
+          "size_ratio": 0.0042106550594326105,
+          "person_id": 2
+        }
+      ],
+      "object_count": 2,
+      "object_categories": {
+        "people": 2
+      },
+      "has_people": true,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 50,
+      "aesthetic_factors": [
+        "decent_composition",
+        "blurry"
+      ]
+    },
+    {
+      "frame": 300,
+      "sec": 10.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_other",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 37.2,
+      "sky_ratio": 0.006,
+      "green_ratio": 0.155,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        65.4,
+        68.0,
+        53.4
+      ],
+      "motion_score": 2.627,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 2082.3,
+      "edge_density": 41.322,
+      "perceptual_lightness": 70.9,
+      "color_temp": "warm",
+      "hue": 54.8,
+      "saturation": 93.6,
+      "brightness": 73.5,
+      "ocr_text": "Tm",
+      "ocr_word_count": 1,
+      "ocr_words": [
+        {
+          "text": "Tm",
+          "confidence": 0.41,
+          "bbox": [
+            159,
+            398,
+            227,
+            454
+          ],
+          "pos_v": "middle",
+          "pos_h": "left",
+          "font_size": 56,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "Tm",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "Tm",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [],
+      "object_count": 0,
+      "object_categories": {},
+      "has_people": false,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 45,
+      "aesthetic_factors": [
+        "blurry"
+      ]
+    },
+    {
+      "frame": 315,
+      "sec": 10.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_street_or_open",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 36.0,
+      "sky_ratio": 0.151,
+      "green_ratio": 0.175,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        60.8,
+        64.2,
+        54.0
+      ],
+      "motion_score": 11.253,
+      "camera_move": "pan_right",
+      "scene_change": false,
+      "sharpness": 1213.0,
+      "edge_density": 28.249,
+      "perceptual_lightness": 66.8,
+      "color_temp": "warm",
+      "hue": 57.3,
+      "saturation": 98.8,
+      "brightness": 71.1,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [],
+      "object_count": 0,
+      "object_categories": {},
+      "has_people": false,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 40,
+      "aesthetic_factors": [
+        "too_colorful",
+        "blurry"
+      ]
+    },
+    {
+      "frame": 330,
+      "sec": 11.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_street_or_open",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 36.6,
+      "sky_ratio": 0.15,
+      "green_ratio": 0.175,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        60.7,
+        64.4,
+        53.8
+      ],
+      "motion_score": 1.038,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 1606.6,
+      "edge_density": 31.772,
+      "perceptual_lightness": 66.9,
+      "color_temp": "warm",
+      "hue": 57.7,
+      "saturation": 100.9,
+      "brightness": 71.3,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [],
+      "object_count": 0,
+      "object_categories": {},
+      "has_people": false,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 45,
+      "aesthetic_factors": [
+        "blurry"
+      ]
+    },
+    {
+      "frame": 345,
+      "sec": 11.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_street_or_open",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 36.8,
+      "sky_ratio": 0.152,
+      "green_ratio": 0.172,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        61.2,
+        64.8,
+        54.6
+      ],
+      "motion_score": 1.344,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 1728.7,
+      "edge_density": 33.364,
+      "perceptual_lightness": 67.4,
+      "color_temp": "warm",
+      "hue": 57.8,
+      "saturation": 99.8,
+      "brightness": 71.8,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [],
+      "object_count": 0,
+      "object_categories": {},
+      "has_people": false,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 40,
+      "aesthetic_factors": [
+        "too_colorful",
+        "blurry"
+      ]
+    },
+    {
+      "frame": 360,
+      "sec": 12.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_street_or_open",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 37.0,
+      "sky_ratio": 0.149,
+      "green_ratio": 0.173,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        60.5,
+        64.3,
+        53.8
+      ],
+      "motion_score": 1.231,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 1822.7,
+      "edge_density": 33.729,
+      "perceptual_lightness": 66.7,
+      "color_temp": "warm",
+      "hue": 57.4,
+      "saturation": 101.4,
+      "brightness": 71.1,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "person",
+          "confidence": 48.1,
+          "category": "people",
+          "position": {
+            "cx": 0.768,
+            "cy": 0.702
+          },
+          "bbox": [
+            534,
+            878,
+            571,
+            919
+          ],
+          "size_ratio": 0.0016750974664723295,
+          "person_id": 3
+        },
+        {
+          "class": "person",
+          "confidence": 31.2,
+          "category": "people",
+          "position": {
+            "cx": 0.814,
+            "cy": 0.702
+          },
+          "bbox": [
+            572,
+            882,
+            599,
+            914
+          ],
+          "size_ratio": 0.0009409889396435271,
+          "person_id": 4
+        }
+      ],
+      "object_count": 2,
+      "object_categories": {
+        "people": 2
+      },
+      "has_people": true,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 45,
+      "aesthetic_factors": [
+        "decent_composition",
+        "too_colorful",
+        "blurry"
+      ]
+    },
+    {
+      "frame": 375,
+      "sec": 12.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_street_or_open",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 37.0,
+      "sky_ratio": 0.15,
+      "green_ratio": 0.172,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        60.9,
+        64.5,
+        54.1
+      ],
+      "motion_score": 1.134,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 1807.9,
+      "edge_density": 33.524,
+      "perceptual_lightness": 67.0,
+      "color_temp": "warm",
+      "hue": 58.0,
+      "saturation": 101.4,
+      "brightness": 71.5,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [
+        {
+          "class": "person",
+          "confidence": 43.9,
+          "category": "people",
+          "position": {
+            "cx": 0.92,
+            "cy": 0.716
+          },
+          "bbox": [
+            640,
+            895,
+            684,
+            937
+          ],
+          "size_ratio": 0.0020445580490761335,
+          "person_id": 5
+        }
+      ],
+      "object_count": 1,
+      "object_categories": {
+        "people": 1
+      },
+      "has_people": true,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 45,
+      "aesthetic_factors": [
+        "decent_composition",
+        "too_colorful",
+        "blurry"
+      ]
+    },
+    {
+      "frame": 390,
+      "sec": 13.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_street_or_open",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 37.0,
+      "sky_ratio": 0.151,
+      "green_ratio": 0.172,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        60.7,
+        64.4,
+        54.0
+      ],
+      "motion_score": 1.268,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 1796.2,
+      "edge_density": 33.462,
+      "perceptual_lightness": 66.9,
+      "color_temp": "warm",
+      "hue": 58.1,
+      "saturation": 101.2,
+      "brightness": 71.3,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [],
+      "object_count": 0,
+      "object_categories": {},
+      "has_people": false,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 40,
+      "aesthetic_factors": [
+        "too_colorful",
+        "blurry"
+      ]
+    },
+    {
+      "frame": 405,
+      "sec": 13.5,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "outdoor",
+      "setting_type": "outdoor_street_or_open",
+      "room_type": null,
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 36.9,
+      "sky_ratio": 0.151,
+      "green_ratio": 0.171,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        60.8,
+        64.4,
+        54.1
+      ],
+      "motion_score": 0.9,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 1782.4,
+      "edge_density": 33.378,
+      "perceptual_lightness": 66.9,
+      "color_temp": "warm",
+      "hue": 57.6,
+      "saturation": 101.0,
+      "brightness": 71.4,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "scene_type": "unknown",
+      "scene_confidence": 0,
+      "scene_category": "unknown",
+      "objects_detected": [],
+      "object_count": 0,
+      "object_categories": {},
+      "has_people": false,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 45,
+      "aesthetic_factors": [
+        "blurry"
+      ]
+    }
+  ],
+  "color_analysis": [
+    {
+      "sec": 0.0,
+      "mean_rgb": [
+        63.3,
+        67.2,
+        48.2
+      ],
+      "stddev_rgb": [
+        36.4,
+        35.8,
+        33.2
+      ],
+      "dominant_colors": [
+        [
+          63,
+          56,
+          37
+        ],
+        [
+          79,
+          89,
+          59
+        ],
+        [
+          42,
+          46,
+          36
+        ],
+        [
+          46,
+          54,
+          41
+        ],
+        [
+          111,
+          116,
+          86
+        ],
+        [
+          55,
+          68,
+          45
+        ]
+      ],
+      "perceived_brightness": 63.9,
+      "color_mood": "neutral",
+      "contrast_score": 35.1,
+      "color_variance": 8.2
+    },
+    {
+      "sec": 3.0,
+      "mean_rgb": [
+        62.0,
+        65.7,
+        48.4
+      ],
+      "stddev_rgb": [
+        36.1,
+        35.5,
+        33.0
+      ],
+      "dominant_colors": [
+        [
+          61,
+          54,
+          36
+        ],
+        [
+          80,
+          89,
+          60
+        ],
+        [
+          41,
+          44,
+          35
+        ],
+        [
+          53,
+          67,
+          45
+        ],
+        [
+          110,
+          115,
+          87
+        ],
+        [
+          45,
+          52,
+          39
+        ]
+      ],
+      "perceived_brightness": 62.7,
+      "color_mood": "neutral",
+      "contrast_score": 34.9,
+      "color_variance": 7.5
+    },
+    {
+      "sec": 6.0,
+      "mean_rgb": [
+        69.4,
+        69.8,
+        55.6
+      ],
+      "stddev_rgb": [
+        41.2,
+        39.0,
+        41.8
+      ],
+      "dominant_colors": [
+        [
+          64,
+          73,
+          48
+        ],
+        [
+          40,
+          41,
+          30
+        ],
+        [
+          123,
+          121,
+          114
+        ],
+        [
+          62,
+          57,
+          43
+        ],
+        [
+          100,
+          98,
+          82
+        ],
+        [
+          45,
+          51,
+          36
+        ]
+      ],
+      "perceived_brightness": 68.0,
+      "color_mood": "neutral",
+      "contrast_score": 40.7,
+      "color_variance": 6.6
+    },
+    {
+      "sec": 9.0,
+      "mean_rgb": [
+        66.0,
+        67.7,
+        51.8
+      ],
+      "stddev_rgb": [
+        38.1,
+        38.7,
+        38.4
+      ],
+      "dominant_colors": [
+        [
+          44,
+          41,
+          30
+        ],
+        [
+          77,
+          76,
+          56
+        ],
+        [
+          59,
+          55,
+          42
+        ],
+        [
+          87,
+          92,
+          63
+        ],
+        [
+          60,
+          69,
+          59
+        ],
+        [
+          121,
+          124,
+          92
+        ]
+      ],
+      "perceived_brightness": 65.4,
+      "color_mood": "neutral",
+      "contrast_score": 38.4,
+      "color_variance": 7.1
+    },
+    {
+      "sec": 12.0,
+      "mean_rgb": [
+        60.5,
+        64.3,
+        53.8
+      ],
+      "stddev_rgb": [
+        39.7,
+        37.6,
+        36.7
+      ],
+      "dominant_colors": [
+        [
+          32,
+          36,
+          37
+        ],
+        [
+          79,
+          71,
+          50
+        ],
+        [
+          54,
+          51,
+          40
+        ],
+        [
+          119,
+          122,
+          108
+        ],
+        [
+          85,
+          90,
+          64
+        ],
+        [
+          34,
+          48,
+          49
+        ]
+      ],
+      "perceived_brightness": 62.0,
+      "color_mood": "neutral",
+      "contrast_score": 38.0,
+      "color_variance": 4.4
+    }
+  ],
+  "ollama_analysis": {
+    "content_summary": "A person apologizes for not being able to participate in a live stream",
+    "topic_niche": "comedy",
+    "sub_topic": "apology and humor",
+    "emotional_tone": "playful",
+    "key_phrases": [
+      "sorry",
+      "can't",
+      "live stream"
+    ],
+    "target_audience": "general audience",
+    "content_language": "Hinglish",
+    "secondary_languages": [],
+    "has_horoscope_elements": false,
+    "has_advice_elements": false,
+    "has_background_music": true,
+    "is_multilingual": false,
+    "confidence": 75,
+    "available": true,
+    "model_used": "llama3"
+  }
+}

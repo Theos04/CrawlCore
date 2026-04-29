@@ -1,0 +1,296 @@
+{
+  "posts": [
+    {
+      "reel_id": "AQMzQg-BFqt3S4LLMSOO",
+      "platform": "instagram",
+      "timestamp": "2026-02-24T13:09:42.086639",
+      "success": false,
+      "metadata": {
+        "content_score": 0.175,
+        "caption_length": 0
+      }
+    },
+    {
+      "reel_id": "AQMzQg-BFqt3S4LLMSOO",
+      "platform": "instagram",
+      "timestamp": "2026-02-24T13:09:42.379089",
+      "success": false,
+      "metadata": {
+        "content_score": 0.175,
+        "caption_length": 0
+      }
+    },
+    {
+      "reel_id": "AQMzQg-BFqt3S4LLMSOO",
+      "platform": "instagram",
+      "timestamp": "2026-02-24T13:09:42.496215",
+      "success": false,
+      "metadata": {
+        "content_score": 0.175,
+        "caption_length": 0
+      }
+    },
+    {
+      "reel_id": "AQPNfKuasStouvYxbh02",
+      "platform": "youtube",
+      "timestamp": "2026-02-24T15:56:16.154261",
+      "success": true,
+      "metadata": {
+        "content_score": 0.175
+      }
+    },
+    {
+      "reel_id": "AQMkd5YFq5ye6twLt0LO",
+      "platform": "instagram",
+      "timestamp": "2026-02-24T17:39:57.749504",
+      "success": false,
+      "metadata": {
+        "content_score": 0.175
+      }
+    },
+    {
+      "reel_id": "AQMkd5YFq5ye6twLt0LO",
+      "platform": "youtube",
+      "timestamp": "2026-02-24T17:40:03.200852",
+      "success": true,
+      "metadata": {
+        "content_score": 0.175
+      }
+    },
+    {
+      "reel_id": "AQNTUp0OL43-X0cLF-q9",
+      "platform": "instagram",
+      "timestamp": "2026-02-24T17:57:29.055351",
+      "success": false,
+      "metadata": {
+        "content_score": 0.175
+      }
+    },
+    {
+      "reel_id": "AQNTUp0OL43-X0cLF-q9",
+      "platform": "youtube",
+      "timestamp": "2026-02-24T17:57:32.666268",
+      "success": true,
+      "metadata": {
+        "content_score": 0.175
+      }
+    },
+    {
+      "reel_id": "3LtNYBVyfRpMbGcZ",
+      "platform": "instagram",
+      "timestamp": "2026-02-24T18:05:59.717924",
+      "success": false,
+      "metadata": {
+        "caption": ""
+      }
+    },
+    {
+      "reel_id": "3LtNYBVyfRpMbGcZ",
+      "platform": "youtube",
+      "timestamp": "2026-02-24T18:05:59.718936",
+      "success": true,
+      "metadata": {
+        "caption": ""
+      }
+    },
+    {
+      "reel_id": "u5liX",
+      "platform": "instagram",
+      "timestamp": "2026-02-24T18:06:43.086424",
+      "success": false,
+      "metadata": {
+        "caption": ""
+      }
+    },
+    {
+      "reel_id": "u5liX",
+      "platform": "youtube",
+      "timestamp": "2026-02-24T18:06:43.088435",
+      "success": true,
+      "metadata": {
+        "caption": ""
+      }
+    },
+    {
+      "reel_id": "DVDxg63CMza",
+      "platform": "instagram",
+      "timestamp": "2026-02-24T18:22:45.571424",
+      "success": false,
+      "metadata": {
+        "caption": ""
+      }
+    },
+    {
+      "reel_id": "DVDxg63CMza",
+      "platform": "youtube",
+      "timestamp": "2026-02-24T18:22:45.572423",
+      "success": true,
+      "metadata": {
+        "caption": ""
+      }
+    },
+    {
+      "reel_id": "AQOywq0X9g8LcloUAru2",
+      "platform": "instagram",
+      "timestamp": "2026-02-24T18:22:53.597066",
+      "success": false,
+      "metadata": {
+        "caption": ""
+      }
+    },
+    {
+      "reel_id": "AQOywq0X9g8LcloUAru2",
+      "platform": "youtube",
+      "timestamp": "2026-02-24T18:22:53.598063",
+      "success": true,
+      "metadata": {
+        "caption": ""
+      }
+    },
+    {
+      "reel_id": "AQMQMzt12MsnOQIjX3DC",
+      "platform": "instagram",
+      "timestamp": "2026-02-24T18:40:54.187170",
+      "success": false,
+      "metadata": {
+        "caption": ""
+      }
+    },
+    {
+      "reel_id": "AQMQMzt12MsnOQIjX3DC",
+      "platform": "youtube",
+      "timestamp": "2026-02-24T18:40:54.188178",
+      "success": true,
+      "metadata": {
+        "caption": ""
+      }
+    },
+    {
+      "reel_id": "AQOXOicMpPhUa2kMHplQ",
+      "platform": "instagram",
+      "timestamp": "2026-02-24T18:41:29.977694",
+      "success": false,
+      "metadata": {
+        "caption": ""
+      }
+    },
+    {
+      "reel_id": "AQOXOicMpPhUa2kMHplQ",
+      "platform": "youtube",
+      "timestamp": "2026-02-24T18:41:29.978704",
+      "success": true,
+      "metadata": {
+        "caption": ""
+      }
+    },
+    {
+      "reel_id": "AQNvQU-qLCKNcABMdDyz",
+      "platform": "instagram",
+      "timestamp": "2026-02-24T18:43:22.431869",
+      "success": false,
+      "metadata": {
+        "caption": ""
+      }
+    },
+    {
+      "reel_id": "AQNvQU-qLCKNcABMdDyz",
+      "platform": "youtube",
+      "timestamp": "2026-02-24T18:43:22.432893",
+      "success": true,
+      "metadata": {
+        "caption": ""
+      }
+    },
+    {
+      "reel_id": "l1XvJ-s8Epw9d",
+      "platform": "instagram",
+      "timestamp": "2026-02-24T18:49:31.381387",
+      "success": false,
+      "metadata": {
+        "caption": "",
+        "category": "Memes"
+      }
+    },
+    {
+      "reel_id": "l1XvJ-s8Epw9d",
+      "platform": "youtube",
+      "timestamp": "2026-02-24T18:49:31.383074",
+      "success": false,
+      "metadata": {
+        "caption": "",
+        "category": "Memes"
+      }
+    },
+    {
+      "reel_id": "l1XvJ-s8Epw9d",
+      "platform": "instagram",
+      "timestamp": "2026-02-25T16:25:54.134029",
+      "success": false,
+      "metadata": {
+        "caption": "",
+        "category": "Memes"
+      }
+    },
+    {
+      "reel_id": "l1XvJ-s8Epw9d",
+      "platform": "youtube",
+      "timestamp": "2026-02-25T16:25:54.386911",
+      "success": true,
+      "metadata": {
+        "caption": "",
+        "category": "Memes"
+      }
+    },
+    {
+      "reel_id": "AQOl3sj0YgtjjNg1cRq5",
+      "platform": "instagram",
+      "timestamp": "2026-02-25T16:27:07.744698",
+      "success": false,
+      "metadata": {
+        "caption": "",
+        "category": ""
+      }
+    },
+    {
+      "reel_id": "AQOl3sj0YgtjjNg1cRq5",
+      "platform": "youtube",
+      "timestamp": "2026-02-25T16:27:07.746696",
+      "success": true,
+      "metadata": {
+        "caption": "",
+        "category": ""
+      }
+    },
+    {
+      "reel_id": "AQMeMotx55fGlyuAspK9",
+      "platform": "instagram",
+      "timestamp": "2026-02-25T16:27:45.043314",
+      "success": false,
+      "metadata": {
+        "caption": "",
+        "category": "Other"
+      }
+    },
+    {
+      "reel_id": "AQMeMotx55fGlyuAspK9",
+      "platform": "youtube",
+      "timestamp": "2026-02-25T16:27:45.044318",
+      "success": true,
+      "metadata": {
+        "caption": "",
+        "category": "Other"
+      }
+    }
+  ],
+  "daily_counts": {
+    "2026-02-24": {
+      "instagram": 13,
+      "youtube": 11
+    },
+    "2026-02-25": {
+      "instagram": 3,
+      "youtube": 3
+    }
+  },
+  "platform_performance": {}
+}

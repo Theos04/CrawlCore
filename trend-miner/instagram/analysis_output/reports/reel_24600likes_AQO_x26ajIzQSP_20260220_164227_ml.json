@@ -1,0 +1,1316 @@
+{
+  "file": "E:\\reel_24600likes_AQO_x26ajIzQSPChzXMv.mp4",
+  "analyzed_at": "2026-02-20T16:45:37.373124",
+  "container": {
+    "duration_sec": 6.57,
+    "fps": 30.0,
+    "resolution": [
+      720,
+      1280
+    ],
+    "aspect_ratio": 0.562,
+    "total_frames": 197,
+    "has_audio": true,
+    "is_vertical": true,
+    "format_hint": "reel/story"
+  },
+  "speech_transcript": {
+    "transcript": "यह लिवाण वीडियो है। यह लिवाण वीडियो है।",
+    "transcript_display": "यह लिवाण वीडियो है। यह लिवाण वीडियो है।",
+    "language": "hi",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.14,
+        "text": "यह लिवाण वीडियो है।",
+        "avg_logprob": -0.838,
+        "no_speech_prob": 0.87,
+        "compression_ratio": 0.911
+      },
+      {
+        "start": 5.14,
+        "end": 6.54,
+        "text": "यह लिवाण वीडियो है।",
+        "avg_logprob": -0.483,
+        "no_speech_prob": 0.805,
+        "compression_ratio": 0.911
+      }
+    ],
+    "word_timestamps": [
+      {
+        "word": "यह",
+        "start": 0.0,
+        "end": 0.4
+      },
+      {
+        "word": "लिवाण",
+        "start": 0.4,
+        "end": 0.96
+      },
+      {
+        "word": "वीडियो",
+        "start": 0.96,
+        "end": 2.48
+      },
+      {
+        "word": "है।",
+        "start": 2.48,
+        "end": 3.14
+      },
+      {
+        "word": "यह",
+        "start": 5.14,
+        "end": 6.54
+      },
+      {
+        "word": "लिवाण",
+        "start": 6.54,
+        "end": 6.54
+      },
+      {
+        "word": "वीडियो",
+        "start": 6.54,
+        "end": 6.54
+      },
+      {
+        "word": "है।",
+        "start": 6.54,
+        "end": 6.54
+      }
+    ],
+    "word_count": 8,
+    "speaking_rate_wpm": 73.4,
+    "quality": {
+      "score": 47,
+      "issues": [
+        "mostly_no_speech"
+      ],
+      "reliable": false,
+      "avg_logprob": -0.661,
+      "avg_no_speech": 0.837,
+      "avg_compression": 0.911,
+      "detected_script": "devanagari",
+      "wpm_estimated": 73.1
+    },
+    "detected_script": "devanagari"
+  },
+  "audio_analysis": {
+    "tempo_bpm": 103.4,
+    "detected_key": "F major",
+    "dominant_note": "F",
+    "beat_times": [
+      0.07,
+      0.65,
+      1.21,
+      1.79,
+      2.37,
+      2.95,
+      3.53
+    ],
+    "beat_count": 7,
+    "onset_times": [
+      0.07,
+      0.35,
+      0.51,
+      0.63,
+      0.79,
+      0.93,
+      1.07,
+      1.21,
+      1.51,
+      1.65,
+      1.79,
+      1.93,
+      2.07,
+      2.35,
+      2.65,
+      2.81,
+      2.95,
+      3.37,
+      3.51,
+      3.81
+    ],
+    "onset_count": 21,
+    "rms_mean": 0.0835,
+    "rms_peak": 0.2278,
+    "silence_ratio": 0.308,
+    "energy_over_time": [
+      {
+        "sec": 0.0,
+        "energy": 0.1296
+      },
+      {
+        "sec": 0.5,
+        "energy": 0.1454
+      },
+      {
+        "sec": 1.0,
+        "energy": 0.1445
+      },
+      {
+        "sec": 1.5,
+        "energy": 0.1025
+      },
+      {
+        "sec": 2.0,
+        "energy": 0.132
+      },
+      {
+        "sec": 2.5,
+        "energy": 0.1591
+      },
+      {
+        "sec": 3.0,
+        "energy": 0.1651
+      },
+      {
+        "sec": 3.5,
+        "energy": 0.1305
+      },
+      {
+        "sec": 4.0,
+        "energy": 0.0401
+      },
+      {
+        "sec": 4.5,
+        "energy": 0.0
+      },
+      {
+        "sec": 5.0,
+        "energy": 0.0
+      },
+      {
+        "sec": 5.5,
+        "energy": 0.0
+      },
+      {
+        "sec": 6.0,
+        "energy": 0.0
+      }
+    ],
+    "energy_drops": [
+      4.0
+    ],
+    "energy_builds": [],
+    "spectral_centroid_mean": 1488.9,
+    "spectral_rolloff_mean": 3305.6,
+    "spectral_bandwidth_mean": 1694.9,
+    "zero_crossing_mean": 0.0581,
+    "chroma_profile": [
+      0.197,
+      0.192,
+      0.279,
+      0.186,
+      0.263,
+      0.282,
+      0.178,
+      0.225,
+      0.19,
+      0.27,
+      0.212,
+      0.145
+    ],
+    "mfcc_signature": [
+      -272.07,
+      53.31,
+      6.6,
+      17.2,
+      3.8,
+      2.39,
+      -2.57,
+      -1.81,
+      -1.5,
+      0.45,
+      4.53,
+      2.03,
+      2.08
+    ],
+    "harmony_pct": 62.1,
+    "percussion_pct": 37.9,
+    "audio_type": "music_only",
+    "audio_mood": "emotional_melodic",
+    "has_voice": true,
+    "is_music": true,
+    "is_speech": false,
+    "is_music_heavy": false
+  },
+  "visual_summary": {
+    "duration_sec": 6.57,
+    "avg_brightness": 108.486,
+    "avg_saturation": 100.986,
+    "avg_sharpness": 128.657,
+    "avg_motion": 3.583,
+    "avg_edge_density": 4.956,
+    "face_presence_ratio": 0.714,
+    "eye_contact_ratio": 0.429,
+    "text_overlay_ratio": 0.714,
+    "estimated_cuts": 0,
+    "pacing": "slow",
+    "dominant_camera_move": "static",
+    "dominant_gaze": "unknown",
+    "all_ocr_text": "Jyheght Jyhelght",
+    "all_hindi_ocr_text": "",
+    "all_english_ocr_text": "Jyheght Jyhelght",
+    "scripts_detected": [
+      "latin"
+    ],
+    "avg_text_readability": 71.429,
+    "dominant_setting": "indoor_busy_background",
+    "indoor_outdoor": "indoor",
+    "dominant_lighting": "dim",
+    "dominant_wall_color": "grey_50",
+    "avg_people_in_frame": 0.857,
+    "max_people_in_frame": 2,
+    "solo_presenter_frames": 4,
+    "multi_person_frames": 1,
+    "dominant_scene_type": "studio",
+    "dominant_activity": "talking head",
+    "indoor_percentage": 42.9,
+    "outdoor_percentage": 42.9,
+    "nature_percentage": 0.0,
+    "avg_aesthetic_score": 60.7,
+    "object_diversity": 3,
+    "top_objects_detected": [
+      "person",
+      "dining table",
+      "potted plant"
+    ],
+    "object_category_counts": {
+      "people": 11,
+      "furniture": 2,
+      "plant": 1
+    },
+    "has_people_in_video": true,
+    "has_pets_in_video": false,
+    "has_technology_in_video": false,
+    "style": "text_educational"
+  },
+  "content_category": {
+    "detected_niche": "general",
+    "niche_scores": {},
+    "content_format": "direct_to_camera",
+    "hook_formats": [],
+    "speaking_style": "slow_dramatic",
+    "audio_mood": "emotional_melodic",
+    "audio_type": "music_only",
+    "duration_category": "ultra_short",
+    "viral_score": 5,
+    "recommendations": [
+      "⚡ Speed up pacing — aim for a cut every 2-3 seconds",
+      "🪝 Add a stronger hook in the first 1-2 seconds",
+      "🔇 Reduce silence gaps — viewers drop off in quiet sections",
+      "📣 Add a CTA (save, follow, comment) before the end",
+      "🎙️ Audio quality may be unclear — consider adding subtitle text overlays"
+    ],
+    "transcript_reliable": false,
+    "replication_template": {
+      "format": "direct_to_camera",
+      "hook_style": "unknown",
+      "audio_mood": "emotional_melodic",
+      "pacing": "slow",
+      "use_face": true,
+      "use_eye_contact": true,
+      "use_text": true,
+      "target_bpm": 103,
+      "niche": "general",
+      "speaking_style": "slow_dramatic"
+    }
+  },
+  "frame_analysis": [
+    {
+      "frame": 0,
+      "sec": 0.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "looking_at_camera",
+      "eye_contact": true,
+      "body_detected": true,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "indoor",
+      "setting_type": "indoor_busy_background",
+      "room_type": "cluttered_or_bookshelf",
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 59.5,
+      "sky_ratio": 0.0,
+      "green_ratio": 0.0,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        100.7,
+        75.9,
+        66.4
+      ],
+      "motion_score": 0.0,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 164.8,
+      "edge_density": 4.87587890625,
+      "hue": 74.4,
+      "saturation": 105.7,
+      "brightness": 100.9,
+      "ocr_text": "Jyheght",
+      "ocr_word_count": 1,
+      "ocr_words": [
+        {
+          "text": "Jyheght",
+          "confidence": 0.59,
+          "bbox": [
+            268,
+            308,
+            464,
+            362
+          ],
+          "pos_v": "top",
+          "pos_h": "center",
+          "font_size": 54,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "Jyheght",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "Jyheght",
+      "scene_type": "studio",
+      "scene_confidence": 9.6,
+      "scene_category": "indoor",
+      "objects_detected": [
+        {
+          "class": "person",
+          "confidence": 93.0,
+          "category": "people",
+          "position": {
+            "cx": 0.351,
+            "cy": 0.705
+          },
+          "bbox": [
+            49,
+            525,
+            455,
+            1278
+          ],
+          "size_ratio": 0.33173881116100046
+        },
+        {
+          "class": "person",
+          "confidence": 88.0,
+          "category": "people",
+          "position": {
+            "cx": 0.726,
+            "cy": 0.651
+          },
+          "bbox": [
+            362,
+            388,
+            683,
+            1278
+          ],
+          "size_ratio": 0.3102477658977538
+        }
+      ],
+      "object_count": 2,
+      "object_categories": {
+        "people": 2
+      },
+      "has_people": true,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 55,
+      "aesthetic_factors": [
+        "good_composition",
+        "good_contrast",
+        "busy_background",
+        "blurry"
+      ]
+    },
+    {
+      "frame": 30,
+      "sec": 1.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.664,
+          "cy": 0.431,
+          "size_ratio": 0.0456,
+          "confidence": 0.52,
+          "is_close_up": false,
+          "position": "center"
+        }
+      ],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "people_count": 1,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "indoor",
+      "setting_type": "indoor_busy_background",
+      "room_type": "cluttered_or_bookshelf",
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 60.5,
+      "sky_ratio": 0.0,
+      "green_ratio": 0.0,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        104.3,
+        77.7,
+        67.5
+      ],
+      "motion_score": 1.689,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 166.4,
+      "edge_density": 4.9240234375,
+      "hue": 69.1,
+      "saturation": 103.9,
+      "brightness": 103.9,
+      "ocr_text": "Jyheght",
+      "ocr_word_count": 1,
+      "ocr_words": [
+        {
+          "text": "Jyheght",
+          "confidence": 0.56,
+          "bbox": [
+            268,
+            308,
+            464,
+            362
+          ],
+          "pos_v": "top",
+          "pos_h": "center",
+          "font_size": 54,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "Jyheght",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "Jyheght",
+      "scene_type": "studio",
+      "scene_confidence": 20.8,
+      "scene_category": "indoor",
+      "objects_detected": [
+        {
+          "class": "person",
+          "confidence": 88.7,
+          "category": "people",
+          "position": {
+            "cx": 0.723,
+            "cy": 0.652
+          },
+          "bbox": [
+            366,
+            391,
+            674,
+            1277
+          ],
+          "size_ratio": 0.2966670880762841
+        },
+        {
+          "class": "person",
+          "confidence": 88.1,
+          "category": "people",
+          "position": {
+            "cx": 0.313,
+            "cy": 0.709
+          },
+          "bbox": [
+            48,
+            536,
+            402,
+            1278
+          ],
+          "size_ratio": 0.285173901759966
+        },
+        {
+          "class": "dining table",
+          "confidence": 25.6,
+          "category": "furniture",
+          "position": {
+            "cx": 0.087,
+            "cy": 0.885
+          },
+          "bbox": [
+            0,
+            1014,
+            124,
+            1251
+          ],
+          "size_ratio": 0.03207812916506858
+        }
+      ],
+      "object_count": 3,
+      "object_categories": {
+        "people": 2,
+        "furniture": 1
+      },
+      "has_people": true,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "talking head",
+      "activity_confidence": 0,
+      "aesthetic_score": 60,
+      "aesthetic_factors": [
+        "good_composition",
+        "good_contrast",
+        "face_well_framed",
+        "busy_background",
+        "blurry"
+      ]
+    },
+    {
+      "frame": 60,
+      "sec": 2.0,
+      "face_count": 2,
+      "face_positions": [
+        {
+          "cx": 0.435,
+          "cy": 0.57,
+          "size_ratio": 0.0607,
+          "confidence": 0.59,
+          "is_close_up": false,
+          "position": "center"
+        },
+        {
+          "cx": 0.652,
+          "cy": 0.438,
+          "size_ratio": 0.0452,
+          "confidence": 0.57,
+          "is_close_up": false,
+          "position": "center"
+        }
+      ],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "people_count": 2,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "indoor",
+      "setting_type": "indoor_busy_background",
+      "room_type": "cluttered_or_bookshelf",
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 59.9,
+      "sky_ratio": 0.0,
+      "green_ratio": 0.0,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        123.0,
+        93.6,
+        81.6
+      ],
+      "motion_score": 2.164,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 168.4,
+      "edge_density": 5.186881510416667,
+      "hue": 68.3,
+      "saturation": 103.2,
+      "brightness": 104.9,
+      "ocr_text": "Jyhelght",
+      "ocr_word_count": 1,
+      "ocr_words": [
+        {
+          "text": "Jyhelght",
+          "confidence": 0.7,
+          "bbox": [
+            268,
+            308,
+            462,
+            362
+          ],
+          "pos_v": "top",
+          "pos_h": "center",
+          "font_size": 54,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "Jyhelght",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "Jyhelght",
+      "scene_type": "mountain",
+      "scene_confidence": 9.5,
+      "scene_category": "outdoor",
+      "objects_detected": [
+        {
+          "class": "person",
+          "confidence": 91.1,
+          "category": "people",
+          "position": {
+            "cx": 0.684,
+            "cy": 0.65
+          },
+          "bbox": [
+            313,
+            386,
+            671,
+            1278
+          ],
+          "size_ratio": 0.3455049415540998
+        },
+        {
+          "class": "person",
+          "confidence": 87.2,
+          "category": "people",
+          "position": {
+            "cx": 0.227,
+            "cy": 0.706
+          },
+          "bbox": [
+            20,
+            530,
+            306,
+            1278
+          ],
+          "size_ratio": 0.23203454878508636
+        }
+      ],
+      "object_count": 2,
+      "object_categories": {
+        "people": 2
+      },
+      "has_people": true,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "talking head",
+      "activity_confidence": 0,
+      "aesthetic_score": 60,
+      "aesthetic_factors": [
+        "good_composition",
+        "good_contrast",
+        "face_well_framed",
+        "busy_background",
+        "blurry"
+      ]
+    },
+    {
+      "frame": 90,
+      "sec": 3.0,
+      "face_count": 0,
+      "face_positions": [],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": true,
+      "hands_raised": false,
+      "people_count": 0,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "indoor",
+      "setting_type": "indoor_busy_background",
+      "room_type": "cluttered_or_bookshelf",
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 61.8,
+      "sky_ratio": 0.0,
+      "green_ratio": 0.001,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        104.2,
+        80.2,
+        71.4
+      ],
+      "motion_score": 2.677,
+      "camera_move": "static",
+      "scene_change": false,
+      "sharpness": 168.7,
+      "edge_density": 5.077034505208333,
+      "hue": 70.5,
+      "saturation": 101.4,
+      "brightness": 104.6,
+      "ocr_text": "Jyheght",
+      "ocr_word_count": 1,
+      "ocr_words": [
+        {
+          "text": "Jyheght",
+          "confidence": 0.66,
+          "bbox": [
+            268,
+            308,
+            464,
+            362
+          ],
+          "pos_v": "top",
+          "pos_h": "center",
+          "font_size": 54,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "Jyheght",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "Jyheght",
+      "scene_type": "mountain",
+      "scene_confidence": 48.7,
+      "scene_category": "outdoor",
+      "objects_detected": [
+        {
+          "class": "person",
+          "confidence": 92.0,
+          "category": "people",
+          "position": {
+            "cx": 0.499,
+            "cy": 0.651
+          },
+          "bbox": [
+            54,
+            393,
+            664,
+            1272
+          ],
+          "size_ratio": 0.5812828221751261
+        },
+        {
+          "class": "person",
+          "confidence": 87.7,
+          "category": "people",
+          "position": {
+            "cx": 0.179,
+            "cy": 0.706
+          },
+          "bbox": [
+            1,
+            532,
+            255,
+            1275
+          ],
+          "size_ratio": 0.20517672254316696
+        }
+      ],
+      "object_count": 2,
+      "object_categories": {
+        "people": 2
+      },
+      "has_people": true,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "scenic/b-roll",
+      "activity_confidence": 0,
+      "aesthetic_score": 50,
+      "aesthetic_factors": [
+        "decent_composition",
+        "good_contrast",
+        "busy_background",
+        "blurry"
+      ]
+    },
+    {
+      "frame": 120,
+      "sec": 4.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.657,
+          "cy": 0.482,
+          "size_ratio": 0.0394,
+          "confidence": 0.51,
+          "is_close_up": false,
+          "position": "center"
+        }
+      ],
+      "gaze_direction": "unknown",
+      "eye_contact": false,
+      "body_detected": false,
+      "hands_raised": false,
+      "people_count": 1,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "indoor",
+      "setting_type": "indoor_busy_background",
+      "room_type": "cluttered_or_bookshelf",
+      "wall_color": "grey_50",
+      "is_flat_bg": false,
+      "bg_texture_std": 58.6,
+      "sky_ratio": 0.0,
+      "green_ratio": 0.001,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        111.7,
+        85.3,
+        71.8
+      ],
+      "motion_score": 3.826,
+      "camera_move": "pan_right",
+      "scene_change": false,
+      "sharpness": 161.6,
+      "edge_density": 4.272412109375,
+      "hue": 62.4,
+      "saturation": 109.3,
+      "brightness": 103.1,
+      "ocr_text": "Jyheght",
+      "ocr_word_count": 1,
+      "ocr_words": [
+        {
+          "text": "Jyheght",
+          "confidence": 0.66,
+          "bbox": [
+            268,
+            308,
+            464,
+            362
+          ],
+          "pos_v": "top",
+          "pos_h": "center",
+          "font_size": 54,
+          "is_large": true,
+          "script": "latin"
+        }
+      ],
+      "has_text_overlay": true,
+      "text_readability": 100.0,
+      "hook_text": "Jyheght",
+      "scripts_detected": [
+        "latin"
+      ],
+      "hindi_text": "",
+      "english_text": "Jyheght",
+      "scene_type": "golf_course",
+      "scene_confidence": 18.1,
+      "scene_category": "outdoor",
+      "objects_detected": [
+        {
+          "class": "person",
+          "confidence": 92.3,
+          "category": "people",
+          "position": {
+            "cx": 0.642,
+            "cy": 0.663
+          },
+          "bbox": [
+            218,
+            421,
+            706,
+            1276
+          ],
+          "size_ratio": 0.45207501109362663
+        },
+        {
+          "class": "dining table",
+          "confidence": 63.6,
+          "category": "furniture",
+          "position": {
+            "cx": 0.216,
+            "cy": 0.859
+          },
+          "bbox": [
+            0,
+            933,
+            309,
+            1264
+          ],
+          "size_ratio": 0.11100958636906903
+        },
+        {
+          "class": "potted plant",
+          "confidence": 42.3,
+          "category": "plant",
+          "position": {
+            "cx": 0.207,
+            "cy": 0.586
+          },
+          "bbox": [
+            36,
+            539,
+            261,
+            959
+          ],
+          "size_ratio": 0.10281732220311016
+        }
+      ],
+      "object_count": 3,
+      "object_categories": {
+        "people": 1,
+        "furniture": 1,
+        "plant": 1
+      },
+      "has_people": true,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "talking head",
+      "activity_confidence": 0,
+      "aesthetic_score": 65,
+      "aesthetic_factors": [
+        "good_composition",
+        "good_contrast",
+        "face_well_framed",
+        "color_harmony",
+        "busy_background",
+        "blurry"
+      ]
+    },
+    {
+      "frame": 150,
+      "sec": 5.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.585,
+          "cy": 0.432,
+          "size_ratio": 0.2529,
+          "confidence": 0.89,
+          "is_close_up": true,
+          "position": "center"
+        }
+      ],
+      "gaze_direction": "looking_at_camera",
+      "eye_contact": true,
+      "body_detected": true,
+      "hands_raised": false,
+      "people_count": 1,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "indoor",
+      "setting_type": "indoor_room",
+      "room_type": "warm_decorated_room",
+      "wall_color": "red_warm",
+      "is_flat_bg": false,
+      "bg_texture_std": 36.2,
+      "sky_ratio": 0.0,
+      "green_ratio": 0.0,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        106.3,
+        72.4,
+        57.6
+      ],
+      "motion_score": 6.846,
+      "camera_move": "tilt_up",
+      "scene_change": false,
+      "sharpness": 34.0,
+      "edge_density": 4.919873046875,
+      "hue": 25.0,
+      "saturation": 93.1,
+      "brightness": 117.1,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "scene_type": "soccer_field",
+      "scene_confidence": 15.0,
+      "scene_category": "sports",
+      "objects_detected": [
+        {
+          "class": "person",
+          "confidence": 91.8,
+          "category": "people",
+          "position": {
+            "cx": 0.5,
+            "cy": 0.507
+          },
+          "bbox": [
+            0,
+            23,
+            720,
+            1273
+          ],
+          "size_ratio": 0.9765108108520508
+        }
+      ],
+      "object_count": 1,
+      "object_categories": {
+        "people": 1
+      },
+      "has_people": true,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "talking head",
+      "activity_confidence": 0,
+      "aesthetic_score": 65,
+      "aesthetic_factors": [
+        "good_contrast",
+        "face_well_framed",
+        "eye_contact",
+        "color_harmony",
+        "blurry"
+      ]
+    },
+    {
+      "frame": 180,
+      "sec": 6.0,
+      "face_count": 1,
+      "face_positions": [
+        {
+          "cx": 0.538,
+          "cy": 0.436,
+          "size_ratio": 0.2505,
+          "confidence": 0.84,
+          "is_close_up": true,
+          "position": "center"
+        }
+      ],
+      "gaze_direction": "looking_at_camera",
+      "eye_contact": true,
+      "body_detected": true,
+      "hands_raised": false,
+      "people_count": 1,
+      "body_count_hog": 0,
+      "body_positions": [],
+      "indoor_outdoor": "indoor",
+      "setting_type": "indoor_room",
+      "room_type": "warm_decorated_room",
+      "wall_color": "red_warm",
+      "is_flat_bg": false,
+      "bg_texture_std": 43.8,
+      "sky_ratio": 0.0,
+      "green_ratio": 0.0,
+      "lighting": "dim",
+      "bg_mean_rgb": [
+        120.8,
+        85.5,
+        71.1
+      ],
+      "motion_score": 7.882,
+      "camera_move": "pan_left",
+      "scene_change": false,
+      "sharpness": 36.7,
+      "edge_density": 5.432584635416666,
+      "hue": 24.4,
+      "saturation": 90.3,
+      "brightness": 124.9,
+      "ocr_text": "",
+      "ocr_word_count": 0,
+      "ocr_words": [],
+      "has_text_overlay": false,
+      "text_readability": 0.0,
+      "hook_text": "",
+      "scripts_detected": [],
+      "hindi_text": "",
+      "english_text": "",
+      "scene_type": "dining_room",
+      "scene_confidence": 52.6,
+      "scene_category": "indoor",
+      "objects_detected": [
+        {
+          "class": "person",
+          "confidence": 92.7,
+          "category": "people",
+          "position": {
+            "cx": 0.507,
+            "cy": 0.509
+          },
+          "bbox": [
+            10,
+            27,
+            720,
+            1276
+          ],
+          "size_ratio": 0.9621052157531408
+        }
+      ],
+      "object_count": 1,
+      "object_categories": {
+        "people": 1
+      },
+      "has_people": true,
+      "has_pets": false,
+      "has_technology": false,
+      "primary_activity": "talking head",
+      "activity_confidence": 0,
+      "aesthetic_score": 70,
+      "aesthetic_factors": [
+        "good_brightness",
+        "good_contrast",
+        "face_well_framed",
+        "eye_contact",
+        "color_harmony",
+        "blurry"
+      ]
+    }
+  ],
+  "color_analysis": [
+    {
+      "sec": 0.0,
+      "mean_rgb": [
+        100.7,
+        75.9,
+        66.4
+      ],
+      "stddev_rgb": [
+        67.9,
+        58.8,
+        52.3
+      ],
+      "dominant_colors": [
+        [
+          165,
+          134,
+          109
+        ],
+        [
+          43,
+          26,
+          29
+        ],
+        [
+          84,
+          52,
+          44
+        ],
+        [
+          13,
+          7,
+          12
+        ],
+        [
+          25,
+          12,
+          17
+        ],
+        [
+          114,
+          88,
+          78
+        ]
+      ],
+      "perceived_brightness": 82.2,
+      "color_mood": "neutral",
+      "contrast_score": 59.7,
+      "color_variance": 14.5
+    },
+    {
+      "sec": 3.0,
+      "mean_rgb": [
+        104.2,
+        80.2,
+        71.4
+      ],
+      "stddev_rgb": [
+        69.3,
+        61.2,
+        54.5
+      ],
+      "dominant_colors": [
+        [
+          174,
+          139,
+          113
+        ],
+        [
+          25,
+          14,
+          20
+        ],
+        [
+          88,
+          55,
+          46
+        ],
+        [
+          44,
+          27,
+          30
+        ],
+        [
+          184,
+          169,
+          153
+        ],
+        [
+          123,
+          97,
+          88
+        ]
+      ],
+      "perceived_brightness": 86.4,
+      "color_mood": "neutral",
+      "contrast_score": 61.7,
+      "color_variance": 13.8
+    },
+    {
+      "sec": 6.0,
+      "mean_rgb": [
+        124.8,
+        93.2,
+        82.8
+      ],
+      "stddev_rgb": [
+        55.0,
+        52.7,
+        54.1
+      ],
+      "dominant_colors": [
+        [
+          160,
+          98,
+          76
+        ],
+        [
+          197,
+          191,
+          190
+        ],
+        [
+          99,
+          65,
+          53
+        ],
+        [
+          133,
+          75,
+          55
+        ],
+        [
+          62,
+          52,
+          51
+        ],
+        [
+          33,
+          21,
+          21
+        ]
+      ],
+      "perceived_brightness": 101.5,
+      "color_mood": "neutral",
+      "contrast_score": 53.9,
+      "color_variance": 17.9
+    }
+  ],
+  "ollama_analysis": {
+    "available": false,
+    "reason": "timeout",
+    "content_summary": "(Ollama analysis unavailable)",
+    "topic_niche": "unknown",
+    "sub_topic": "",
+    "emotional_tone": "unknown",
+    "key_phrases": [],
+    "target_audience": "unknown",
+    "content_language": "unknown",
+    "has_horoscope_elements": false,
+    "has_advice_elements": false,
+    "confidence": 0
+  }
+}
