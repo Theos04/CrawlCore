@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maps Scraper · Next-Gen Data Intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #050504;
+            --surface: #0c0b0a;
+            --surface2: #12100e;
+            --border: #201e1a;
+            --border-hi: #2f2b24;
+            --text: #ece6db;
+            --muted: #837e73;
+            --accent: #d4a96a;
+            --accent-lo: #1c180f;
+            --accent-hi: #f0d4a0;
+            --green: #8dba72;
+            --red: #c97060;
+            --blue: #6aa0d4;
+            --grad-glow: radial-gradient(circle at 50% 0%, rgba(212, 169, 106, 0.12) 0%, transparent 70%);
+            --radius: 36px;
+            --radius-sm: 24px;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        body {
+            background: var(--bg);
+            font-family: 'Syne', sans-serif;
+            color: var(--text);
+            line-height: 1.4;
+            overflow-x: hidden;
+            cursor: none;
+        }
+
+        /* Custom Cursor */
+        #cursor {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background: var(--accent);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            transition: width 0.2s, height 0.2s, background 0.2s;
+            mix-blend-mode: difference;
+        }
+
+        #cursor-trail {
+            position: fixed;
+            width: 32px;
+            height: 32px;
+            border: 1.5px solid rgba(212, 169, 106, 0.4);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9998;
+            transform: translate(-50%, -50%);
+            transition: left 0.1s ease-out, top 0.1s ease-out;
+        }
+
+        /* Grain overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+            opacity: 0.4;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .grid-bg {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            background-image:
+                linear-gradient(rgba(212, 169, 106, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(212, 169, 106, 0.02) 1px, transparent 1px);
+            background-size: 70px 70px;
+            mask-image: radial-gradient(ellipse 80% 60% at 40% 20%, black 20%, transparent 80%);
+        }
+
+        .container {
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 40px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 20px 0;
+            transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+        }
+
+        nav.scrolled {
+            background: rgba(5, 5, 4, 0.92);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            padding: 12px 0;
+        }
+
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            text-decoration: none;
+        }
+
+        .nav-logo-icon {
+            width: 46px;
+            height: 46px;
+            background: var(--accent-lo);
+            border: 1px solid var(--border-hi);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .nav-logo:hover .nav-logo-icon {
+            transform: scale(1.05) rotate(5deg);
+        }
+
+        .nav-logo h1 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: var(--text);
+        }
+
+        .nav-logo h1 span {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 42px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--muted);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .nav-cta {
+            background: var(--accent-lo);
+            border: 1px solid var(--border-hi);
+            color: var(--accent);
+            padding: 10px 24px;
+            border-radius: 60px;
+            font-family: 'Syne', sans-serif;
+            font-weight: 700;
+            font-size: 0.7rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            transition: all 0.25s;
+        }
+
+        .nav-cta:hover {
+            background: #2a241a;
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 140px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-orb {
+            position: absolute;
+            width: 900px;
+            height: 900px;
+            background: radial-gradient(circle, rgba(212, 169, 106, 0.07) 0%, transparent 70%);
+            top: -250px;
+            right: -250px;
+            pointer-events: none;
+            animation: floatOrb 18s infinite alternate ease-in-out;
+        }
+
+        .hero-orb2 {
+            position: absolute;
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, rgba(141, 186, 114, 0.05) 0%, transparent 70%);
+            bottom: -150px;
+            left: -200px;
+            pointer-events: none;
+            animation: floatOrb2 22s infinite alternate;
+        }
+
+        @keyframes floatOrb {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            100% {
+                transform: translate(40px, 30px) scale(1.08);
+            }
+        }
+
+        @keyframes floatOrb2 {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            100% {
+                transform: translate(-30px, 40px) scale(1.1);
+            }
+        }
+
+        .hero-layout {
+            display: flex;
+            gap: 80px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .hero-left {
+            flex: 1.2;
+            min-width: 300px;
+        }
+
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(212, 169, 106, 0.08);
+            border: 0.5px solid var(--border-hi);
+            padding: 6px 16px 6px 12px;
+            border-radius: 40px;
+            margin-bottom: 36px;
+            backdrop-filter: blur(4px);
+        }
+
+        .hero-eyebrow-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--green);
+            border-radius: 50%;
+            animation: pulseGreen 1.8s infinite;
+        }
+
+        @keyframes pulseGreen {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.4;
+                transform: scale(1.3);
+            }
+        }
+
+        .hero-eyebrow span {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+        }
+
+        .hero-title {
+            font-size: 5.2rem;
+            font-weight: 800;
+            line-height: 1.05;
+            letter-spacing: -0.04em;
+            margin-bottom: 28px;
+        }
+
+        .hero-title .word {
+            display: inline-block;
+        }
+
+        .accent-word {
+            color: var(--accent);
+            position: relative;
+        }
+
+        .accent-word::after {
+            content: '';
+            position: absolute;
+            bottom: 8px;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: var(--accent);
+            opacity: 0.25;
+            border-radius: 4px;
+            pointer-events: none;
+        }
+
+        .underline-word {
+            position: relative;
+            display: inline-block;
+        }
+
+        .underline-word::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: var(--accent);
+            transition: width 0.9s cubic-bezier(0.2, 0.9, 0.4, 1.1) 1.2s;
+        }
+
+        .underline-word.animated::after {
+            width: 100%;
+        }
+
+        .hero-desc {
+            font-size: 1rem;
+            color: var(--muted);
+            max-width: 540px;
+            margin-bottom: 48px;
+            line-height: 1.65;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 48px;
+            flex-wrap: wrap;
+            margin-bottom: 48px;
+        }
+
+        .stat-item {
+            position: relative;
+        }
+
+        .stat-item::after {
+            content: '';
+            position: absolute;
+            right: -24px;
+            top: 10%;
+            height: 80%;
+            width: 1px;
+            background: linear-gradient(to bottom, transparent, var(--border), transparent);
+        }
+
+        .stat-item:last-child::after {
+            display: none;
+        }
+
+        .stat-num {
+            font-family: var(--font-mono);
+            font-size: 2.4rem;
+            font-weight: 600;
+            color: var(--accent);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--muted);
+            margin-top: 8px;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            border-radius: 60px;
+            padding: 14px 32px;
+            font-family: 'Syne', sans-serif;
+            font-weight: 700;
+            font-size: 0.8rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.2);
+            text-decoration: none;
+            border: 1px solid transparent;
+        }
+
+        .btn-primary {
+            background: var(--accent-lo);
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .btn-primary:hover {
+            background: #2b241a;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(212, 169, 106, 0.2);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border-color: var(--border-hi);
+            color: var(--text);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: rgba(212, 169, 106, 0.05);
+            transform: translateY(-2px);
+        }
+
+        .hero-right {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .terminal-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: 0 35px 60px -25px rgba(0, 0, 0, 0.6);
+            transition: transform 0.4s, border-color 0.3s;
+        }
+
+        .terminal-card:hover {
+            border-color: var(--border-hi);
+            transform: translateY(-6px);
+        }
+
+        .terminal-bar {
+            background: #0a0908;
+            padding: 16px 22px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .terminal-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .terminal-bar-title {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            color: var(--muted);
+            margin-left: 12px;
+        }
+
+        .terminal-body {
+            padding: 22px 24px;
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            line-height: 1.8;
+            background: var(--bg);
+        }
+
+        .t-line {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        .t-prompt {
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .t-cmd {
+            color: var(--text);
+        }
+
+        .t-output {
+            color: var(--green);
+            padding-left: 8px;
+        }
+
+        .t-highlight {
+            color: var(--accent);
+        }
+
+        .hero-feature-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 20px 24px 24px;
+            border-top: 1px solid var(--border);
+        }
+
+        .pill {
+            background: var(--accent-lo);
+            border: 1px solid var(--border-hi);
+            border-radius: 60px;
+            padding: 7px 16px;
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+            color: var(--accent);
+            transition: all 0.2s;
+        }
+
+        .pill:hover {
+            background: var(--accent);
+            color: var(--bg);
+            transform: translateY(-2px);
+        }
+
+        /* Section styles */
+        section {
+            padding: 120px 0;
+            position: relative;
+        }
+
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .section-label span {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--accent);
+        }
+
+        .section-label::before {
+            content: '';
+            width: 30px;
+            height: 2px;
+            background: var(--accent);
+        }
+
+        .section-head {
+            font-size: 3.2rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.15;
+            margin-bottom: 24px;
+        }
+
+        .section-sub {
+            font-size: 1rem;
+            color: var(--muted);
+            max-width: 580px;
+            line-height: 1.65;
+        }
+
+        /* Feature Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2px;
+            margin-top: 70px;
+            border-radius: 32px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        .feat-cell {
+            background: var(--surface);
+            padding: 42px 32px;
+            transition: all 0.35s cubic-bezier(0.2, 0.9, 0.4, 1.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        .feat-cell::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 30% 30%, rgba(212, 169, 106, 0.08), transparent 70%);
+            opacity: 0;
+            transition: opacity 0.4s;
+            z-index: -1;
+        }
+
+        .feat-cell:hover {
+            background: var(--surface2);
+            transform: translateY(-6px);
+        }
+
+        .feat-cell:hover::before {
+            opacity: 1;
+        }
+
+        .feat-num {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            color: var(--muted);
+            margin-bottom: 18px;
+        }
+
+        .feat-icon {
+            font-size: 2.4rem;
+            margin-bottom: 24px;
+            display: block;
+        }
+
+        .feat-cell h4 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
+
+        .feat-cell p {
+            font-size: 0.82rem;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        .feat-tag {
+            display: inline-block;
+            margin-top: 18px;
+            font-family: var(--font-mono);
+            font-size: 0.65rem;
+            color: var(--accent);
+            background: var(--accent-lo);
+            padding: 5px 12px;
+            border-radius: 10px;
+            border: 1px solid var(--border-hi);
+        }
+
+        /* Stats Grid */
+        .counter-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2px;
+            margin-top: 70px;
+            border-radius: 32px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        .counter-cell {
+            background: var(--surface);
+            padding: 52px 28px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .counter-cell:hover {
+            background: var(--surface2);
+            transform: translateY(-4px);
+        }
+
+        .counter-num {
+            font-family: var(--font-mono);
+            font-size: 3.4rem;
+            font-weight: 600;
+            color: var(--accent);
+            display: block;
+            line-height: 1;
+        }
+
+        .counter-label {
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--muted);
+            margin-top: 14px;
+            display: block;
+        }
+
+        /* How It Works */
+        .how-section {
+            background: var(--surface);
+        }
+
+        .how-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .step-item {
+            display: flex;
+            gap: 28px;
+            margin-bottom: 44px;
+            cursor: default;
+        }
+
+        .step-num-box {
+            width: 52px;
+            height: 52px;
+            border: 1px solid var(--border-hi);
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-mono);
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: var(--accent);
+            background: var(--accent-lo);
+            transition: all 0.3s;
+        }
+
+        .step-item:hover .step-num-box {
+            background: var(--accent);
+            color: var(--bg);
+            transform: rotate(5deg) scale(1.05);
+        }
+
+        .step-content h4 {
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .step-content p {
+            font-size: 0.82rem;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        .pipeline-visual {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            padding: 32px;
+        }
+
+        /* Testimonials */
+        .testi-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+            margin-top: 70px;
+        }
+
+        .testi-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            padding: 32px 28px;
+            transition: all 0.35s;
+        }
+
+        .testi-card:hover {
+            border-color: var(--border-hi);
+            transform: translateY(-8px);
+        }
+
+        .testi-stars {
+            color: var(--accent);
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+
+        .testi-quote {
+            font-size: 0.88rem;
+            line-height: 1.65;
+            margin-bottom: 28px;
+            color: var(--text);
+        }
+
+        .testi-author {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .testi-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--accent-lo);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: var(--accent);
+            border: 1px solid var(--border-hi);
+        }
+
+        .testi-name {
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+
+        .testi-role {
+            font-size: 0.7rem;
+            color: var(--muted);
+        }
+
+        /* CTA */
+        .cta-section {
+            background: radial-gradient(ellipse at 50% 0%, rgba(212, 169, 106, 0.1), transparent 80%), var(--surface);
+        }
+
+        .cta-inner {
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 0;
+        }
+
+        .cta-inner h2 {
+            font-size: 3.6rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-bottom: 24px;
+        }
+
+        .cta-note {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            color: var(--muted);
+            margin-top: 32px;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 60px 0 40px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 50px;
+        }
+
+        .footer-brand h3 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+
+        .footer-brand h3 span {
+            color: var(--accent);
+        }
+
+        .footer-brand p {
+            font-size: 0.8rem;
+            color: var(--muted);
+            max-width: 280px;
+            line-height: 1.6;
+        }
+
+        .footer-col h4 {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--muted);
+            margin-bottom: 20px;
+        }
+
+        .footer-col a {
+            display: block;
+            color: var(--text);
+            text-decoration: none;
+            font-size: 0.8rem;
+            padding: 6px 0;
+            transition: color 0.2s;
+        }
+
+        .footer-col a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--border);
+            padding-top: 28px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 0.7rem;
+            color: var(--muted);
+        }
+
+        /* Responsive */
+        @media (max-width: 1100px) {
+
+            .features-grid,
+            .counter-grid,
+            .testi-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .hero-title {
+                font-size: 3rem;
+            }
+
+            .section-head {
+                font-size: 2rem;
+            }
+
+            .how-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+
+            section {
+                padding: 80px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="cursor"></div>
+    <div id="cursor-trail"></div>
+    <div class="grid-bg"></div>
+
+    <nav id="main-nav">
+        <div class="container">
+            <div class="nav-inner">
+                <a href="#" class="nav-logo">
+                    <div class="nav-logo-icon">🗺️</div>
+                    <h1>Maps <span>Scraper</span></h1>
+                </a>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#how">Workflow</a>
+                    <a href="#testimonials">Trust</a>
+                    <a href="#pricing">Pricing</a>
+                    <button class="nav-cta" id="navLaunchBtn">⚡ Launch App</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-orb"></div>
+        <div class="hero-orb2"></div>
+        <div class="container">
+            <div class="hero-layout">
+                <div class="hero-left">
+                    <div class="hero-eyebrow" id="heroEyebrow">
+                        <div class="hero-eyebrow-dot"></div>
+                        <span>AI-POWERED MAPS INTELLIGENCE</span>
+                    </div>
+                    <h2 class="hero-title" id="heroTitle">
+                        <span class="line"><span class="word">Extract</span> <span class="word accent-word">Google
+                                Maps</span></span>
+                        <span class="line"><span class="word">data at</span> <span class="word underline-word"
+                                id="scaleWord">unlimited scale.</span></span>
+                    </h2>
+                    <p class="hero-desc" id="heroDesc">Enterprise-grade headless scraper that converts millions of
+                        pincodes into structured business profiles — names, phones, websites, ratings, coordinates. Zero
+                        API quotas, full ownership.</p>
+                    <div class="hero-stats" id="heroStats">
+                        <div class="stat-item">
+                            <div class="stat-num" data-target="500000" data-prefix="" data-suffix="+">0</div>
+                            <div class="stat-label">Businesses / month</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num" data-target="99.7" data-suffix="%" data-decimal="1">0</div>
+                            <div class="stat-label">Extraction accuracy</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num" data-target="10" data-prefix="⚡" data-suffix="x">0</div>
+                            <div class="stat-label">Parallel workers</div>
+                        </div>
+                    </div>
+                    <div class="hero-btns">
+                        <a href="#" class="btn btn-primary" id="heroCtaBtn">🚀 Start scraping →</a>
+                        <a href="#how" class="btn btn-outline">📖 See how it works</a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="terminal-card">
+                        <div class="terminal-bar">
+                            <div class="terminal-dot" style="background:#ff5f56;"></div>
+                            <div class="terminal-dot" style="background:#ffbd2e;"></div>
+                            <div class="terminal-dot" style="background:#27c93f;"></div>
+                            <span class="terminal-bar-title">maps-scraper@prod:~/live</span>
+                        </div>
+                        <div class="terminal-body" id="terminalBody">
+                            <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd"> python scraper.py
+                                    --mode multi --workers 6 --category "hospital"</span></div>
+                            <div class="t-line"><span class="t-output">⚙ Loading pincode dataset...</span></div>
+                            <div class="t-line"><span class="t-output">📂 2,847 pincodes loaded from
+                                    ./data/pincodes.csv</span></div>
+                            <div class="t-line"><span class="t-output">🎯 Region filter: Maharashtra › Pune (489
+                                    pincodes active)</span></div>
+                            <div class="t-line"><span class="t-output">🕸 Spawning 6 headless Chrome workers [undetected
+                                    mode]</span></div>
+                            <div class="t-line"><span class="t-output">✅ [Worker 1] 411001 → 53 businesses saved</span>
+                            </div>
+                            <div class="t-line"><span class="t-output">✅ [Worker 2] 411002 → 41 businesses saved</span>
+                            </div>
+                            <div class="t-line"><span class="t-output">📊 Progress: <span class="t-highlight">24%</span>
+                                    ━━━━━━━━━━ | Saved: <span class="t-highlight">2,189</span> records</span></div>
+                            <div class="t-line"><span class="t-prompt">_</span><span class="t-cmd t-blink">█</span>
+                            </div>
+                        </div>
+                        <div class="hero-feature-pills">
+                            <span class="pill">📦 CSV / JSON</span>
+                            <span class="pill">🐘 PostgreSQL</span>
+                            <span class="pill">🧠 Anti-detect</span>
+                            <span class="pill">♻️ Auto-resume</span>
+                            <span class="pill">📡 SSE logs</span>
+                            <span class="pill">🌍 29k+ pincodes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <div class="section-label"><span>Core engine</span></div>
+            <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:30px;">
+                <h2 class="section-head">Built for<br><span style="color:var(--accent);">enterprise scale.</span></h2>
+                <p class="section-sub">Every component optimized for high-volume extraction — from pincode queues to
+                    production databases.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feat-cell">
+                    <div class="feat-num">01</div><span class="feat-icon">⚙️</span>
+                    <h4>Multi-instance workers</h4>
+                    <p>Scale up to 10 parallel Chrome sessions, each processing different pincodes. Reduce total crawl
+                        time by 85%.</p><span class="feat-tag">--workers 10</span>
+                </div>
+                <div class="feat-cell">
+                    <div class="feat-num">02</div><span class="feat-icon">🗃️</span>
+                    <h4>PostgreSQL native</h4>
+                    <p>Auto-generate tables, incremental upserts, connection pooling. No ETL required — data lands ready
+                        for BI tools.</p><span class="feat-tag">psycopg2 + async</span>
+                </div>
+                <div class="feat-cell">
+                    <div class="feat-num">03</div><span class="feat-icon">🎛️</span>
+                    <h4>Dynamic region filters</h4>
+                    <p>Filter by state, district, or specific pincodes. Live preview counts, whitelist/blacklist,
+                        category thresholds.</p><span class="feat-tag">GeoJSON aware</span>
+                </div>
+                <div class="feat-cell">
+                    <div class="feat-num">04</div><span class="feat-icon">📡</span>
+                    <h4>Real-time SSE dashboard</h4>
+                    <p>Server-Sent Events streaming logs, live progress bars, business counters — zero polling overhead.
+                    </p><span class="feat-tag">EventSource API</span>
+                </div>
+                <div class="feat-cell">
+                    <div class="feat-num">05</div><span class="feat-icon">🔐</span>
+                    <h4>Undetectable automation</h4>
+                    <p>Headless Chrome with CDP, humanized delays, random viewport, proxy rotation, and fingerprint
+                        masking.</p><span class="feat-tag">undetected-chromedriver</span>
+                </div>
+                <div class="feat-cell">
+                    <div class="feat-num">06</div><span class="feat-icon">💾</span>
+                    <h4>Checkpoint & resume</h4>
+                    <p>Crash-safe state persistence. Resume from last successful pincode within seconds — zero
+                        duplicates.</p><span class="feat-tag">checkpoint.json</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how" class="how-section">
+        <div class="container">
+            <div class="section-label"><span>Pipeline</span></div>
+            <div class="how-layout">
+                <div>
+                    <h2 class="section-head">From CSV to<br><span style="color:var(--accent);">structured
+                            dataset.</span></h2>
+                    <p class="section-sub">Four stages, zero friction. Designed for data engineers and analysts who need
+                        clean, actionable business intelligence.</p>
+                    <div class="steps-list">
+                        <div class="step-item">
+                            <div class="step-num-box">1</div>
+                            <div class="step-content">
+                                <h4>Load pincodes</h4>
+                                <p>Upload CSV with pincode/region metadata. Auto-validation, deduplication, and preview
+                                    counts.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num-box">2</div>
+                            <div class="step-content">
+                                <h4>Set filters & mode</h4>
+                                <p>Choose business category, region filter (state/district), worker count, and database
+                                    target.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num-box">3</div>
+                            <div class="step-content">
+                                <h4>Headless scraping</h4>
+                                <p>Orchestrated Chrome workers emulate human navigation, scroll, and extract deep
+                                    listings.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num-box">4</div>
+                            <div class="step-content">
+                                <h4>Export & integrate</h4>
+                                <p>CSV, JSON, or live PostgreSQL write. Schema: 14+ fields including lat/lng, rating,
+                                    reviews, hours.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pipeline-visual">
+                    <div style="background: var(--accent-lo); border-radius: 20px; padding: 24px; margin-bottom: 24px;">
+                        <div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+                            <div><i class="fas fa-file-csv" style="color: var(--accent);"></i> pincodes.csv</div>
+                            <div><i class="fas fa-arrow-right" style="color: var(--border-hi);"></i></div>
+                            <div><i class="fas fa-sliders-h" style="color: var(--accent);"></i> Filter</div>
+                            <div><i class="fas fa-arrow-right" style="color: var(--border-hi);"></i></div>
+                            <div><i class="fab fa-chrome" style="color: var(--accent);"></i> 6x Chrome</div>
+                            <div><i class="fas fa-arrow-right" style="color: var(--border-hi);"></i></div>
+                            <div><i class="fas fa-database" style="color: var(--accent);"></i> PostgreSQL</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h5 style="font-size:0.7rem; letter-spacing:0.1em; color:var(--muted); margin-bottom:16px;">
+                            PERFORMANCE METRICS</h5>
+                    </div>
+                    <div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;"><span>Success
+                                rate</span><span style="font-family:monospace;">94.2%</span></div>
+                        <div style="height:4px; background:var(--border); border-radius:4px;">
+                            <div class="metric-fill"
+                                style="width:0%; height:100%; background:var(--green); border-radius:4px;"></div>
+                        </div>
+                    </div>
+                    <div style="margin-top:12px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span>Deduplication</span><span style="font-family:monospace;">100%</span>
+                        </div>
+                        <div style="height:4px; background:var(--border); border-radius:4px;">
+                            <div class="metric-fill"
+                                style="width:0%; height:100%; background:var(--accent); border-radius:4px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance counters -->
+    <section>
+        <div class="container">
+            <div class="section-label"><span>Scale metrics</span></div>
+            <h2 class="section-head">Deployed across<br><span style="color:var(--accent);">200+ production
+                    pipelines.</span></h2>
+            <div class="counter-grid">
+                <div class="counter-cell"><span class="counter-num" data-target="500" data-suffix="k+">0</span><span
+                        class="counter-label">businesses / month</span></div>
+                <div class="counter-cell"><span class="counter-num" data-target="29800" data-suffix="+">0</span><span
+                        class="counter-label">Indian pincodes supported</span></div>
+                <div class="counter-cell"><span class="counter-num" data-target="99.7" data-suffix="%"
+                        data-decimal="1">0</span><span class="counter-label">field extraction accuracy</span></div>
+                <div class="counter-cell"><span class="counter-num" data-target="10" data-suffix="x">0</span><span
+                        class="counter-label">parallel workers max</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" style="background:var(--surface);">
+        <div class="container">
+            <div class="section-label"><span>Social proof</span></div>
+            <h2 class="section-head">Trusted by data<br><span style="color:var(--accent);">teams worldwide.</span></h2>
+            <div class="testi-grid">
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-quote">“Scraped <strong>18,000 restaurants</strong> across 5 states in under 6
+                        hours on a $10 VPS. The multi-worker mode is a game-changer. Saved us $40k/year in API costs.”
+                    </div>
+                    <div class="testi-author">
+                        <div class="testi-avatar">RK</div>
+                        <div>
+                            <div class="testi-name">Rohit Kulkarni</div>
+                            <div class="testi-role">CTO, FoodTech Platform</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-quote">“The PostgreSQL auto-schema feature eliminated our ETL overhead. We now
+                        have real-time business data flowing directly into our analytics warehouse. Flawless.”</div>
+                    <div class="testi-author">
+                        <div class="testi-avatar">AS</div>
+                        <div>
+                            <div class="testi-name">Ananya Sharma</div>
+                            <div class="testi-role">Lead Data Engineer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★☆</div>
+                    <div class="testi-quote">“We’ve tested 4 different scraping tools. Maps Scraper is the only one that
+                        handles long-running jobs gracefully. The auto-resume saved us multiple times.”</div>
+                    <div class="testi-author">
+                        <div class="testi-avatar">VP</div>
+                        <div>
+                            <div class="testi-name">Vikram Patil</div>
+                            <div class="testi-role">Head of Market Intelligence</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing">
+        <div class="container">
+            <div class="section-label"><span>Pricing</span></div>
+            <h2 class="section-head" style="text-align:center;">One-time payment.<br><span
+                    style="color:var(--accent);">Own it forever.</span></h2>
+            <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:28px; margin-top:60px;">
+                <div
+                    style="background:var(--surface); border:1px solid var(--border); border-radius:32px; padding:36px 28px;">
+                    <div style="font-weight:800; font-size:1.2rem;">Open Core</div>
+                    <div style="font-size:2.5rem; font-weight:600; margin:20px 0;">Free</div>
+                    <ul style="list-style:none; margin:28px 0;">
+                        <li style="padding:8px 0;">✓ Single worker</li>
+                        <li style="padding:8px 0;">✓ CSV/JSON export</li>
+                        <li style="padding:8px 0;">✓ Basic region filters</li>
+                        <li style="padding:8px 0; color:var(--muted);">✗ PostgreSQL</li>
+                        <li style="padding:8px 0; color:var(--muted);">✗ Multi-worker</li>
+                    </ul><button class="btn btn-outline" style="width:100%;">Get source</button>
+                </div>
+                <div
+                    style="background:var(--accent-lo); border:1px solid var(--accent); border-radius:32px; padding:36px 28px; transform:scale(1.02);">
+                    <div style="font-weight:800; font-size:1.2rem;">Pro <span
+                            style="font-size:0.7rem; background:var(--accent); padding:2px 10px; border-radius:20px; margin-left:12px;">popular</span>
+                    </div>
+                    <div style="font-size:2.5rem; font-weight:600; margin:20px 0;">₹2,499 <span
+                            style="font-size:0.9rem;">one-time</span></div>
+                    <ul style="list-style:none; margin:28px 0;">
+                        <li style="padding:8px 0;">✓ 10× parallel workers</li>
+                        <li style="padding:8px 0;">✓ PostgreSQL auto-sync</li>
+                        <li style="padding:8px 0;">✓ Live SSE dashboard</li>
+                        <li style="padding:8px 0;">✓ Advanced region filters</li>
+                        <li style="padding:8px 0;">✓ Auto-resume engine</li>
+                    </ul><button class="btn btn-primary" style="width:100%;">Buy Pro →</button>
+                </div>
+                <div
+                    style="background:var(--surface); border:1px solid var(--border); border-radius:32px; padding:36px 28px;">
+                    <div style="font-weight:800; font-size:1.2rem;">Enterprise</div>
+                    <div style="font-size:2.5rem; font-weight:600; margin:20px 0;">Custom</div>
+                    <ul style="list-style:none; margin:28px 0;">
+                        <li style="padding:8px 0;">✓ Unlimited workers</li>
+                        <li style="padding:8px 0;">✓ White-label UI</li>
+                        <li style="padding:8px 0;">✓ Dedicated infra</li>
+                        <li style="padding:8px 0;">✓ SLA 24/7 support</li>
+                        <li style="padding:8px 0;">✓ Custom schema</li>
+                    </ul><button class="btn btn-outline" style="width:100%;">Contact us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-inner">
+                <h2>Ready to extract<br><span style="color:var(--accent);">millions of listings?</span></h2>
+                <p>Self-host in minutes. No monthly fees. Unlimited extraction. Full data ownership.</p>
+                <div class="hero-btns" style="justify-content:center; margin-top:32px;">
+                    <a href="#" class="btn btn-primary" id="ctaMainBtn">⚡ Launch Web UI →</a>
+                    <a href="#features" class="btn btn-outline">📘 Explore features</a>
+                </div>
+                <div class="cta-note">self-hosted · open core · 29k+ pincodes covered · zero API keys</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Maps <span>Scraper</span></h3>
+                    <p>Enterprise-grade data extraction. Built for scale, owned by you.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4><a href="#">Features</a><a href="#">Pricing</a><a href="#">Changelog</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4><a href="#">Documentation</a><a href="#">GitHub</a><a href="#">API</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4><a href="#">About</a><a href="#">Contact</a><a href="#">Status</a>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>© 2025 Maps Scraper — precision data intelligence</span><span>🔒 GDPR
+                    compliant · ⚡ Open core · 🇮🇳 Made in India</span></div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Cursor logic
+        const cur = document.getElementById('cursor');
+        const trail = document.getElementById('cursor-trail');
+        document.addEventListener('mousemove', (e) => {
+            gsap.to(cur, { left: e.clientX, top: e.clientY, duration: 0.08 });
+            gsap.to(trail, { left: e.clientX, top: e.clientY, duration: 0.16 });
+        });
+        document.querySelectorAll('a, button, .btn, .feat-cell, .testi-card, .counter-cell').forEach(el => {
+            el.addEventListener('mouseenter', () => { gsap.to(cur, { width: 28, height: 28, duration: 0.2 }); gsap.to(trail, { scale: 1.4, duration: 0.2 }); });
+            el.addEventListener('mouseleave', () => { gsap.to(cur, { width: 10, height: 10, duration: 0.2 }); gsap.to(trail, { scale: 1, duration: 0.2 }); });
+        });
+
+        // Nav scroll
+        window.addEventListener('scroll', () => document.getElementById('main-nav').classList.toggle('scrolled', window.scrollY > 50));
+
+        // Hero animations
+        const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+        tl.from('#heroEyebrow', { y: 30, opacity: 0, duration: 0.7 })
+            .from('.hero-title .word', { y: 90, opacity: 0, duration: 0.9, stagger: 0.08 }, '-=0.4')
+            .from('#heroDesc', { y: 40, opacity: 0, duration: 0.7 }, '-=0.3')
+            .from('.stat-item', { y: 30, opacity: 0, duration: 0.6, stagger: 0.12 }, '-=0.3')
+            .from('.hero-btns .btn', { y: 25, opacity: 0, duration: 0.5, stagger: 0.1 }, '-=0.2')
+            .from('.hero-right', { x: 60, opacity: 0, duration: 0.9 }, '-=0.7');
+        setTimeout(() => document.getElementById('scaleWord').classList.add('animated'), 1300);
+
+        // Scroll triggers
+        gsap.utils.toArray('.gsap-fade, .feat-cell, .step-item, .testi-card, .counter-cell, .pricing-card').forEach(el => {
+            gsap.from(el, { y: 50, opacity: 0, duration: 0.7, scrollTrigger: { trigger: el, start: 'top 85%', once: true } });
+        });
+
+        // Counter animation
+        function animateNumber(el) {
+            const target = parseFloat(el.dataset.target);
+            const suffix = el.dataset.suffix || '';
+            const prefix = el.dataset.prefix || '';
+            const dec = parseInt(el.dataset.decimal) || 0;
+            gsap.to({ val: 0 }, {
+                val: target, duration: 2.2, ease: 'power2.out', onUpdate: function () {
+                    let v = this.targets()[0].val;
+                    let display = dec ? v.toFixed(dec) : Math.floor(v);
+                    if (target >= 1000 && !dec) display = (v / 1000).toFixed(1) + 'k';
+                    el.textContent = prefix + display + suffix;
+                }
+            });
+        }
+        ScrollTrigger.create({ trigger: '.counter-grid', start: 'top 80%', once: true, onEnter: () => document.querySelectorAll('[data-target]').forEach(animateNumber) });
+        ScrollTrigger.create({ trigger: '.hero-stats', start: 'top 80%', once: true, onEnter: () => document.querySelectorAll('.hero-stats [data-target]').forEach(animateNumber) });
+
+        // Metric fill bars
+        ScrollTrigger.create({
+            trigger: '.pipeline-visual', start: 'top 75%', once: true, onEnter: () => {
+                gsap.to('.metric-fill', { width: '94.2%', duration: 1.2, stagger: 0.2 });
+            }
+        });
+
+        // Terminal typing effect
+        const lines = document.querySelectorAll('#terminalBody .t-line');
+        gsap.fromTo(lines, { y: 15, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, stagger: 0.18, delay: 0.5 });
+
+        // Modal demo UI
+        let modalActive = false;
+        function openDemoModal() {
+            if (modalActive) return;
+            const modal = document.createElement('div');
+            modal.style.cssText = 'position:fixed; inset:0; background:rgba(0,0,0,0.9); z-index:2000; display:flex; align-items:center; justify-content:center; backdrop-filter:blur(12px);';
+            modal.innerHTML = `<div style="max-width:600px; width:90%; background:#0c0b0a; border:1px solid #2f2b24; border-radius:36px; padding:32px; position:relative;">
+    <button id="closeModal" style="position:absolute; top:20px; right:24px; background:none; border:none; font-size:28px; color:#837e73;">&times;</button>
+    <div style="display:flex; gap:14px; align-items:center;"><span style="font-size:32px;">🗺️</span><h3 style="font-size:1.6rem; font-weight:800;">Launch UI preview</h3></div>
+    <p style="margin:20px 0; color:#837e73;">Full configuration panel: business type, CSV upload, PostgreSQL toggle, region filters, multi-instance workers, and live SSE logs.</p>
+    <div style="background:#050504; border-radius:20px; padding:18px; font-family:monospace; font-size:0.75rem;"><span style="color:#d4a96a;">⚙️ Business type:</span> hospital | restaurant<br><span style="color:#d4a96a;">🎯 Filter:</span> By state / district (312 active)<br><span style="color:#d4a96a;">🚀 Mode:</span> Multi-worker (max 10)<br><span style="color:#d4a96a;">🐘 Export:</span> CSV + JSON + PostgreSQL auto-schema</div>
+    <div style="display:flex; gap:12px; margin-top:28px;"><button id="simulateBtn" style="flex:1; background:#1a1609; border:1px solid #d4a96a; color:#d4a96a; padding:12px; border-radius:50px; font-weight:700;">▶ Simulate run</button><button id="closeModalBtn" style="background:transparent; border:1px solid #2f2b24; color:#ece6db; padding:12px 24px; border-radius:50px;">Close</button></div>
+    <div id="modalLog" style="margin-top:16px; font-size:0.65rem; font-family:monospace; color:#8dba72; max-height:100px; overflow-y:auto;"></div>
+  </div>`;
+            document.body.appendChild(modal);
+            modalActive = true;
+            const close = () => { modal.remove(); modalActive = false; };
+            modal.querySelector('#closeModal').onclick = close;
+            modal.querySelector('#closeModalBtn').onclick = close;
+            modal.querySelector('#simulateBtn').onclick = () => {
+                const logDiv = modal.querySelector('#modalLog');
+                logDiv.innerHTML = '';
+                const msgs = ['⚙ Initializing 4 headless workers...', '📂 Loading 2,847 pincodes', '🎯 Filter: Maharashtra → 489 pincodes', '✅ 411001 → 53 businesses saved', '✅ 411002 → 41 businesses saved', '💾 Writing to PostgreSQL + CSV', '📊 Progress: 24% | Total: 2,189 businesses'];
+                let idx = 0;
+                function addMsg() { if (idx < msgs.length) { const p = document.createElement('div'); p.textContent = msgs[idx++]; logDiv.appendChild(p); logDiv.scrollTop = logDiv.scrollHeight; setTimeout(addMsg, 480); } else { const done = document.createElement('div'); done.style.color = '#d4a96a'; done.textContent = '🚀 Demo complete — real-time SSE logs in full app.'; logDiv.appendChild(done); } }
+                addMsg();
+            };
+        }
+        document.getElementById('heroCtaBtn')?.addEventListener('click', (e) => { e.preventDefault(); openDemoModal(); });
+        document.getElementById('ctaMainBtn')?.addEventListener('click', (e) => { e.preventDefault(); openDemoModal(); });
+        document.getElementById('navLaunchBtn')?.addEventListener('click', () => openDemoModal());
+    </script>
+</body>
+
+</html>

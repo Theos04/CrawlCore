@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maps Scraper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <style>
+        /* ── Reset & tokens ─────────────────────────────────────────── */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg: #0c0b09;
+            --surface: #151412;
+            --border: #252219;
+            --border-hi: #3a3526;
+            --text: #e8e2d6;
+            --muted: #8a8275;
+            --accent: #d4a96a;
+            --accent-lo: #1e1a12;
+            --accent-hi: #e8c48a;
+            --green: #8dba72;
+            --red: #c97060;
+            --radius: 28px;
+            --radius-sm: 16px;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background: var(--bg);
+            font-family: 'Syne', system-ui, sans-serif;
+            color: var(--text);
+            padding: 28px 36px;
+            min-height: 100vh;
+        }
+
+        /* ── Grid ───────────────────────────────────────────────────── */
+        .grid {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            grid-template-rows: auto auto auto auto;
+            gap: 20px;
+            max-width: 1540px;
+            margin: 0 auto;
+        }
+
+        /* ── Card base ──────────────────────────────────────────────── */
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            transition: border-color .2s;
+        }
+
+        .card:hover {
+            border-color: var(--border-hi);
+        }
+
+        .card-pad {
+            padding: 1.6rem 1.8rem;
+        }
+
+        /* ── Header ─────────────────────────────────────────────────── */
+        .header {
+            grid-column: 1 / -1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: .9rem 1.8rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--accent-lo);
+            border: 1px solid var(--border-hi);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -.03em;
+            color: var(--text);
+        }
+
+        .logo h1 span {
+            color: var(--accent);
+        }
+
+        .badge {
+            background: var(--accent-lo);
+            border: 1px solid var(--border-hi);
+            border-radius: 40px;
+            padding: 5px 18px;
+            font-size: .72rem;
+            font-weight: 700;
+            letter-spacing: .06em;
+            color: var(--accent);
+            text-transform: uppercase;
+        }
+
+        /* ── Sidebar stats ──────────────────────────────────────────── */
+        .sidebar {
+            grid-column: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .stat {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 1.2rem 1.4rem;
+        }
+
+        .stat-label {
+            font-size: .65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            color: var(--muted);
+            margin-bottom: 8px;
+        }
+
+        .stat-val {
+            font-family: var(--font-mono);
+            font-size: 2rem;
+            font-weight: 500;
+            color: var(--accent);
+            line-height: 1;
+        }
+
+        .stat-val.green {
+            color: var(--green);
+        }
+
+        .prog-bar {
+            margin-top: 12px;
+            background: var(--border-hi);
+            border-radius: 40px;
+            height: 5px;
+            overflow: hidden;
+        }
+
+        .prog-fill {
+            height: 100%;
+            width: 0%;
+            max-width: 100%;
+            background: var(--accent);
+            border-radius: 40px;
+            transition: width .4s ease;
+        }
+
+        .status-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 8px;
+        }
+
+        .led {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: var(--border-hi);
+            transition: background .3s, box-shadow .3s;
+        }
+
+        .led.running {
+            background: var(--green);
+            box-shadow: 0 0 6px var(--green);
+        }
+
+        .led.stopped {
+            background: var(--red);
+        }
+
+        #status-text {
+            font-weight: 700;
+            font-size: .8rem;
+            color: var(--muted);
+        }
+
+        /* ── Main config panel ──────────────────────────────────────── */
+        .main {
+            grid-column: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        /* ── Section label ──────────────────────────────────────────── */
+        .section-label {
+            font-size: .65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            color: var(--accent);
+            border-left: 2px solid var(--accent);
+            padding-left: 10px;
+            margin-bottom: 16px;
+        }
+
+        /* ── Form elements ──────────────────────────────────────────── */
+        .field {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        .field label {
+            font-size: .65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .06em;
+            color: var(--muted);
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="password"],
+        select {
+            background: var(--bg);
+            border: 1px solid var(--border-hi);
+            border-radius: var(--radius-sm);
+            padding: 11px 15px;
+            color: var(--text);
+            font-family: 'Syne', sans-serif;
+            font-size: .82rem;
+            outline: none;
+            transition: border-color .2s, box-shadow .2s;
+        }
+
+        input:focus,
+        select:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(212, 169, 106, .12);
+        }
+
+        select option {
+            background: #1a1814;
+        }
+
+        /* ── Checkbox inline ────────────────────────────────────────── */
+        .check-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: .8rem;
+            color: var(--muted);
+            cursor: pointer;
+        }
+
+        .check-row input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            accent-color: var(--accent);
+            cursor: pointer;
+            padding: 0;
+        }
+
+        /* ── Grid layouts ───────────────────────────────────────────── */
+        .col2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .col3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 16px;
+        }
+
+        .col4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+
+        /* ── Toggle (mode selector) ─────────────────────────────────── */
+        .toggle-group {
+            display: flex;
+            gap: 6px;
+            background: var(--bg);
+            border: 1px solid var(--border-hi);
+            border-radius: 40px;
+            padding: 5px;
+        }
+
+        .toggle-opt {
+            flex: 1;
+            text-align: center;
+            padding: 9px 0;
+            border-radius: 40px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: .72rem;
+            letter-spacing: .04em;
+            color: var(--muted);
+            transition: all .18s;
+            user-select: none;
+        }
+
+        .toggle-opt.active {
+            background: var(--accent-lo);
+            color: var(--accent);
+            border: 1px solid var(--border-hi);
+        }
+
+        /* ── Buttons ────────────────────────────────────────────────── */
+        .btn {
+            border-radius: 40px;
+            padding: 11px 0;
+            font-family: 'Syne', sans-serif;
+            font-weight: 700;
+            font-size: .78rem;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all .15s;
+            border: 1px solid transparent;
+            width: 100%;
+        }
+
+        .btn:disabled {
+            opacity: .35;
+            cursor: not-allowed;
+        }
+
+        .btn-primary {
+            background: var(--accent-lo);
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            background: #2a2315;
+            box-shadow: 0 0 14px rgba(212, 169, 106, .15);
+        }
+
+        .btn-danger {
+            background: #1c1210;
+            border-color: #6b3a30;
+            color: var(--red);
+        }
+
+        .btn-danger:hover:not(:disabled) {
+            background: #251814;
+        }
+
+        .btn-ghost {
+            background: transparent;
+            border-color: var(--border-hi);
+            color: var(--muted);
+            padding: 7px 0;
+            font-size: .7rem;
+        }
+
+        .btn-ghost:hover:not(:disabled) {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* ── Filter region ──────────────────────────────────────────── */
+        .filter-scroll {
+            max-height: 220px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 12px;
+            padding-right: 4px;
+        }
+
+        .filter-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 40px;
+            padding: 9px 16px;
+            font-size: .78rem;
+            cursor: pointer;
+            transition: border-color .15s;
+        }
+
+        .filter-item:hover {
+            border-color: var(--accent);
+        }
+
+        .filter-item input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+            accent-color: var(--accent);
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .filter-item label {
+            flex: 1;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .filter-count {
+            color: var(--muted);
+            font-family: var(--font-mono);
+            font-size: .7rem;
+        }
+
+        /* ── Log panel ──────────────────────────────────────────────── */
+        .log-panel {
+            grid-column: 1 / -1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .log-header {
+            padding: .9rem 1.6rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .log-body {
+            font-family: var(--font-mono);
+            font-size: .71rem;
+            padding: 1rem 1.4rem;
+            height: 260px;
+            overflow-y: auto;
+            background: var(--bg);
+            border-radius: 0 0 var(--radius) var(--radius);
+        }
+
+        .log-line {
+            display: block;
+            padding: 4px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, .03);
+            white-space: pre-wrap;
+            color: #b0a898;
+        }
+
+        .log-line.ok {
+            color: #8dba72;
+        }
+
+        .log-line.err {
+            color: #c97060;
+        }
+
+        .log-line.warn {
+            color: #d4a96a;
+        }
+
+        /* ── Postgres collapsible ───────────────────────────────────── */
+        #pg-config {
+            display: none;
+            margin-top: 16px;
+        }
+
+        /* ── Workers wrapper ────────────────────────────────────────── */
+        #workers-wrap {
+            display: none;
+            margin-top: 16px;
+        }
+
+        /* ── Scrollbar ──────────────────────────────────────────────── */
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-hi);
+            border-radius: 4px;
+        }
+
+        /* ── Responsive ─────────────────────────────────────────────── */
+        @media (max-width: 1100px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                flex-direction: row;
+                flex-wrap: wrap;
+                grid-column: 1;
+            }
+
+            .sidebar .stat {
+                flex: 1;
+                min-width: 150px;
+            }
+
+            .main {
+                grid-column: 1;
+            }
+
+            .log-panel {
+                grid-column: 1;
+            }
+        }
+
+        @media (max-width: 680px) {
+            body {
+                padding: 16px;
+            }
+
+            .col2,
+            .col3,
+            .col4 {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid">
+
+        <!-- ══ HEADER ══════════════════════════════════════════════════ -->
+        <header class="card header">
+            <div class="logo">
+                <div class="logo-icon">🗺️</div>
+                <h1>MAPS <span>SCRAPER</span></h1>
+            </div>
+            <span class="badge">JSON · CSV · PostgreSQL</span>
+        </header>
+
+        <!-- ══ SIDEBAR — STATS ══════════════════════════════════════════ -->
+        <aside class="sidebar">
+
+            <div class="stat">
+                <div class="stat-label">Pincodes done</div>
+                <div class="stat-val" id="stat-done">0</div>
+                <div class="prog-bar">
+                    <div class="prog-fill" id="prog-fill"></div>
+                </div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-label">Total pincodes</div>
+                <div class="stat-val" id="stat-total">—</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-label">Filtered (active)</div>
+                <div class="stat-val green" id="stat-filtered">—</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-label">Businesses found</div>
+                <div class="stat-val green" id="stat-biz">0</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-label">Status</div>
+                <div class="status-row">
+                    <div class="led" id="led"></div>
+                    <span id="status-text">Idle</span>
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- ══ MAIN CONFIG PANEL ════════════════════════════════════════ -->
+        <main class="main">
+
+            <!-- Target & paths ─────────────────────────────────────── -->
+            <section class="card card-pad">
+                <p class="section-label">⚙ Target &amp; Paths</p>
+
+                <div class="col2" style="margin-bottom:16px">
+                    <div class="field">
+                        <label>Business type *</label>
+                        <input type="text" id="business_type" value="{{ config.business_type }}"
+                            placeholder="e.g. hospital, car rental" />
+                    </div>
+                    <div class="field">
+                        <label>Custom search query (optional)</label>
+                        <input type="text" id="search_query" value="{{ config.search_query }}"
+                            placeholder="Leave blank → uses Business Type" />
+                    </div>
+                </div>
+
+                <div class="col2" style="margin-bottom:16px">
+                    <div class="field">
+                        <label>Pincode CSV file *</label>
+                        <input type="text" id="csv_file" value="{{ config.csv_file }}"
+                            placeholder="E:/data/pincodes.csv" />
+                        <button class="btn btn-ghost" style="margin-top:8px" onclick="loadCSVSummary()">
+                            ⟳ Load &amp; preview pincodes
+                        </button>
+                    </div>
+                    <div class="field">
+                        <label>Output directory</label>
+                        <input type="text" id="output_dir" value="{{ config.output_dir }}" placeholder="output" />
+                    </div>
+                </div>
+
+                <div class="col2">
+                    <div class="field">
+                        <label>Chrome binary path</label>
+                        <input type="text" id="chrome_binary" value="{{ config.chrome_binary }}"
+                            placeholder="D:/chrome-win/chrome.exe" />
+                    </div>
+                    <div class="field">
+                        <label>ChromeDriver path</label>
+                        <input type="text" id="chromedriver_path" value="{{ config.chromedriver_path }}"
+                            placeholder="E:/chromedriver.exe" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Database & export ──────────────────────────────────── -->
+            <section class="card card-pad">
+                <p class="section-label">🗄 Database &amp; Export</p>
+
+                <div class="col3">
+                    <label class="check-row">
+                        <input type="checkbox" id="postgres_enabled" {% if config.postgres_enabled %}checked{% endif %}>
+                        Enable PostgreSQL
+                    </label>
+                    <label class="check-row">
+                        <input type="checkbox" id="auto_export_csv" {% if config.auto_export_csv %}checked{% endif %}>
+                        Auto-export CSV
+                    </label>
+                    <div class="field">
+                        <label>Export format</label>
+                        <select id="export_format">
+                            <option value="both" {% if config.export_format=='both' %}selected{% endif %}>JSON + CSV
+                            </option>
+                            <option value="json" {% if config.export_format=='json' %}selected{% endif %}>JSON only
+                            </option>
+                            <option value="csv" {% if config.export_format=='csv' %}selected{% endif %}>CSV only
+                            </option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- PostgreSQL fields (shown when checkbox ticked) -->
+                <div id="pg-config">
+                    <div class="col3" style="margin-top:4px">
+                        <div class="field">
+                            <label>Host</label>
+                            <input type="text" id="pg_host" value="{{ config.postgres_host }}"
+                                placeholder="localhost" />
+                        </div>
+                        <div class="field">
+                            <label>Port</label>
+                            <input type="number" id="pg_port" value="{{ config.postgres_port }}" placeholder="5432" />
+                        </div>
+                        <div class="field">
+                            <label>Database</label>
+                            <input type="text" id="pg_db" value="{{ config.postgres_db }}"
+                                placeholder="business_scraper" />
+                        </div>
+                        <div class="field">
+                            <label>Username</label>
+                            <input type="text" id="pg_user" value="{{ config.postgres_user }}" placeholder="postgres" />
+                        </div>
+                        <div class="field">
+                            <label>Password</label>
+                            <input type="password" id="pg_password" value="{{ config.postgres_password }}" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Timing ─────────────────────────────────────────────── -->
+            <section class="card card-pad">
+                <p class="section-label">⏱ Timing</p>
+                <div class="col4">
+                    <div class="field">
+                        <label>Scroll delay (s)</label>
+                        <input type="number" id="scroll_delay" value="{{ config.scroll_delay }}" step=".5" min=".5" />
+                    </div>
+                    <div class="field">
+                        <label>Max scrolls</label>
+                        <input type="number" id="max_scrolls" value="{{ config.max_scrolls }}" min="1" />
+                    </div>
+                    <div class="field">
+                        <label>Page load delay (s)</label>
+                        <input type="number" id="page_load_delay" value="{{ config.page_load_delay }}" step=".5"
+                            min="1" />
+                    </div>
+                    <div class="field">
+                        <label>Pincode delay (s)</label>
+                        <input type="number" id="delay_between_pincodes" value="{{ config.delay_between_pincodes }}"
+                            step=".5" min="0" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mode selector ──────────────────────────────────────── -->
+            <section class="card card-pad">
+                <p class="section-label">⚡ Scraping Mode</p>
+
+                <div class="toggle-group" id="mode-toggle">
+                    <div class="toggle-opt {% if config.mode != 'multi' %}active{% endif %}" data-mode="single">Single
+                        Instance</div>
+                    <div class="toggle-opt {% if config.mode == 'multi' %}active{% endif %}" data-mode="multi">Multi
+                        Instance</div>
+                </div>
+
+                <div id="workers-wrap">
+                    <div class="field" style="max-width:200px">
+                        <label>Parallel workers (max 10)</label>
+                        <input type="number" id="max_workers" value="{{ config.max_workers }}" min="2" max="10" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Filter by region ───────────────────────────────────── -->
+            <section class="card card-pad">
+                <p class="section-label">🎯 Filter by Region</p>
+
+                <div class="toggle-group" id="filter-toggle">
+                    <div class="toggle-opt active" data-filtermode="all">All Pincodes</div>
+                    <div class="toggle-opt" data-filtermode="states">By State</div>
+                    <div class="toggle-opt" data-filtermode="districts">By District</div>
+                </div>
+
+                <div id="states-container" style="display:none; margin-top:18px">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px">
+                        <span class="section-label" style="margin-bottom:0">States
+                            <span id="state-count" style="font-size:.6rem; opacity:.7"></span>
+                        </span>
+                        <div style="display:flex; gap:8px">
+                            <button class="btn btn-ghost" style="width:auto;padding:5px 14px"
+                                onclick="selectAll('state')">✓ All</button>
+                            <button class="btn btn-ghost" style="width:auto;padding:5px 14px"
+                                onclick="clearAll('state')">✗ Clear</button>
+                        </div>
+                    </div>
+                    <div class="filter-scroll" id="state-list"></div>
+                </div>
+
+                <div id="districts-container" style="display:none; margin-top:18px">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px">
+                        <span class="section-label" style="margin-bottom:0">Districts
+                            <span id="dist-count" style="font-size:.6rem; opacity:.7"></span>
+                        </span>
+                        <div style="display:flex; gap:8px">
+                            <button class="btn btn-ghost" style="width:auto;padding:5px 14px"
+                                onclick="selectAll('dist')">✓ All</button>
+                            <button class="btn btn-ghost" style="width:auto;padding:5px 14px"
+                                onclick="clearAll('dist')">✗ Clear</button>
+                        </div>
+                    </div>
+                    <div class="filter-scroll" id="dist-list"></div>
+                </div>
+            </section>
+
+            <!-- Start / Stop ───────────────────────────────────────── -->
+            <div class="col2">
+                <button class="btn btn-primary" id="btn-start" onclick="startScraper()">
+                    ▶ Start Scraping
+                </button>
+                <button class="btn btn-danger" id="btn-stop" onclick="stopScraper()" disabled>
+                    ■ Stop
+                </button>
+            </div>
+
+        </main>
+
+        <!-- ══ LOG PANEL ════════════════════════════════════════════════ -->
+        <section class="card log-panel">
+            <div class="log-header">
+                <span class="section-label" style="margin-bottom:0">📡 Live Console</span>
+                <div style="display:flex; gap:10px">
+                    <button class="btn btn-ghost" style="width:auto;padding:6px 18px" onclick="exportCSV()">
+                        ↓ Export CSV
+                    </button>
+                    <button class="btn btn-ghost" style="width:auto;padding:6px 18px" onclick="clearLog()">
+                        Clear
+                    </button>
+                </div>
+            </div>
+            <div id="log" class="log-body">
+                <span class="log-line">◆ Ready — load a CSV file and start scraping.</span>
+            </div>
+        </section>
+
+    </div><!-- /grid -->
+
+    <script>
+        /* ═══════════════════════════════════════════════════════════════
+           STATE
+        ══════════════════════════════════════════════════════════════ */
+        let evtSource = null;
+        let csvSummary = null;
+        let selectedStates = new Set();
+        let selectedDists = new Set();
+        let filterMode = 'all';
+        let scrapeMode = '{{ config.mode if config.mode else "single" }}';
+
+        /* ═══════════════════════════════════════════════════════════════
+           LOG HELPERS
+        ══════════════════════════════════════════════════════════════ */
+        const logDiv = document.getElementById('log');
+
+        function appendLog(msg) {
+            const line = document.createElement('span');
+            line.className = 'log-line';
+            if (/✅|saved|completed|done/i.test(msg)) line.classList.add('ok');
+            else if (/❌|error|fatal/i.test(msg)) line.classList.add('err');
+            else if (/⚠️|warning|stopped/i.test(msg)) line.classList.add('warn');
+            line.textContent = msg;
+            logDiv.appendChild(line);
+            line.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        function clearLog() {
+            logDiv.innerHTML = '<span class="log-line">◆ Console cleared.</span>';
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           STATUS / STATS
+        ══════════════════════════════════════════════════════════════ */
+        function setStatus(s) {
+            const led = document.getElementById('led');
+            const txt = document.getElementById('status-text');
+            led.className = 'led' + (s === 'running' ? ' running' : s === 'stopped' ? ' stopped' : '');
+            txt.textContent = s === 'running' ? 'Running' : s === 'stopped' ? 'Stopped' : 'Idle';
+        }
+
+        function updateStats(d) {
+            if (d.pincodes_done !== undefined) document.getElementById('stat-done').textContent = d.pincodes_done;
+            if (d.businesses_found !== undefined) document.getElementById('stat-biz').textContent = d.businesses_found;
+            if (d.total_pincodes !== undefined) document.getElementById('stat-total').textContent = d.total_pincodes;
+            if (d.filtered_pincodes !== undefined) document.getElementById('stat-filtered').textContent = d.filtered_pincodes;
+
+            if (d.total_pincodes > 0) {
+                // Clamp to [0, 100] to prevent a >100% bar
+                const pct = Math.min(100, Math.max(0, (d.pincodes_done / d.total_pincodes) * 100));
+                document.getElementById('prog-fill').style.width = pct + '%';
+            }
+        }
+
+        function updateFilteredCount() {
+            if (!csvSummary) return;
+            let count = 0;
+            if (filterMode === 'all') {
+                count = csvSummary.total_pincodes;
+            } else if (filterMode === 'states') {
+                for (const [st, val] of Object.entries(csvSummary.states))
+                    if (selectedStates.has(st)) count += val.count;
+            } else {
+                for (const val of Object.values(csvSummary.states))
+                    for (const d of val.districts)
+                        if (selectedDists.has(d.name)) count += d.count;
+            }
+            document.getElementById('stat-filtered').textContent = count;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           CSV SUMMARY / FILTER LISTS
+        ══════════════════════════════════════════════════════════════ */
+        async function loadCSVSummary() {
+            const csv_file = document.getElementById('csv_file').value.trim();
+            if (!csv_file) { appendLog('⚠️ Enter a CSV file path first.'); return; }
+            appendLog(`📂 Loading summary for: ${csv_file} …`);
+
+            try {
+                const resp = await fetch('/csv_summary', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ csv_file }),
+                });
+                const data = await resp.json();
+                if (data.error) { appendLog(`❌ ${data.error}`); return; }
+                csvSummary = data;
+                appendLog(`✅ ${data.total_pincodes.toLocaleString()} pincodes across ${Object.keys(data.states).length} states.`);
+                renderStateList(data.states);
+                renderDistrictList(data.states);
+                updateFilteredCount();
+            } catch (e) {
+                appendLog(`❌ ${e.message}`);
+            }
+        }
+
+        function renderStateList(states) {
+            const el = document.getElementById('state-list');
+            el.innerHTML = '';
+            for (const [name, data] of Object.entries(states).sort()) {
+                const row = makeFilterRow('state', name, `(${data.count.toLocaleString()})`, () => {
+                    selectedStates.has(name) ? selectedStates.delete(name) : selectedStates.add(name);
+                    document.getElementById('state-count').textContent = `(${selectedStates.size} selected)`;
+                    updateFilteredCount();
+                });
+                el.appendChild(row);
+            }
+        }
+
+        function renderDistrictList(states) {
+            const el = document.getElementById('dist-list');
+            el.innerHTML = '';
+            const all = [];
+            for (const [st, val] of Object.entries(states))
+                for (const d of val.districts) all.push({ name: d.name, state: st, count: d.count });
+            all.sort((a, b) => a.name.localeCompare(b.name));
+
+            for (const d of all) {
+                const label = `${d.name} <span style="opacity:.55; font-size:.7rem">(${d.state})</span>`;
+                const row = makeFilterRow('dist', d.name, `(${d.count.toLocaleString()})`, () => {
+                    selectedDists.has(d.name) ? selectedDists.delete(d.name) : selectedDists.add(d.name);
+                    document.getElementById('dist-count').textContent = `(${selectedDists.size} selected)`;
+                    updateFilteredCount();
+                }, label);
+                el.appendChild(row);
+            }
+        }
+
+        function makeFilterRow(type, value, countStr, onChange, customLabel) {
+            const row = document.createElement('div');
+            row.className = 'filter-item';
+            const id = `${type}_${value.replace(/\W/g, '_')}`;
+            row.innerHTML = `
+    <input type="checkbox" id="${id}" value="${value}">
+    <label for="${id}">${customLabel || value}</label>
+    <span class="filter-count">${countStr}</span>`;
+            row.querySelector('input').addEventListener('change', onChange);
+            return row;
+        }
+
+        function selectAll(type) {
+            document.querySelectorAll(`#${type}-list input`).forEach(cb => {
+                cb.checked = true;
+                if (type === 'state') selectedStates.add(cb.value);
+                else selectedDists.add(cb.value);
+            });
+            const countEl = type === 'state' ? 'state-count' : 'dist-count';
+            const set = type === 'state' ? selectedStates : selectedDists;
+            document.getElementById(countEl).textContent = `(${set.size} selected)`;
+            updateFilteredCount();
+        }
+
+        function clearAll(type) {
+            document.querySelectorAll(`#${type}-list input`).forEach(cb => {
+                cb.checked = false;
+                if (type === 'state') selectedStates.delete(cb.value);
+                else selectedDists.delete(cb.value);
+            });
+            const countEl = type === 'state' ? 'state-count' : 'dist-count';
+            document.getElementById(countEl).textContent = '(0 selected)';
+            updateFilteredCount();
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           TOGGLE GROUPS
+        ══════════════════════════════════════════════════════════════ */
+        function bindToggle(groupId, attr, callback) {
+            document.querySelectorAll(`#${groupId} .toggle-opt`).forEach(el => {
+                el.addEventListener('click', () => {
+                    document.querySelectorAll(`#${groupId} .toggle-opt`).forEach(o => o.classList.remove('active'));
+                    el.classList.add('active');
+                    callback(el.getAttribute(attr));
+                });
+            });
+        }
+
+        bindToggle('mode-toggle', 'data-mode', val => {
+            scrapeMode = val;
+            document.getElementById('workers-wrap').style.display = val === 'multi' ? 'block' : 'none';
+        });
+
+        bindToggle('filter-toggle', 'data-filtermode', val => {
+            filterMode = val;
+            document.getElementById('states-container').style.display = val === 'states' ? 'block' : 'none';
+            document.getElementById('districts-container').style.display = val === 'districts' ? 'block' : 'none';
+            updateFilteredCount();
+        });
+
+        // Show workers row if multi is already selected (from config)
+        if (scrapeMode === 'multi') {
+            document.getElementById('workers-wrap').style.display = 'block';
+        }
+
+        // PostgreSQL config toggle
+        document.getElementById('postgres_enabled').addEventListener('change', e => {
+            document.getElementById('pg-config').style.display = e.target.checked ? 'block' : 'none';
+        });
+        // Restore state on load
+        if (document.getElementById('postgres_enabled').checked) {
+            document.getElementById('pg-config').style.display = 'block';
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           START / STOP
+        ══════════════════════════════════════════════════════════════ */
+        function buildConfig() {
+            return {
+                business_type: document.getElementById('business_type').value.trim(),
+                search_query: document.getElementById('search_query').value.trim(),
+                csv_file: document.getElementById('csv_file').value.trim(),
+                output_dir: document.getElementById('output_dir').value.trim() || 'output',
+                chrome_binary: document.getElementById('chrome_binary').value.trim(),
+                chromedriver_path: document.getElementById('chromedriver_path').value.trim(),
+                scroll_delay: +document.getElementById('scroll_delay').value,
+                max_scrolls: +document.getElementById('max_scrolls').value,
+                page_load_delay: +document.getElementById('page_load_delay').value,
+                delay_between_pincodes: +document.getElementById('delay_between_pincodes').value,
+                max_workers: +document.getElementById('max_workers').value,
+                mode: scrapeMode,
+                filter_mode: filterMode,
+                selected_states: Array.from(selectedStates),
+                selected_districts: Array.from(selectedDists),
+                postgres_enabled: document.getElementById('postgres_enabled').checked,
+                postgres_host: document.getElementById('pg_host').value,
+                postgres_port: +document.getElementById('pg_port').value || 5432,
+                postgres_db: document.getElementById('pg_db').value,
+                postgres_user: document.getElementById('pg_user').value,
+                postgres_password: document.getElementById('pg_password').value,
+                auto_export_csv: document.getElementById('auto_export_csv').checked,
+                export_format: document.getElementById('export_format').value,
+            };
+        }
+
+        async function startScraper() {
+            const cfg = buildConfig();
+
+            // Client-side validation
+            if (!cfg.business_type) { appendLog('⚠️ Business Type is required.'); return; }
+            if (!cfg.csv_file) { appendLog('⚠️ CSV file path is required.'); return; }
+            if (!cfg.chrome_binary || !cfg.chromedriver_path) {
+                appendLog('⚠️ Chrome Binary and ChromeDriver paths are required.'); return;
+            }
+
+            document.getElementById('btn-start').disabled = true;
+            document.getElementById('btn-stop').disabled = false;
+            setStatus('running');
+
+            // Open SSE stream first, then POST /start
+            if (evtSource) evtSource.close();
+            evtSource = new EventSource('/stream');
+            evtSource.onmessage = e => {
+                const data = JSON.parse(e.data);
+                if (data.type === 'log') appendLog(data.msg);
+                if (data.type === 'stats') updateStats(data);
+                if (data.type === 'done') {
+                    setStatus('idle');
+                    document.getElementById('btn-start').disabled = false;
+                    document.getElementById('btn-stop').disabled = true;
+                    evtSource.close();
+                    evtSource = null;
+                }
+            };
+            evtSource.onerror = () => {
+                // SSE disconnect — server may have restarted
+                setStatus('stopped');
+                document.getElementById('btn-start').disabled = false;
+                document.getElementById('btn-stop').disabled = true;
+            };
+
+            const resp = await fetch('/start', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(cfg),
+            });
+            const json = await resp.json();
+            if (json.status !== 'ok') {
+                appendLog(`❌ ${json.error || 'Start failed'}`);
+                setStatus('idle');
+                document.getElementById('btn-start').disabled = false;
+                document.getElementById('btn-stop').disabled = true;
+                if (evtSource) { evtSource.close(); evtSource = null; }
+            }
+        }
+
+        function stopScraper() {
+            fetch('/stop', { method: 'POST' }).then(() => {
+                setStatus('stopped');
+                appendLog('⏹ Stop requested — finishing current pincode …');
+                document.getElementById('btn-stop').disabled = true;
+                document.getElementById('btn-start').disabled = false;
+            });
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           EXPORT CSV
+        ══════════════════════════════════════════════════════════════ */
+        async function exportCSV() {
+            appendLog('📊 Requesting CSV export …');
+            const resp = await fetch('/export_csv', { method: 'POST' });
+            const data = await resp.json();
+            if (data.status === 'ok' && data.filename) {
+                appendLog(`✅ Downloading: ${data.filename}`);
+                window.location.href = `/download/${encodeURIComponent(data.filename)}`;
+            } else {
+                appendLog(`⚠️ ${data.error || 'No CSV found yet'}`);
+            }
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           STATS POLL  (fallback when SSE isn't connected)
+        ══════════════════════════════════════════════════════════════ */
+        setInterval(async () => {
+            if (evtSource) return;  // SSE handles updates while connected
+            try {
+                const r = await fetch('/stats');
+                updateStats(await r.json());
+            } catch (_) { }
+        }, 3000);
+
+        /* ═══════════════════════════════════════════════════════════════
+           INITIAL CSV LOAD
+           Only auto-loads if CSV path is pre-populated from saved config.
+           Does NOT block the page — runs in background.
+        ══════════════════════════════════════════════════════════════ */
+        (async () => {
+            const csvPath = document.getElementById('csv_file').value.trim();
+            if (csvPath) {
+                // Small delay so the page paints first
+                await new Promise(r => setTimeout(r, 600));
+                await loadCSVSummary();
+            }
+        })();
+    </script>
+
+</body>
+
+</html>
