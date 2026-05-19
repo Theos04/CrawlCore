@@ -1,22 +1,3 @@
-{
-  "_readme": "Set enabled:true and fill in your credentials",
-  "caption": "#viral #trending #reels #shorts",
-  "instagram": {
-    "enabled": false,
-    "access_token": "YOUR_LONG_LIVED_INSTAGRAM_TOKEN",
-    "user_id": "YOUR_INSTAGRAM_BUSINESS_USER_ID",
-    "video_url_base": "https://YOUR_NGROK_URL/api/video"
-  },
-  "youtube": {
-    "enabled": false,
-    "client_secrets_file": "client_secrets.json",
-    "token_file": "youtube_token.json",
-    "privacy": "public",
-    "tags": [
-      "shorts",
-      "viral",
-      "trending",
-      "reels"
-    ]
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:97a528d7140cb050984bb1a1d6e0a7dddd6039e956232b7917763bb0d2e1bcd3
+size 579
