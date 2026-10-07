@@ -57,7 +57,7 @@ _DEFAULTS: Dict = {
     "page_load_delay": 5.0,
     "delay_between_pincodes": 2.0,
     "output_dir": os.path.join(BASE_DIR, "exports"),
-    "csv_file": "",
+    "csv_file": os.path.join(BASE_DIR, "data", "pincodes.csv"),
     "chrome_binary": os.path.join(BASE_DIR, "chrome", "chrome-win", "chrome.exe"),
     "chromedriver_path": os.path.join(BASE_DIR, "chrome", "chromedriver_win32", "chromedriver.exe"),
     "selected_states": [],
