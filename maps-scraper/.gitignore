@@ -1,0 +1,51 @@
+# Chrome bundle (too large for git)
+chrome/
+chromedriver*
+chrome.exe
+chromedriver.exe
+
+# Output data
+output/
+run_history/
+*.csv
+*.json
+!scraper_config.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.dll
+*.dylib
+venv/
+env/
+ENV/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+scraper.log
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Environment variables
+.env
+.env.local
+
+# Allow the master pincode input file
+!data/pincodes.csv
